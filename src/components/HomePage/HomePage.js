@@ -462,6 +462,7 @@ function HomePage() {
       </div>
       <Footer/>
       <div class="footer_very_bottom"></div>
+      
     </>
   )
 }

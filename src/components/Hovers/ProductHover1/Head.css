@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 
 .wrapper1 p {
+    margin-top:38px;
     font-family: Urbanist;
     font-style: normal;
     font-weight: 300;
