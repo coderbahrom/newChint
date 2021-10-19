@@ -1,0 +1,61 @@
+#products [type="radio"]:checked,
+#products [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+#products [type="radio"]:checked + label,
+#products [type="radio"]:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  color: #8da6c5;
+  margin: 0.7vw 0;
+  text-align: end;
+  font-size: 1vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 1vw;
+  border: 0.13vw solid #1e59a48c;
+  font-weight: 600;
+}
+
+#products [type="radio"]:checked + label {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+#products [type="radio"]:checked + label:after,
+#products [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #f87da9;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+
+#products [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#products [type="radio"]:checked + label {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#products .custom_radio_container {
+  display: flex;
+  justify-content: space-between;
+}

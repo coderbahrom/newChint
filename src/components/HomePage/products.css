@@ -1,0 +1,81 @@
+#products {
+  padding: 5vw 0;
+  background-color: #fff;
+}
+
+#products .products_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5vw 0;
+}
+
+#products .products_list__prouduct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31vw;
+  height: 7.4vw;
+  border-radius: 1.3vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #6a6a6a;
+  padding: 0 3vw;
+  cursor: pointer;
+}
+
+#products .products_list__prouduct object {
+  width: 2.2vw;
+  height: 4.5vw;
+}
+
+#products .products_list__prouduct2 {
+  display: none;
+}
+
+#products .products_list__prouduct:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+#products .products_list__prouduct:hover .products_list__prouduct2 {
+  display: block;
+}
+
+#products .products_list__prouduct:hover .products_list__prouduct1 {
+  display: none;
+}
+
+#products .product_bottom_btns {
+  display: flex;
+  justify-content: center;
+}
+
+#products .product_bottom_btns .product_bottom_btn {
+  margin: 0 1vw;
+  width: 16vw;
+  height: 4.2vw;
+  border-radius: 0.7vw;
+  display: flex;
+  align-items: center;
+  padding: 0 2.2vw;
+  cursor: pointer;
+  font-size: var(--text14px);
+}
+
+#products .product_bottom_btns .product_bottom_btn object {
+  margin-right: 1.5vw;
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+#products .product_bottom_btns .product_bottom_btn.outlined {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+#products .product_bottom_btns .product_bottom_btn.filled {
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: bold;
+}

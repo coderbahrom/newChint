@@ -1,0 +1,149 @@
+#advantages {
+  padding: 5vw 0;
+}
+
+#advantages .showcase {
+  height: 23vw;
+  width: 100%;
+  margin: 4.1vw 0;
+  border-radius: 5vw;
+  background-color: var(--primary);
+  position: relative;
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+  padding: 0 6vw;
+}
+
+#advantages .showcase::after {
+  content: "";
+  width: 100%;
+  height: 23vw;
+  background-image: url("./assets/images/advantages_showcase.png");
+  display: block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#advantages .showcase_content {
+  width: 100%;
+  color: #ffff;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#advantages .stat_wrap {
+  position: relative;
+}
+
+#advantages .stat_number {
+  font-size: 3.2vw;
+  margin-bottom: 1vw;
+  position: relative;
+  z-index: 2;
+}
+
+#advantages .stat_title {
+  font-size: var(--text14px);
+}
+
+#advantages .stat_rect {
+  width: 5.8vw;
+  height: 5.8vw;
+  background: rgba(106, 152, 211, 0.5);
+  border-radius: 1.6vw;
+  position: absolute;
+  top: -2vw;
+  left: -1.5vw;
+}
+
+#advantages .advantage_cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 6vw 0;
+}
+
+#advantages .advantage_cards__card {
+  width: 21vw;
+  height: 24vw;
+  background-color: #fff;
+  border-radius: 1.6vw;
+  padding: 3vw;
+  cursor: pointer;
+}
+
+#advantages .advantage_cards__card ul {
+  padding: 0;
+  list-style-type: square;
+  list-style-type: none;
+}
+
+#advantages .advantage_cards__card object {
+  width: 2.7vw;
+  height: 2.7vw;
+}
+
+#advantages .advantage_cards__card ul li {
+  margin-bottom: 1vw;
+  font-size: 0.8vw;
+  color: #6a6a6a;
+}
+
+#advantages .advantage_card_title {
+  font-size: 1.8vw;
+  color: var(--primary);
+  margin: 2vw 0;
+}
+
+#advantages .advantage_cards__card:hover {
+  background-color: var(--primary);
+}
+
+#advantages .advantage_cards__card:hover * {
+  color: #fff;
+}
+
+#advantages .advantage_cards__card:hover .advantage_card_sm_rect {
+  background-color: #fff;
+}
+
+#advantages .advantage_cards__card:hover .advantage_cards_rect {
+  background-color: #fff;
+}
+
+#advantages .advantage_cards_rect {
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--primary);
+  border-radius: 0.9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#advantages .advantage_cards__icon2 {
+  display: none;
+}
+
+#advantages .advantage_cards__card:hover .advantage_cards__icon2 {
+  display: block;
+}
+
+#advantages .advantage_cards__card:hover .advantage_cards__icon1 {
+  display: none;
+}
+
+#advantages .advantage_card_sm_rect {
+  display: inline-block;
+  width: 0.3vw;
+  height: 0.3vw;
+  background-color: var(--primary);
+  border-radius: 1px;
+  margin-right: 0.5vw;
+}

@@ -1,0 +1,45 @@
+#map{
+  margin:0 0 5vw 0;
+}
+#map .map_svg {
+  width: 74vw;
+  margin: 5vw 0;
+}
+
+#map .map_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#map .map_wrapper object {
+  width: 60vw;
+}
+
+#map .chint_around_world_title {
+  font-size: 1.8vw;
+  color: var(--primary);
+  margin-bottom: 1vw;
+}
+
+#map .chint_around_world_desc {
+  font-size: var(--text14px);
+  color: var(--primary);
+}
+
+#map .country_representation_title {
+  font-size: 7.5vw;
+  color: var(--primary);
+}
+
+#map .country_representation_desc {
+  font-size: 1.8vw;
+  color: var(--primary);
+}
+
+#map .map_text_wrap {
+  width: 75%;
+  margin: 3vw auto;
+  margin-bottom: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
