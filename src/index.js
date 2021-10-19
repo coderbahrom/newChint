@@ -10,11 +10,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       {/* <HomePage/> */}
-<<<<<<< HEAD
+
       <ProductsHover/>
-=======
-      <ProductsHover_inner/>
->>>>>>> 6315bec93898dd5660b0ef3a03d73e092ba2ac6a
+
+      {/* <ProductsHover_inner/> */}
+
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

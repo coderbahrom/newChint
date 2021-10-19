@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.mapping {
+  display: flex;
+  flex-direction: row;
+ column-gap: 48px;
+ row-gap: 100px;
+}
+.switching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 229px;
+  height: 126px;
+  background: #ffffff;
+  border: 0.783848px solid rgba(30, 89, 164, 0.3);
+  box-sizing: border-box;
+  border-radius: 19.5962px;
+}
+.text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.text-area h1 {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1e59a4;
+}
+.text-area p {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 16px;
+  color: #8a8a8a;
+}
