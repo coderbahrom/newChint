@@ -26,6 +26,18 @@
 }
 .hr1{
   margin-top: 2px;
+  
+border: 1px solid #DBDBDB;
+}
+.hr2{
+  width: 20%;
+  border: 1px solid #1E59A4;
+}
+.span1{
+  
+  display: flex;
+  flex-direction: column;
+  gap:7px
 }
 .left-side span h1 {
  
@@ -56,6 +68,20 @@
   box-sizing: border-box;
   border-radius: 50%;
 }
+.arrow1 {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1.6px solid #1E59A4;
+}
+.arrow1 img{
+  width: 8px;
+  height: 10px;
+}
 
 .list {
   display: flex;
@@ -79,6 +105,9 @@ font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 17px;
-
 color: #393939;
+}
+.foot hr{
+  margin-top: 12px;
+  border: 0.783848px solid #DBDBDB;
 }

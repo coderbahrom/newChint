@@ -1,9 +1,12 @@
 import React from 'react'
 import './ProductsHover.css'
 import Head from './Head'
+import Header from '../../Navbar/Header'
 function ProductHover1() {
     return (
+        
         <div className="wrapper">
+            <Header/>
           <Head title1={'Главная /Каталог продукции'} title2={'Каталог продукции'}/>
             <div className="body1">
 
@@ -17,8 +20,10 @@ function ProductHover1() {
         </div>
         </span>
         <hr className={'hr1'} />
+        <div className={'span1'}>
         <h2>Модульное оборудование</h2>
-        <hr />
+        <hr className={'hr2'}/>
+        </div>
         <ul className="list">
             <li>Силовое оборудование защиты и коммутации</li>
             <li>Контакторы, реле, пускатели</li>
@@ -36,9 +41,9 @@ function ProductHover1() {
         <span>
 <h1>Оборудование распределения 
 и передачи</h1>
-<div className="arrow">
+<div className="arrow1">
 
-<img src="./assets/images/arrow.png" alt="" />
+<img src="./assets/images/arrow1.png" alt="" />
 </div>
 </span>
 <hr />
@@ -46,9 +51,9 @@ function ProductHover1() {
 
 <h1> Оборудование распределения 
 и передачи</h1>
-<div className="arrow">
+<div className="arrow1">
 
-<img src="./assets/images/arrow.png" alt="" />
+<img src="./assets/images/arrow1.png" alt="" />
 </div>
 </span>
 <hr />
