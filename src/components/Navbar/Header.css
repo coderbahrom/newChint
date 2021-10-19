@@ -1,11 +1,46 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  list-style: none;
+}
+.wrapper ul li {
+  cursor: pointer;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #393939;
+}
+.wrapper button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+  height: 32px;
+  background: #1e59a4;
+  border-radius: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10.4419px;
+  line-height: 13px;
+  color: #ffffff;
+  cursor: pointer;
 }

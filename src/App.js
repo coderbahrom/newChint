@@ -1,11 +1,10 @@
-
+import Header from './components/Navbar/Header';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1>Hello</h1>
-     <p>for delete</p>
+  <Header/>
     </div>
   );
 }

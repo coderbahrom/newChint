@@ -1,9 +1,9 @@
 import React from 'react'
-import '../App.css' 
+import './Header.css'
 function Header() {
     return (
-        <div wrapper>
-          <img src="public\assets\images\chint.png" alt="" />
+        <div className="wrapper">
+          <img src="./assets/images/chint.png" alt="" />
           <ul>
               <li>Продукция</li>
               <li>О компании</li>
@@ -12,8 +12,9 @@ function Header() {
               <li>Поддержка</li>
               <li>Контакты</li>
           </ul>
-          <button><img src="public\assets\images\Vector.png" alt="" /> (95) 476 76 76 </button>
-        </div>
+          <button><img src="./assets/images/Vector.png" alt="" /> (95) 476 76 76 </button>
+       </div>
+   
     )
 }
 
