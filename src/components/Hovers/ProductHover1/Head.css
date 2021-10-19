@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+.wrapper1 p {
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #cacaca;
+  }
+  .wrapper1 h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #1e59a4;
+    margin-top: 38px;
+  }
+  .wrapper1{
+    display: flex;
+    flex-direction: column;
+    /* gap: 38px; */
+  }
+  .hr{
+      margin-top: 28px;
+  }

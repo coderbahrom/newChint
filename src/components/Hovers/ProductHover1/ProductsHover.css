@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+.wrapper {
+  display: flex;
+  margin: 0 250px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 25px;
+}
+.left-side span {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+}
+.hr1{
+  margin-top: 2px;
+}
+.left-side span h1 {
+ 
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #686868;
+}
+.left-side h2 {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1e59a4;
+}
+
+.arrow {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e59a4;
+  border: 1.5677px solid #1e59a4;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+ul li {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+
+  text-align: left;
+  list-style: none;
+}
+.foot h1{
+  font-family: Urbanist;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+color: #393939;
+}
