@@ -1,0 +1,23 @@
+button{
+    height: 31.977848052978516px;
+    width: 86.00715637207031px;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color:#F8F8F8;
+    border:0;
+    cursor: pointer;
+}
+button:hover{
+    border:2px solid #8EACD1;
+}
+.rang1{
+    color:#828282;
+}
+.rang2{
+    color:#C6C6C6;
+}
