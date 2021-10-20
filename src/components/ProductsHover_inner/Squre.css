@@ -10,7 +10,10 @@ button{
     text-align: center;
     background-color:#F8F8F8;
     border:0;
-
+    cursor: pointer;
+}
+button:hover{
+    border:2px solid #8EACD1;
 }
 .rang1{
     color:#828282;
