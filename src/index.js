@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 // import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 
 // import ProductsHover from './components/Hovers/ProductHover1/ProductsHover';
-// import ChintWorld from './components/ChintWorld/ChintWorld';
+import ChintWorld from './components/ChintWorld/ChintWorld';
 // import App from './App';
 // import HomePage from './components/HomePage/HomePage';
 // import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
@@ -23,13 +23,13 @@ ReactDOM.render(
 
       {/* <ProductsHover/> */}
 
-<ProductsHover_inner3/>
+{/* <ProductsHover_inner3/> */}
 
 
       {/* <ProductsHover_inner2/> */}
       {/* <ProductsHover_inner/> */}
 
-      {/* <ChintWorld/> */}
+      <ChintWorld/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

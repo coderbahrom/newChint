@@ -1,0 +1,9 @@
+.showimage{
+    background-image: url('../assets/images/showimage.png');
+    background-color:#1E59A4;
+}
+.common_container {
+    width: 72.5%;
+    margin: 0 auto;
+  }
+  
