@@ -1,0 +1,21 @@
+.img    {
+width: 62px;
+height: 62px; 
+
+    
+}
+.services p{
+    font-family: Urbanist;
+font-style: normal;
+font-weight: normal;
+font-size: 12.0561px;
+line-height: 17px;
+width: 61%;
+color: #393939;
+}
+.services{
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}

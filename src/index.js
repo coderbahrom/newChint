@@ -14,7 +14,8 @@ import ReactDOM from 'react-dom';
 // import ProductsHover_inner2 from './components/ProductsHover_inner2/ProductsHover_inner2';
 
 import {BrowserRouter as Router} from 'react-router-dom'
-import ProductsHover_inner3 from './components/ProductsHover_inner/ProductsHover_inner3';
+import ChintInWorld3 from './components/ChintWorld/ChintInWorld3/ChintInWorld3';
+// import ProductsHover_inner3 from './components/ProductsHover_inner/ProductsHover_inner3';
 import './index.css'
 ReactDOM.render(
   <React.StrictMode>
@@ -22,8 +23,8 @@ ReactDOM.render(
       {/* <HomePage/> */}
 
       {/* <ProductsHover/> */}
-
-<ProductsHover_inner3/>
+  <ChintInWorld3/>
+{/* <ProductsHover_inner3/> */}
 
 
       {/* <ProductsHover_inner2/> */}
