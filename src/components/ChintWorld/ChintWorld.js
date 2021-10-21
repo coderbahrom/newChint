@@ -14,8 +14,8 @@ const arr2 = ['Дочернее подразделение международ�
 const arr3 = ['','','']
 
 const styleImage = {
-    // backgroundImage:"url('../assets/images//rightcase1.png'),
-    // backgroundColor:'None',
+    backgroundImage:rightcase1,
+    backgroundColor:'None',
 }
 
 
