@@ -20,39 +20,39 @@
 .common_container {
     width: 72.5%;
     margin: 0 auto;
-    padding-top: 74px;
-    padding-bottom: 68px;
+    padding-top: 5.4vw;
+    padding-bottom: 4.97vw;
 }
 
 .common_container  p:nth-child(1){
     font-family: Urbanist;
-    font-size: 36px;
+    font-size: 2.63vw;
     font-style: normal;
     font-weight: 800;
-    line-height: 59px;
+    line-height: 4.31vw;
     letter-spacing: 0em;
     color:#FFFFFF;
 }
 .common_container  p:nth-child(2){
     font-family: Urbanist;
-    font-size: 20px;
+    font-size: 1.46vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.6vw;
     letter-spacing: 0em;
     text-align: left;    
     color:#FFFFFF;
-    margin:6px 0 41px 0;
+    margin:0.43vw 0 3vw 0;
 }
 .common_container  p:nth-child(3){
     font-family: Urbanist;
-    font-size: 16px;
+    font-size: 1.17vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.75vw;
     letter-spacing: 0em;
     color:#FFFFFF;
-    margin:5px 0 40px 0;
+    margin:0.36vw 0 2.92vw 0;
     width:85%;
     
 }
@@ -61,19 +61,19 @@
     display:flex;
     flex-direction: row;
     align-items: center; 
-    column-gap: 13px;
+    column-gap: 0.95vw;
    
 }
 .showimage_inner img{
-    height: 16.457143783569336px;
-    width: 16.457143783569336px;
+    height: 1.2vw;
+    width: 1.2vw;
 }
 .showimage_inner h6{
     font-family: Urbanist;
-    font-size: 13px;
+    font-size: 0.95vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.6vw;
     letter-spacing: 0em;
     color:#FFFFFF;
 }
