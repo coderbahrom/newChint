@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "../Hovers/ProductHover1/Head";
 import Header from "../Navbar/Header";
+import Footer from '../Footer/Footer'
 import "./ProductsHover_inner3.css";
 import Numbers from "./Numbers";
 const data = [
@@ -199,6 +200,10 @@ function ProductsHover_inner3(props) {
           <img src="./assets/images/rec.png" alt="" />
           <p>Все товары сертифицированы. Качество подтверждено международными сертификатами UL (США), VDE (Германия), KEMA (Нидерланды), EAC (Таможенный союз), RoHS. Последний заверяет, что продукция не вредит окружающей среде и не угрожает здоровью человека.</p>
         </div>
+      </div>
+      <div className="footer">
+
+      <Footer/>
       </div>
     </div>
   );

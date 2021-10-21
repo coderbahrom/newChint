@@ -18,6 +18,7 @@
   flex-direction: row;
   column-gap: 48px;
   margin-top: 40px;
+  /* background-color: white; */
 }
 .switch img {
   width: 183px;
@@ -273,4 +274,7 @@
 .rec img{
   width: 14px;
 height: 14px;
+}
+.footer{
+  margin-top: 142px;
 }
