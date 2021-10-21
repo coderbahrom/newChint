@@ -1,16 +1,16 @@
 import React from 'react'
 import './showImage.css'
-import downloadStrelka from '../assets/images/downloadStrelka.png'
-function showImage() {
+
+function showImage({show_titl1,show_titl2,show_titl3,show_titl4,show_titl5}) {
     return (
         <div className='showimage'>
             <div className={'common_container'}>
-                <p>О компании</p>
-                <p>Группа компаний CHINT основана в 1984</p>
-                <p>На сегодняшний день является лидером мирового рынка в области электротехнической промышленности. Корпорация имеет в своем составе множество предприятий и подразделений, каждое из которых отвечает за различные сегменты разработки и производства.</p>
-                <div> 
-                    <img src={downloadStrelka} alt='rasm3'/>
-                    <p>Презентация о компании</p>
+                <p>{show_titl1}</p>
+                <p>{show_titl2}</p>
+                <p>{show_titl3}</p>
+                <div className='showimage_inner'> 
+                    <img src={show_titl4} alt='rasm3' />
+                    <h6>{show_titl5}</h6>
                 </div>
             </div>
         </div>

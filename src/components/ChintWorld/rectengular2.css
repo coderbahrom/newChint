@@ -1,0 +1,56 @@
+@font-face {
+    font-family:Urbanist;
+    src: url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+  }
+  @font-face {
+    font-family:Lato;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+  }
+  @font-face {
+    font-family:SF Pro Display;
+    src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
+  }
+
+.rectengular2{
+    background-image: url('../assets/images/rectengular.png');
+    background-repeat: no-repeat;
+    background-position:top right;
+    width: 19vw;
+    height:14vw;
+    border-radius: 24.13050079345703px;
+    padding-top:5.5vw;
+
+}
+.rectengular2 h5{
+    font-family: Urbanist;
+    font-family: Urbanist;
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    text-align: left;    
+    color:#1E59A4;
+    margin:17px 0 21px 0;
+}
+.rectengular2 p:nth-child(1){
+    font-family: Urbanist;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color:#1E59A4
+}
+
+.rectengular2 p:nth-child(3){
+    font-family: Urbanist;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#1E59A4
+
+}
