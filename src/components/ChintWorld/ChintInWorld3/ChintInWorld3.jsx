@@ -4,11 +4,14 @@ import Header from "../../Navbar/Header";
 import campus1 from "./chintasset/campus1.png";
 import campus from "./chintasset/campus.png";
 import ChintServices from "./ChintServices";
-import product1 from  './chintasset/production-icon-3.png'
-import product2 from  './chintasset/production-icon-2.png'
-import product3 from  './chintasset/production-icon-1.png'
-import product4 from  './chintasset/production-icon-4.png'
-import product5 from  './chintasset/production-icon-5.png'
+import product1 from "./chintasset/production-icon-3.png";
+import product2 from "./chintasset/production-icon-2.png";
+import product3 from "./chintasset/production-icon-1.png";
+import product4 from "./chintasset/production-icon-4.png";
+import product5 from "./chintasset/production-icon-5.png";
+import down from "../../assets/images/downloadStrelka.png";
+import NavbarButtom from '../NavbarButtom'
+import ShowImage from "../ShowImage";
 
 import "./ChintInWorld3.css";
 const data = [
@@ -20,7 +23,7 @@ const data = [
   {
     id: 2,
     img: product2,
-    title: 'Автоматизации производственных процессов',
+    title: "Автоматизации производственных процессов",
   },
   {
     id: 3,
@@ -43,9 +46,20 @@ function ChintInWorld3() {
     <>
       <div className={"wrapper2"}>
         <Header />
+      
       </div>
 
       <div className="bigContainer">
+          <div className="showimg">
+              <NavbarButtom link1="Главная /" link2=" О компании /" link3=" CHINT в мире"/>
+      <ShowImage
+          show_titl1="Наше производство"
+          show_titl3="Основанная в 1984 году группа компаний CHINT предоставляет надежное и безопасное промышленное электротехническое оборудование, а также решения для систем управления повышением энергоэффективности."
+          show_titl4={down}
+          show_titl5="Сертификат
+ISO14001, ISO9001"
+        />
+        </div>
         <div className="containers">
           <div className="contents">
             <p>
@@ -89,34 +103,37 @@ function ChintInWorld3() {
           </div>
         </div>
         <div className="Products">
-
-        <div className="production">
-
-{       
-    data.map((value,index)=>{
-        return(
-            <div key={data.id}>
-                <ChintServices data={value}/>
-            </div>
-        )
-    })
-
-}
-        </div>
+          <div className="production">
+            {data.map((value, index) => {
+              return (
+                <div key={data.id}>
+                  <ChintServices data={value} />
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className="text">
-            <p>
-            Группа компаний имеет в своем портфеле ряд подразделений, деятельность которых направлена на отдельные сегменты и сферы деятельности в рамках рынка электротехнической продукции. Данные бренды охватывают такие области как: производство электроэнергии фотоэлектрическими установками, промышленная автоматизация, оборудование для передачи и распределения энергии, низковольтные электротехнические приборы, инструменты и счетчики, электроприборы для помещений, автоэлектрика и т.д.
-            </p>
-<p>
-
-
-Это обеспечивает корпорации непревзойденное качество на всем пути: от производства, передачи, перераспределения и распределения электрической энергии до конечного потребления. Для заказчиков по всему миру CHINT обеспечивает системную поддержку продуктов, решений и услуг. 
-            </p>
+          <p>
+            Группа компаний имеет в своем портфеле ряд подразделений,
+            деятельность которых направлена на отдельные сегменты и сферы
+            деятельности в рамках рынка электротехнической продукции. Данные
+            бренды охватывают такие области как: производство электроэнергии
+            фотоэлектрическими установками, промышленная автоматизация,
+            оборудование для передачи и распределения энергии, низковольтные
+            электротехнические приборы, инструменты и счетчики, электроприборы
+            для помещений, автоэлектрика и т.д.
+          </p>
+          <p>
+            Это обеспечивает корпорации непревзойденное качество на всем пути:
+            от производства, передачи, перераспределения и распределения
+            электрической энергии до конечного потребления. Для заказчиков по
+            всему миру CHINT обеспечивает системную поддержку продуктов, решений
+            и услуг.
+          </p>
         </div>
         <div className="footer">
-
-        <Footer/>
+          <Footer />
         </div>
       </div>
     </>

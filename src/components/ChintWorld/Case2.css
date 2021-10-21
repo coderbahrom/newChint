@@ -1,0 +1,9 @@
+.case2{
+    background-image: url('../assets/images/leftcase.png');
+    background-position: center;
+    background-size: 100%;
+    height:35.5vw;
+    width: 61.7vw;
+    border-top-left-radius: 45.25714111328125px;
+    border-bottom-left-radius: 45.25714111328125px;
+}

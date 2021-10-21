@@ -1,0 +1,32 @@
+@font-face {
+    font-family:Urbanist;
+    src: url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+  }
+  @font-face {
+    font-family:Lato;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+  }
+  @font-face {
+    font-family:SF Pro Display;
+    src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
+  }
+
+.rectengular{
+    background-image: url('../assets/images/rectengular.png');
+    background-repeat: no-repeat;
+    background-position:top right;
+    width: 17.6vw;
+    height:14vw;
+    border-radius: 24.13050079345703px;
+    padding-top:3.5vw;
+
+}
+.rectengular h5{
+    font-family: Urbanist;
+    font-size: 5.8vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color:#1E59A4;
+}
