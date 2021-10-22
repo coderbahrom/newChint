@@ -12,7 +12,7 @@ import ReactDOM from 'react-dom';
 // import HomePage from './components/HomePage/HomePage';
 // import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 // import ProductsHover_inner2 from './components/ProductsHover_inner2/ProductsHover_inner2';
-
+import ChintWorld2 from './components/ChintWorld/ChintWorld2/ChintWorld2';
 import {BrowserRouter as Router} from 'react-router-dom'
 import ChintInWorld3 from './components/ChintWorld/ChintInWorld3/ChintInWorld3';
 // import ProductsHover_inner3 from './components/ProductsHover_inner/ProductsHover_inner3';
@@ -24,7 +24,8 @@ ReactDOM.render(
 
       {/* <ProductsHover/> */}
 
-  <ChintInWorld3/>
+  {/* <ChintInWorld3/> */}
+     <ChintWorld2/>
 
 
 
