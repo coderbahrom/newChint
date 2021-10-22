@@ -1,0 +1,50 @@
+.world5_container_image{
+    display: flex;
+    flex-direction: row;
+    column-gap:4.39vw;
+    margin-top:4.4vw;
+}
+.world5_container_image img{
+    width: 24.89vw;
+    height: 15.95vw;
+
+}
+
+.world5_container_image_title{
+    display:flex;
+    flex-direction: column;
+}
+
+.world5_container_image_title p:nth-child(1){
+    font-family: SF Pro Display;
+    font-size: var(--text18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.53vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin:0.86vw 0 0 0;
+}
+.world5_container_image_title p:nth-child(2){
+    font-family: SF Pro Display;
+    font-size: var(--text14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.53vw;
+    letter-spacing: 0em;
+    color:#7A7A7A;
+    margin-top:auto;
+
+}
+.world5_container_image_title p:nth-child(3){
+    font-family: Lato;
+    font-size: 0.73vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.87vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:auto;
+    color:#A9B1BC;
+
+}

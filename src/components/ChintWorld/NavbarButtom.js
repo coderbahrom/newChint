@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 const stylelink = {
     textDecoration: 'none',
     fontFamily: 'Urbanist',
-    fontSize: '12px',
+    fontSize: '0.87vw',
     fontStyle: 'normal',
     fontWeight: '300',
-    lineHeight: '15px',
+    lineHeight: '1.09vw',
     color:'#CACACA',
 
 }

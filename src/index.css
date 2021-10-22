@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 @font-face {
   font-family:Urbanist;
   src: url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
@@ -12,10 +14,10 @@
   src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;  
+  /* font-family: "Lato", sans-serif;   */
   box-sizing: border-box;
 }
 
@@ -36,6 +38,7 @@ body {
   --secondary: #f7faff;
   --secondary-dark: #d8e8ff;
   --text14px: 0.9vw;
+  --text18px: 1.31vw;
 }
 
 /* INPUTS */

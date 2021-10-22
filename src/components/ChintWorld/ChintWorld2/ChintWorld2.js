@@ -36,20 +36,7 @@ function ChintWorld2() {
                         </div>
                     </div>
                 </div>
-                <div className='main_container_row2'>
-                    <div className='main_container_row2_left'>
-                        <p>50</p>
-                        <p>Стран представительств CHINT</p>
-                    </div>
-                    
-                    <div className='main_container_row2_right'>
-                        <p>CHINT в мире1</p> 
-                        <h6>
-                            Штат сотрудников корпорации насчитывает более 32 000 сотрудников по всему миру. Продукция CHINT представлена в более чем 100 странах по всему миру.
-                        </h6>
-                    </div>
-                </div>
-                <Map/>
+                    <Map/>
             </div>
             <Footer/>
         </>

@@ -426,7 +426,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-
+        
         
          {/* MAP  */}
           <Map/>

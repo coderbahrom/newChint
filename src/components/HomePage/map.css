@@ -1,5 +1,5 @@
 #map{
-  margin:0 0 5vw 0;
+  padding:0 0 5vw 0;
 }
 #map .map_svg {
   width: 74vw;
@@ -37,7 +37,7 @@
 }
 
 #map .map_text_wrap {
-  width: 75%;
+  width: 72.5%;
   margin: 3vw auto;
   margin-bottom: 6vw;
   display: flex;

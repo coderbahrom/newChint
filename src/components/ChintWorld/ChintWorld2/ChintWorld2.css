@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     align-items:center;
     column-gap:9vw;
+    margin-bottom:9vw;
 }
 .main_container_row2{
     display: flex;
@@ -60,32 +61,3 @@
     width:22vw;
 }
 
-.main_container_row2_right{
-    display: flex;
-    flex-direction: column;
-    row-gap:1.53vw;
-    flex:1;
-}
-
-.main_container_row2_right p{
-    font-family: Urbanist;
-    font-size: 2vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 2.7vw;
-    letter-spacing: 0em;
-    text-align: left;
-    color:#1E59A4;
-}
-.main_container_row2_right h6{
-    font-family: Urbanist;
-    font-size: 1.02vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3vw;
-    letter-spacing: 0em;
-    text-align: left;
-    color:#5C5C5C;
-    width:22vw;
-
-}
