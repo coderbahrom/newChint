@@ -2,14 +2,14 @@ import React from 'react'
 import './showImage.css'
 
 
-function ShowImage({show_titl1,show_titl2,show_titl3,show_titl4,show_titl5, hidden}) {
+function ShowImage({show_titl1,show_titl2,show_titl3,show_titl4,show_titl5, hidden,styleTop,styleBackground}) {
 
 
 
     return (
-        <div className='showimage'>
+        <div className='showimage' style={styleBackground}>
             <div className={'common_container'}>
-                <p>{show_titl1}</p>
+                <p style={styleTop}>{show_titl1}</p>
                 <p>{show_titl2}</p>
                 <p>{show_titl3}</p>
 

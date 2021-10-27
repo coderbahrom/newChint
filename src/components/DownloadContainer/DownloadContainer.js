@@ -2,7 +2,7 @@ import React from 'react'
 import './DownloadContainer.css'
 import strelka from '../assets/images/strelka.png'
 import pdf from '../assets/images/pdf.png'
-function DownloadContainer() {
+function DownloadContainer(){
     return (
         <div className='downloadContainer'>
             <img src={pdf} alt='rasm'/>

@@ -1,0 +1,40 @@
+.world9_content{
+    background-color:white;
+    padding-bottom: 11.5vw;
+}
+.world9_container{
+    width: 72.5%;
+    margin: 0 auto;
+    padding:10.3vw 0 0 0;
+    height:100vh;
+}
+
+.world9_container > p{
+    font-family: Urbanist;
+    font-size: 1.02vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.97vw;
+    letter-spacing: 0em;
+    color:#393939;
+}
+
+.world9_container p:nth-child(2){
+  margin:2vw 0;
+}
+.world9_container ul:nth-child(4){
+    margin:2vw 0 2vw 1.3vw;
+    display:flex;
+    flex-direction:column;
+    row-gap:1vw;
+}
+.world9_container li{
+    font-family: Urbanist;
+    font-size: 1.02vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.97vw;
+    letter-spacing: 0em;
+    color:#393939;
+}
+
