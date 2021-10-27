@@ -10,19 +10,16 @@ import ReactDOM from 'react-dom';
 // import ProductsHover from './components/Hovers/ProductHover1/ProductsHover';
 // import ChintWorld from './components/ChintWorld/ChintWorld';
 // import App from './App';
-// import HomePage from './components/HomePage/HomePage';
+import HomePage from './components/HomePage/HomePage';
 // import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 // import ProductsHover_inner2 from './components/ProductsHover_inner2/ProductsHover_inner2';
 // import ChintWorld2 from './components/ChintWorld/ChintWorld2/ChintWorld2';
 import {BrowserRouter as Router} from 'react-router-dom'
-<<<<<<< HEAD
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
-=======
 import ChintWorld6 from './components/ChintWorld/ChintWorld6/ChintWorld6';
 
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
 
->>>>>>> 32ccd39b0124ca5ca27eab24762f38273a42945c
 // import ChintInWorld3 from './components/ChintWorld/ChintInWorld3/ChintInWorld3';
 // import ProductsHover_inner3 from './components/ProductsHover_inner/ProductsHover_inner3';
 // import DownloadContainer from './components/DownloadContainer/DownloadContainer';
@@ -34,8 +31,8 @@ import './index.css'
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <ChintWorld6/>
-      {/* <HomePage/> */}
+      {/* <ChintWorld6/> */}
+      <HomePage/>
 {/* <ChintWorld4/> */}
       {/* <ProductsHover/> */}
 
@@ -57,7 +54,7 @@ ReactDOM.render(
       {/* <ChintWorld5/> */}
       {/* <ChintWorld7/> */}
       {/* <ChintWorld8/> */}
-      <ChintWorld9/>
+      {/* <ChintWorld9/> */}
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
