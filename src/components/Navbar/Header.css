@@ -68,7 +68,7 @@
 
 
 #Hover{
-
+  overflow: hidden;
   top:10vw;
   position: absolute;
  
@@ -261,4 +261,7 @@ color: #D4E7FF;
   line-height: 16px;
   
   color: #FFFFFF;
+}
+.dropdown1 > div{
+  overflow-y: hidden;
 }
