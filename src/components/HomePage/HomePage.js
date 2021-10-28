@@ -19,6 +19,8 @@ const styleDot = {
   height:'0.58vw',
   borderRadius:'0.29vw',
   marginRight:'0.73vw',
+  backgroundColor:'#FFFFFF',
+  border:'1px solid #FFFFFF'
 }
 const styleCarousel ={
   width:'70vw',
