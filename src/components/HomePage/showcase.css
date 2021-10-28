@@ -5,13 +5,15 @@
   border-radius: 3.3vw;
   background-color: var(--primary);
   position: relative;
-  padding: 0 3vw;
+  padding: 0 0 2vw 4.39vw ;
   display: flex;
-  align-items: center;
   margin-bottom: 9.3vw;
+  background-image: url("../assets/images/showcase_img.png");
+  background-position:center;
+  background-size:100%;
 }
 
-#showcase::after {
+/* #showcase::after {
   content: "";
   width: 100%;
   height: 24.3vw;
@@ -23,7 +25,7 @@
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 #showcase .showcase_content {
   color: #ffff;
@@ -33,7 +35,7 @@
 
 #showcase .showcase_title {
   font-size: 2.3vw;
-  margin-bottom: 8vw;
+  margin:8vw 0 6vw 0;
 }
 
 #showcase .text_btn {
@@ -73,6 +75,10 @@
   z-index: 2;
   right: 0;
   display: flex;
+  align-items: center;
+}
+.main_language{
+  display:flex;
   align-items: center;
 }
 

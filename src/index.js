@@ -11,15 +11,17 @@ import ReactDOM from 'react-dom';
 // import ChintWorld from './components/ChintWorld/ChintWorld';
 // import App from './App';
 import HomePage from './components/HomePage/HomePage';
-// import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
+import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 // import ProductsHover_inner2 from './components/ProductsHover_inner2/ProductsHover_inner2';
 // import ChintWorld2 from './components/ChintWorld/ChintWorld2/ChintWorld2';
 import {BrowserRouter as Router} from 'react-router-dom'
+
 
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
 // import ChintWorld6 from './components/ChintWorld/ChintWorld6/ChintWorld6';
 
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
+
 
 
 // import ChintInWorld3 from './components/ChintWorld/ChintInWorld3/ChintInWorld3';
@@ -61,4 +63,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-

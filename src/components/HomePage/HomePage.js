@@ -2,10 +2,13 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
+<<<<<<< HEAD
+=======
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
 import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
 import {Switch,Link,Route } from 'react-router-dom'
+>>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
 import "./search.css"
 import './showcase.css'
 import './news.css'
@@ -14,8 +17,27 @@ import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
 import Map from './Map';
+<<<<<<< HEAD
+import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
+const styleDot = {
+  width:'0.58vw',
+  height:'0.58vw',
+  borderRadius:'0.29vw',
+  marginRight:'0.73vw',
+  backgroundColor:'#FFFFFF',
+  border:'1px solid #FFFFFF'
+}
+const styleCarousel ={
+  width:'70vw',
+  
+}
+=======
+>>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
 
 function HomePage() {
+  
   return (
   <>
   <Switch>
@@ -31,7 +53,143 @@ function HomePage() {
     </div>
 
     {/* SHOWCASE  */}
-      <div id="showcase">
+    <div id="showcase">
+    <CarouselProvider
+        style={styleCarousel}
+        naturalSlideWidth={300}
+        naturalSlideHeight={100}
+        totalSlides={4}
+        isPlaying={true}
+        interval={6000}
+        
+      >
+        <Slider >
+          <Slide index={0}>
+              <div class="showcase_content">
+              <h1 class="showcase_title">
+                Официальный <br />
+                дистрибьютор в Узбекистане
+              </h1>
+              <button class="text_btn">
+                <span>Cкачать каталог</span>
+                <svg
+                  width="30"
+                  height="14"
+                  viewBox="0 0 30 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6364 7.6364C29.9879 7.28493 29.9879 6.71508 29.6364 6.36361L23.9088 0.636041C23.5574 0.284569 22.9875 0.284569 22.636 0.636041C22.2846 0.987513 22.2846 1.55736 22.636 1.90883L27.7272 7L22.636 12.0912C22.2846 12.4426 22.2846 13.0125 22.636 13.364C22.9875 13.7154 23.5574 13.7154 23.9088 13.364L29.6364 7.6364ZM-7.86805e-08 7.9L29 7.9L29 6.1L7.86805e-08 6.1L-7.86805e-08 7.9Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </Slide>
+          <Slide index={1}>
+          <div class="showcase_content">
+              <h1 class="showcase_title">
+                Официальный <br />
+                дистрибьютор в Узбекистане
+              </h1>
+              <button class="text_btn">
+                <span>Cкачать каталог</span>
+                <svg
+                  width="30"
+                  height="14"
+                  viewBox="0 0 30 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6364 7.6364C29.9879 7.28493 29.9879 6.71508 29.6364 6.36361L23.9088 0.636041C23.5574 0.284569 22.9875 0.284569 22.636 0.636041C22.2846 0.987513 22.2846 1.55736 22.636 1.90883L27.7272 7L22.636 12.0912C22.2846 12.4426 22.2846 13.0125 22.636 13.364C22.9875 13.7154 23.5574 13.7154 23.9088 13.364L29.6364 7.6364ZM-7.86805e-08 7.9L29 7.9L29 6.1L7.86805e-08 6.1L-7.86805e-08 7.9Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </Slide>
+          <Slide index={2}>
+          <div class="showcase_content">
+              <h1 class="showcase_title">
+                Официальный <br />
+                дистрибьютор в Узбекистане
+              </h1>
+              <button class="text_btn">
+                <span>Cкачать каталог</span>
+                <svg
+                  width="30"
+                  height="14"
+                  viewBox="0 0 30 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6364 7.6364C29.9879 7.28493 29.9879 6.71508 29.6364 6.36361L23.9088 0.636041C23.5574 0.284569 22.9875 0.284569 22.636 0.636041C22.2846 0.987513 22.2846 1.55736 22.636 1.90883L27.7272 7L22.636 12.0912C22.2846 12.4426 22.2846 13.0125 22.636 13.364C22.9875 13.7154 23.5574 13.7154 23.9088 13.364L29.6364 7.6364ZM-7.86805e-08 7.9L29 7.9L29 6.1L7.86805e-08 6.1L-7.86805e-08 7.9Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </Slide>
+          <Slide index={3}>
+          <div class="showcase_content">
+              <h1 class="showcase_title">
+                Официальный <br />
+                дистрибьютор в Узбекистане
+              </h1>
+              <button class="text_btn">
+                <span>Cкачать каталог</span>
+                <svg
+                  width="30"
+                  height="14"
+                  viewBox="0 0 30 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6364 7.6364C29.9879 7.28493 29.9879 6.71508 29.6364 6.36361L23.9088 0.636041C23.5574 0.284569 22.9875 0.284569 22.636 0.636041C22.2846 0.987513 22.2846 1.55736 22.636 1.90883L27.7272 7L22.636 12.0912C22.2846 12.4426 22.2846 13.0125 22.636 13.364C22.9875 13.7154 23.5574 13.7154 23.9088 13.364L29.6364 7.6364ZM-7.86805e-08 7.9L29 7.9L29 6.1L7.86805e-08 6.1L-7.86805e-08 7.9Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </Slide>
+        </Slider>
+        <div style={{marginLeft:'29.2vw'}}>
+        <Dot style={styleDot} slide={0}> 
+        </Dot>
+        <Dot style={styleDot} slide={1}>
+        </Dot>
+        <Dot style={styleDot} slide={2}>
+        </Dot>
+        <Dot style={styleDot} slide={3}>
+        </Dot>
+        </div>
+      </CarouselProvider>
+      
+      <div class="main_language">
+      <div class="language">
+        
+          <form action="#">
+            <p class="lang_option_wrap">
+              <input type="radio" id="test1" name="radio-group" checked />
+              <label class="lang_option_label" for="test1">UZ</label>
+            </p>
+            <p class="lang_option_wrap">
+              <input type="radio" id="test2" name="radio-group" />
+              <label class="lang_option_label" for="test2">RU</label>
+            </p>
+            <p class="lang_option_wrap">
+              <input type="radio" id="test3" name="radio-group" />
+              <label class="lang_option_label" for="test3">ENG</label>
+            </p>
+          </form>
+        </div>
+        </div>
+      </div>
+      {/* <div id="showcase">
         <div class="showcase_content">
           <h1 class="showcase_title">
             Официальный <br />
@@ -69,7 +227,7 @@ function HomePage() {
             </p>
           </form>
         </div>
-      </div>
+      </div> */}
       <ThreeImageComponent/>
       </div>
        {/* PRODUCTS  */}
