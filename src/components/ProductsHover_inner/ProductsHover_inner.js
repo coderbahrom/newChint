@@ -18,36 +18,35 @@ function ProductsHover_inner() {
                     <div className='content_data'>
                         <Content_data_left/>
                         <div className='content_data_right'>
-                            <div className='right_inner'>
-                                 <div className='right_inner_1'>
+                            <div className='rightInner'>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
-                                 <div className='right_inner_1'>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
-                                 <div className='right_inner_1'>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
-                                 <div className='right_inner_1'>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
-                                 <div className='right_inner_1'>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
-                                 <div className='right_inner_1'>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
+                                 <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </div>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                 </Link>
                             </div>
                         </div>
                     </div>
             </div>
-            
         </div>
         </>
     )

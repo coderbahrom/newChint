@@ -15,7 +15,7 @@
   }
 .content_data{
     display:flex;
-    margin-top:62px;
+    margin-top:4.53vw;
     /* flex-wrap: wrap; */
 }
 .content_data_right{
@@ -25,57 +25,57 @@
 }
 
 .right_inner{
-    padding:41px 43px 47px 42px;
-    height: 362.17px;
+    padding:3vw 3.14vw 3.44vw 3.07vw;
+    height: 26.5vw;
     width: 42.4vw;
-    border-radius: 18.591772079467773px;
+    border-radius: 1.36vw;
     border:1px solid rgba(30, 89, 164, 0.2);
     display: flex;
     flex-direction: column;   
-    margin-bottom:63px;
+    margin-bottom:4.61vw;
 }
 .right_inner:hover{
     border:1px solid #8EACD1;
 }
 
 .right_inner_1{
-    margin:0px 0 23px 0;
+    margin:0px 0 1.68vw 0;
     width:95%;
     
 }
 .right_inner_1 p:nth-child(1){
     font-weight: 700;
     font-family: SF Pro Display;  
-    font-size: 14px;
+    font-size: 1.02vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.46vw;
     letter-spacing: 0em;
     text-align: left;
 }
 .right_inner_1 p:nth-child(2){
     font-family: SF Pro Display;
-    font-size: 14px;
+    font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.46vw;
     letter-spacing: 0em;
     text-align: left;
 }
 
 .doc{
     display: flex;
-    margin-top:30px;
+    margin-top:2.19vw;
     align-items:center;
-    column-gap:6px;
+    column-gap:0.43vw;
     font-family: Urbanist;
-    font-size: 14px;
+    font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.46vw;
     letter-spacing: 0em;
     text-align: left;
-    margin-top:30px;
+    margin-top:2.19vw;
     color:#1E59A4;
 }
 .right_inner_2{
@@ -85,30 +85,27 @@
 }
 .right_inner_2_1{
     flex:50%;
-    margin-bottom:22px;
+    margin-bottom:1.61vw;
 }
 .right_inner_2_1 p:nth-child(1){
     font-family: SF Pro Display;
-    font-size: 10px;
+    font-size: 0.73vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.46vw;
     letter-spacing: 0em;
     color:#393939;
-    margin-bottom:9px;
+    margin-bottom:0.65vw;
 
 }
 .right_inner_2_1 p:nth-child(2){
     font-family: SF Pro Display;
-    font-size: 24px;
+    font-size: 1.75vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.46vw;
     letter-spacing: 0em;
     color:#1E59A4;
 
 }
 
-.right_inner2{
-    
-}

@@ -6,40 +6,40 @@
 }
 .filter{
     display: flex;
-    column-gap:17px;
+    column-gap:1.24vw;
 }
 .filter h3{
     font-family: Lato;
-    font-size: 18px;
+    font-size: 1.31vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 1.53vw;
     letter-spacing: 0em;
     text-align: left;
 
 }
 .line_title hr{
-    margin:19px 0 23px 0;
+    margin:1.39vw 0 1.68vw 0;
     height: 0px;
-    width: 223px;
+    width: 16.3vw;
     color:#D0D0D0;
 
 }
 .line_title p{
     font-family: Lato;
-    font-size: 12px;
+    font-size: 0.87vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 14px;
+    line-height: 1.02vw;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom:23px;
+    margin-bottom:1.68vw;
     color:#393939;
 }
 
 .many_button{
     display: flex;
-    column-gap:12px;
-    row-gap:16px;
+    column-gap:0.87vw;
+    row-gap:1.17vw;
     flex-wrap: wrap;
 }
