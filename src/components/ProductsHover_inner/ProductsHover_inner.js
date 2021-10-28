@@ -19,10 +19,10 @@ function ProductsHover_inner() {
                         <Content_data_left/>
                         <div className='content_data_right'>
                             <div className='right_inner'>
-                                 <Link className='right_inner_1'>
+                                 <div className='right_inner_1'>
                                      <img src={rasm1} alt="rasmbor"></img>
                                      <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
-                                 </Link>
+                                 </div>
                                  <div className='right_inner_1'>
                                      <img src={rasm1} alt="rasmbor"></img>
                                      <p><font>DZ47-60, 1-63А, 4.5кА</font></p>
