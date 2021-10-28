@@ -18,7 +18,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 
 
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
-import ChintWorld6 from './components/ChintWorld/ChintWorld6/ChintWorld6';
+// import ChintWorld6 from './components/ChintWorld/ChintWorld6/ChintWorld6';
 
 // import ChintWorld4 from './components/ChintWorld/ChintWorld4/ChintWorld4';
 
@@ -63,4 +63,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-

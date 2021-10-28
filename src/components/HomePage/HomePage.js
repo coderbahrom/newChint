@@ -2,6 +2,13 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
+<<<<<<< HEAD
+=======
+import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
+import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
+import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
+import {Switch,Link,Route } from 'react-router-dom'
+>>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
 import "./search.css"
 import './showcase.css'
 import './news.css'
@@ -10,6 +17,7 @@ import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
 import Map from './Map';
+<<<<<<< HEAD
 import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -25,11 +33,15 @@ const styleCarousel ={
   width:'70vw',
   
 }
+=======
+>>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
 
 function HomePage() {
   
   return (
   <>
+  <Switch>
+  <Route exact path="/">
   <div className="container">
     <Header/>
     {/* search */}
@@ -585,7 +597,21 @@ function HomePage() {
       </div>
       <Footer/>
       <div class="footer_very_bottom"></div>
-      
+       </Route>
+
+       <Route exact path="/productHover1">
+         <ProductsHover1/>
+       </Route>
+       <Route exact  path="/productHover1/products" >
+         <ProductsHover_inner/>
+         </Route>
+    
+         
+  
+     </Switch>
+  
+ 
+     
     </>
   )
 }
