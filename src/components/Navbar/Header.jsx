@@ -1,8 +1,10 @@
 import React from "react";
 import "./Header.css";
-import { useState } from "react";
 import Hover1 from "./Hover1";
-
+import { Link } from "react-router-dom";
+const linking={
+  color:'white'
+}
 function Header() {
 
   return (
@@ -50,13 +52,12 @@ function Header() {
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
-                    <p>CHINT в мире</p>
-                    <p>Наше производство</p>
-                    <p> Наше производство </p>
+                    <p> CHINT в мире </p>
+                    <p > <Link to='/production'> Наше производство </Link> </p>
                     <p>Акции </p>
-                    <p> Сотрудничество</p>
+                    <p> <Link to='/cooperation'> Сотрудничество </Link></p>
                     <p> Новости и газета</p>
-                    <p> История компании</p>
+                    <p> <Link to='/history'> История компании </Link></p>
                   </div>
                 </div>
               </div>
@@ -66,9 +67,9 @@ function Header() {
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about2"}>
-                    <p>Рекламные материалы</p>
-                    <p>Сертификаты</p>
-                    <p> Паспорта устройств, РЭ </p>
+                    <p> <Link style={linking} to='/download'> Рекламные материалы </Link></p>
+                    <p > <Link  style={linking} to='/download'>Сертификаты </Link></p>
+                    <p> <Link style={linking} to='/download'> Паспорта устройств, РЭ </Link> </p>
                   </div>
                 </div>
               </div>

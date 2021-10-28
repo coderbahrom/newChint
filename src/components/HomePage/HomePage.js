@@ -2,13 +2,9 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
-<<<<<<< HEAD
-=======
-import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
-import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
+import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import {Switch,Link,Route } from 'react-router-dom'
->>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
 import "./search.css"
 import './showcase.css'
 import './news.css'
@@ -17,9 +13,12 @@ import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
 import Map from './Map';
-<<<<<<< HEAD
 import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import ChintWorld6 from '../ChintWorld/ChintWorld6/ChintWorld6';
+import ChintWorld7 from '../ChintWorld/ChintWorld7/ChintWorld7';
+import ChintInWorld3 from '../ChintWorld/ChintInWorld3/ChintInWorld3';
+import Chintworld4 from '../ChintWorld/ChintWorld4/ChintWorld4'
 
 const styleDot = {
   width:'0.58vw',
@@ -33,8 +32,7 @@ const styleCarousel ={
   width:'70vw',
   
 }
-=======
->>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
+
 
 function HomePage() {
   
@@ -603,11 +601,22 @@ function HomePage() {
          <ProductsHover1/>
        </Route>
        <Route exact  path="/productHover1/products" >
-         {/* <ProductsHover_inner/> */}
+         <ProductsHover_inner/>
          </Route>
     
-         
-  
+     
+         <Route exact  path="/history" >
+         <ChintWorld6/>
+         </Route>
+         <Route exact  path="/download" >
+         <ChintWorld7/>
+         </Route>
+         <Route exact  path="/production" >
+         <ChintInWorld3/>
+         </Route>
+         <Route exact  path="/cooperation" >
+         <Chintworld4/>
+         </Route>
      </Switch>
   
  

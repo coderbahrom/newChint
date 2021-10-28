@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 
-*{
-=======
-* {
->>>>>>> 3f0540b698968e8d54333e768de5e6d6678d3149
-  /* border: 1px solid red; */
-}
 
 #nav {
   height: 10vw;
@@ -143,7 +136,9 @@
   height: 25vw;
   width: 100%;
 }
-
+.dropdown{
+  position: static;
+}
 .dropdown1:hover #Hover1 {
   display: block;
   height: 6vw;

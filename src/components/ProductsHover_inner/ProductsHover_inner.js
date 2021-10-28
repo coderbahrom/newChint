@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Header'
-import './ProductsHover_inner.css'
+// import './ProductsHover_inner.css'
 import Head from '../Hovers/ProductHover1/Head'
 import rasm1 from '../assets/images/rasm1.png'
 import Content_data_left from './Content_data_left'
