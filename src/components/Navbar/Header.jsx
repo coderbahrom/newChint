@@ -1,14 +1,10 @@
 import React from "react";
 import "./Header.css";
 import { useState } from "react";
+import Hover1 from "./Hover1";
+
 function Header() {
-  const [show, setShow] = useState(false);
-  function showModal() {
-    setShow(true);
-  }
-  function showModal1() {
-    setShow(false);
-  }
+
   return (
     <>
       <nav id="nav">
@@ -46,33 +42,8 @@ function Header() {
           <ul class="nav_ul">
             <li className={"dropdown"}>
               <span>Продукция</span>
-
-              <div id="Hover">
-                <div className="hoverContainer">
-                  <div className={"about"}>
-                    <h1>Низковольтное оборудование</h1>
-
-                    <p> Модульное оборудование</p>
-                    <p>Силовое оборудование защиты и коммутации</p>
-                    <p> Контакторы, реле, пускатели</p>
-                    <p> Компенсации реактивной мощности</p>
-                    <p> Кнопки управления, индикаторы</p>
-                    <p>Оборудование электропитания</p>
-                    <p>Выключатель-разъединители/рубильники</p>
-                    <p> Приводная техника Щиты и шкафы</p>
-                  </div>
-                  <div className={"middle"}>
-                    <p> Аксессуары для шкафов и щитов</p>
-                    <p> Цифровые измерительные приборы</p>
-                  </div>
-                  <div className={"down"}>
-                    <h1>
-                      Оборудование распределения и передачи электроэнергии
-                    </h1>
-                    <h1>Электроустановочные изделия</h1>
-                  </div>
-                </div>
-              </div>
+            <Hover1/>
+             
             </li>
             <li className={"dropdown1"}>
               <span>О компании</span>

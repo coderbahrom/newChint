@@ -2,6 +2,9 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
+import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
+import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
+import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
 import {Switch,Link,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
@@ -11,9 +14,12 @@ import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
 import Map from './Map';
+
 function HomePage() {
   return (
   <>
+  <Switch>
+  <Route exact path="/">
   <div className="container">
     <Header/>
     {/* search */}
@@ -433,7 +439,21 @@ function HomePage() {
       </div>
       <Footer/>
       <div class="footer_very_bottom"></div>
-      
+       </Route>
+
+       <Route exact path="/productHover1">
+         <ProductsHover1/>
+       </Route>
+       <Route exact  path="/productHover1/products" >
+         <ProductsHover_inner/>
+         </Route>
+    
+         
+  
+     </Switch>
+  
+ 
+     
     </>
   )
 }
