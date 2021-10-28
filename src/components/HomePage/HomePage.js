@@ -2,7 +2,6 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
-import {Switch,Link,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
 import './news.css'
@@ -11,9 +10,9 @@ import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
 import Map from './Map';
-import icon1 from '../assets/images/icon1.png';
 import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+
 const styleDot = {
   width:'0.58vw',
   height:'0.58vw',

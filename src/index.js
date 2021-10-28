@@ -45,14 +45,14 @@ ReactDOM.render(
 
      {/* <ChintWorld2/> */}
 
-{/* <HomePage/> */}
+<HomePage/>
 
 
 {/* <ProductsHover_inner3/> */}
 
 
       {/* <ProductsHover_inner2/> */}
-      <ProductsHover_inner/>
+      {/* <ProductsHover_inner/> */}
 
       {/* <ChintWorld/> */}
       {/* <ChintWorld5/> */}
