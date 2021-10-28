@@ -445,7 +445,7 @@ function HomePage() {
          <ProductsHover1/>
        </Route>
        <Route exact  path="/productHover1/products" >
-         <ProductsHover_inner/>
+         {/* <ProductsHover_inner/> */}
          </Route>
     
          
