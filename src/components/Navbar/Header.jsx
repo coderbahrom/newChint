@@ -1,7 +1,16 @@
 import React from 'react'
 import './Header.css'
+import {useState} from 'react'
 function Header() {
-    return (   
+  const [show, setShow]=useState(false)
+  function showModal(){
+    setShow(true)
+  }
+  function showModal1(){
+    setShow(false)
+  }
+    return (  
+      <> 
         <nav id="nav">
         <div class="nav_logo">
           <svg
@@ -35,8 +44,24 @@ function Header() {
         </div>
         <div class="navigation">
           <ul class="nav_ul">
-            <li>Продукция</li>
-            <li>О компании</li>
+            <li className={'dropdown'}>
+             <span>Продукция</span> 
+        <div id="Hover">
+          <div>
+            <h1>Низковольтное оборудование</h1>
+          </div>
+          <div>
+            <h1>Аксессуары для шкафов и щитов 
+Цифровые измерительные приборы</h1>
+          </div>
+          <div>
+            <h1>Оборудование распределения 
+и передачи электроэнергии</h1>
+          </div>
+        </div>
+     
+            </li>
+            <li>О компании  </li>
             <li>Скачать</li>
             <li>Где купить</li>
             <li>Поддержка</li>
@@ -60,6 +85,8 @@ function Header() {
           </div>
         </div>
       </nav>
+    
+        </>
     )
 }
 export default Header

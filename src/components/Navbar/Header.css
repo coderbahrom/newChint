@@ -1,3 +1,4 @@
+
 #nav {
   margin-top: 4.5vw;
   margin-bottom: 4.5vw;
@@ -21,6 +22,7 @@
   margin: 0 4vw;
   cursor: pointer;
   color: #393939;
+  
 }
 
 #nav .navigation li {
@@ -50,3 +52,22 @@
   width: 1vw;
   height: 1vw;
 }
+
+
+#Hover{
+  top:9vw;
+  position: absolute;
+  width:100%;
+height: 20vw;
+  display: flex;
+  flex-direction: row;
+ background: rgba(30, 89, 164, 0.97);
+  color: #fff;
+  display: none;
+  right:0px;
+
+}
+.dropdown:hover #Hover{
+  display: block;
+}
+
