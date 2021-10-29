@@ -2,10 +2,10 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
-
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
+
 import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
-import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
+// import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import {Switch,Link,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
@@ -17,6 +17,15 @@ import './advantages.css'
 import Map from './Map';
 import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import ChintWorld6 from '../ChintWorld/ChintWorld6/ChintWorld6';
+import ChintWorld7 from '../ChintWorld/ChintWorld7/ChintWorld7';
+import ChintInWorld3 from '../ChintWorld/ChintInWorld3/ChintInWorld3';
+import Chintworld4 from '../ChintWorld/ChintWorld4/ChintWorld4'
+import ChintWorld5 from '../ChintWorld/ChintWorld5/ChintWorld5'
+import  ChintWorld2 from '../ChintWorld/ChintWorld2/ChintWorld2'
+import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
+import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
+import ChintWorld from '../ChintWorld/ChintWorld'
 
 const styleDot = {
   width:'0.58vw',
@@ -601,8 +610,33 @@ function HomePage() {
          <ProductsHover_inner/>
          </Route>
     
-         
-  
+         <Route exact  path="/chintworld" >
+         <ChintWorld2/>
+         </Route>
+         <Route exact  path="/history" >
+         <ChintWorld6/>
+         </Route>
+         <Route exact  path="/download" >
+         <ChintWorld7/>
+         </Route>
+         <Route exact  path="/production" >
+         <ChintInWorld3/>
+         </Route>
+         <Route exact  path="/cooperation" >
+         <Chintworld4/>
+         </Route>
+         <Route exact  path="/news" >
+         <ChintWorld5/>
+         </Route>
+         <Route exact  path="/support" >
+         <ChintWorld8/>
+         </Route>
+         <Route exact  path="/tech-consult" >
+         <ChintWorld9/>
+         </Route>
+         <Route exact  path="/about" >
+         <ChintWorld/>
+         </Route>
      </Switch>
   
  
