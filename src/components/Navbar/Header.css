@@ -2,6 +2,9 @@
 
 *{
   /* border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -138,7 +141,7 @@
 }
 .dropdown:hover #Hover {
   display: block;
-  height: 25vw;
+  height: 32vw;
   width: 100%;
 }
 .dropdown{
@@ -161,7 +164,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  row-gap: 0.3vw;
+  row-gap:0px;
   width: 19.693vw;
 }
 .linking{
@@ -195,11 +198,7 @@
   flex-direction: row;
   column-gap: 8.346vw;
 }
-.about ul {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.3vw;
-}
+
 .about p {
   font-family: Lato;
   font-style: normal;

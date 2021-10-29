@@ -41,6 +41,9 @@ const data = [
     title: "Контролю качества продукции на всех этапах ее изготовления",
   },
 ];
+const hide={
+  display:'none',
+}
 function ChintInWorld3() {
   return (
     <>
@@ -57,7 +60,8 @@ function ChintInWorld3() {
           show_titl3="Основанная в 1984 году группа компаний CHINT предоставляет надежное и безопасное промышленное электротехническое оборудование, а также решения для систем управления повышением энергоэффективности."
           show_titl4={down}
           show_titl5="Сертификат
-ISO14001, ISO9001"
+            ISO14001, ISO9001"
+         
         />
         </div>
         <div className="containers">

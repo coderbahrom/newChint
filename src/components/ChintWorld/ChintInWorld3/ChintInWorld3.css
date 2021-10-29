@@ -168,7 +168,7 @@ color: #1E59A4;
     display: flex;
     flex-direction: column;
     row-gap: 2.196vw;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
   }
   .text{
@@ -181,6 +181,7 @@ color: #1E59A4;
     font-size: 1.025vw;
     line-height: 1.537vw;
     color: #393939;
+    width: 100%;
   }
   .footer{
       margin-top: 267px;
