@@ -26,6 +26,7 @@ import  ChintWorld2 from '../ChintWorld/ChintWorld2/ChintWorld2'
 import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
 import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
 import ChintWorld from '../ChintWorld/ChintWorld'
+import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
 
 const styleDot = {
   width:'0.58vw',
@@ -608,6 +609,9 @@ function HomePage() {
        </Route>
        <Route exact  path="/productHover1/products" >
          <ProductsHover_inner/>
+         </Route>
+         <Route exact  path="/productHover1/products/product-info" >
+         <ProductsHover_inner2/>
          </Route>
     
          <Route exact  path="/chintworld" >

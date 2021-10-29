@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 const linking={
   color:'white'
 }
+const downloading={
+  
+  listStyleType: "none",
+  margin:' 0 4vw',
+  cursor: 'pointer',
+  color: '#393939',
+}
 function Header() {
 
   return (
@@ -48,7 +55,7 @@ function Header() {
              
             </li>
             <li className={"dropdown1"}>
-              <span> <Link to='/about'> О компании </Link></span>
+              <Link to='/about'>  <span> О компании </span> </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
@@ -68,7 +75,7 @@ function Header() {
               </div>
             </li>
             <li className={"dropdown1"}>
-              <span>Скачать</span>
+              <span><Link   to='/download'>Скачать </Link></span>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about2"}>
@@ -85,7 +92,8 @@ function Header() {
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about3"}>
-                    <p>Скачать</p>
+                    <p> 
+                    <Link className={'linking'} to='/download'>Скачать </Link></p>
                     <p>
                     <Link className={'linking'} to='/support'> Гарантия и ремонт </Link></p>
                     <p> 
