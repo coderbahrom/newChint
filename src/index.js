@@ -30,7 +30,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 // import ChintWorld8 from './components/ChintWorld/ChintWorld8/ChintWorld8'
 // import ChintWorld9 from './components/ChintWorld/ChintWorld9/ChintWorld9'
 // import ChintWorld5 from './components/ChintWorld/ChintWorld5/ChintWorld5';
-// import ChintWorld7 from './components/ChintWorld/ChintWorld7/ChintWorld7';
+import ChintWorld7 from './components/ChintWorld/ChintWorld7/ChintWorld7';
 import './index.css'
 ReactDOM.render(
   <React.StrictMode>
@@ -45,7 +45,7 @@ ReactDOM.render(
 
      {/* <ChintWorld2/> */}
 
-<HomePage/>
+{/* <HomePage/> */}
 
 
 {/* <ProductsHover_inner3/> */}
@@ -56,7 +56,7 @@ ReactDOM.render(
 
       {/* <ChintWorld/> */}
       {/* <ChintWorld5/> */}
-      {/* <ChintWorld7/> */}
+      <ChintWorld7/>
       {/* <ChintWorld8/> */}
       {/* <ChintWorld9/> */}
     </Router>
