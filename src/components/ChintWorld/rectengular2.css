@@ -15,11 +15,11 @@
     background-image: url('../assets/images/rectengular.png');
     background-repeat: no-repeat;
     background-position:top right;
-    width: 19vw;
-    height:14vw;
-    border-radius: 24.13050079345703px;
+    background-size:13.85vw 13.85vw;
+    width: 18.6vw;
+    height:100%;
+    border-radius: 1.76vw;
     padding-top:5.5vw;
-
 }
 .rectengular2 h5{
     font-family: Urbanist;

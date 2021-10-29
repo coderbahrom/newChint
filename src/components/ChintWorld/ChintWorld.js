@@ -8,6 +8,7 @@ import Case1 from './Case1'
 import './rectengular.css'
 import './rectengular2.css'
 import './rectengular3.css'
+import './rectengular4.css'
 import './Case2.css'
 import './Case4.css'
 import Footer from '../Footer/Footer'
@@ -72,7 +73,7 @@ function ChintWorld() {
 
                 <div className={'second_content_row4'}>
                     <div className={'second_content_row4_left'}>
-                        <div className='rectengular3'>
+                        <div className='rectengular4'>
                             <h5>380</h5>
                             <p>сертификатов качества</p>
                         </div>

@@ -11,23 +11,36 @@
     src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
   }
 
-.rectengular{
+.rectengular4{
     background-image: url('../assets/images/rectengular.png');
     background-repeat: no-repeat;
     background-position:top right;
-    background-size: 14.2vw 14.2vw;
-    width: 17.6vw;
+    background-size:11.7vw 11.7vw;
+    width: 15.5vw;
     height:14vw;
     border-radius: 1.76vw;
-    padding-top:3.5vw;
+    padding-top:2.92vw;
 
 }
-.rectengular h5{
+.rectengular4 h5{
     font-family: Urbanist;
-    font-size: 5.8vw;
+    font-size: 4.31vw;
     font-style: normal;
     font-weight: 800;
-    line-height: 3.36vw;
+    line-height: 3.29vw;
     letter-spacing: 0.05em;
+    text-align: left;
     color:#1E59A4;
+    margin-bottom: 0.6vw;
 }
+.rectengular4 p:nth-child(2){
+    font-family: Urbanist;
+    font-size: 1.31vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.56vw;
+    letter-spacing: 0em;   
+    color:#5C5C5C;
+    width:16vw;
+}
+

@@ -57,7 +57,7 @@ function HomePage() {
     </div>
 
     {/* SHOWCASE  */}
-    <div id="showcase">
+    {/* <div id="showcase">
     <CarouselProvider
         style={styleCarousel}
         naturalSlideWidth={300}
@@ -192,7 +192,7 @@ function HomePage() {
           </form>
         </div>
         </div>
-      </div>
+      </div> */}
       {/* <div id="showcase">
         <div class="showcase_content">
           <h1 class="showcase_title">

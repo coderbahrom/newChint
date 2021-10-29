@@ -15,26 +15,27 @@
     background-image: url('../assets/images/rectengular.png');
     background-repeat: no-repeat;
     background-position:top right;
-    width: 17.2vw;
+    background-size:11.7vw 11.7vw;
+    width: 15vw;
     height:14vw;
-    border-radius: 24.13050079345703px;
-    padding-top:2.9vw;
+    border-radius: 1.76vw;
+    padding-top:2.04vw;
 
 }
 .rectengular3 h5{
     font-family: Urbanist;
-    font-size: 4.3vw;
+    font-size: 5.78vw;
     font-style: normal;
     font-weight: 800;
-    line-height: 46px;
+    line-height: 3.36vw;
     letter-spacing: 0.05em;
-    text-align: left;
+    text-align: left;  
     color:#1E59A4;
     margin-bottom: 1vw;
 }
 .rectengular3 p:nth-child(2){
     font-family: Urbanist;
-    font-size: 1.3vw;
+    font-size: 1.31vw;
     font-style: normal;
     font-weight: 300;
     line-height: 1.75vw;
