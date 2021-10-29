@@ -48,16 +48,21 @@ function Header() {
              
             </li>
             <li className={"dropdown1"}>
-              <span>О компании</span>
+              <span> <Link to='/about'> О компании </Link></span>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
-                    <p> CHINT в мире </p>
-                    <p > <Link to='/production'> Наше производство </Link> </p>
+                    
+                    <p> 
+                      <Link className={'linking'} to='/chintworld'> CHINT в мире </Link>
+                       </p>
+                    <p > <Link className={'linking'}  to='/production'> Наше производство </Link> </p>
                     <p>Акции </p>
-                    <p> <Link to='/cooperation'> Сотрудничество </Link></p>
-                    <p> Новости и газета</p>
-                    <p> <Link to='/history'> История компании </Link></p>
+                    <p> <Link className={'linking'}  to='/cooperation'> Сотрудничество </Link></p>
+                    <p>
+                    <Link className={'linking'}  to='/news'>   Новости и газета </Link>
+                    </p>
+                    <p> <Link className={'linking'}  to='/history'> История компании </Link></p>
                   </div>
                 </div>
               </div>
@@ -81,8 +86,10 @@ function Header() {
                 <div className="hoverContainer1">
                   <div className={"about3"}>
                     <p>Скачать</p>
-                    <p>Гарантия и ремонт</p>
-                    <p>Техническое консультирование</p>
+                    <p>
+                    <Link className={'linking'} to='/support'> Гарантия и ремонт </Link></p>
+                    <p> 
+                    <Link className={'linking'} to='/tech-consult'>Техническое консультирование </Link></p>
                     <p> Программное обеспечение </p>
                   </div>
                 </div>

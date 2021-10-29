@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 
 .wrapper1 p {
-    margin-top:38px;
+    margin-top:2.78vw;
     font-family: Urbanist;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 1.02vw;
+    line-height: 1.02vw;
     color: #cacaca;
   }
   .wrapper1 h1 {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 2.04vw;
+    line-height: 2.04vw;
     color: #1e59a4;
-    margin-top: 38px;
+    margin-top: 2.78vw;
   }
   .wrapper1{
     display: flex;
@@ -25,7 +25,6 @@
     /* gap: 38px; */
   }
   .hr{
-      margin-top: 28px;
-      
-border: 1px solid #DBDBDB;
+      margin-top: 2.04vw;   
+      border: 1px solid #DBDBDB;
   }

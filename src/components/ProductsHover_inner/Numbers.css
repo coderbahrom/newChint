@@ -8,17 +8,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45.33px;
-  height: 29.72px;
+  width: 3.31vw;
+  height: 2.17vw;
   font-family: Urbanist;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.87vw;
+  line-height: 1.02vw;
 
-color: #201f1f;
-background: #EAEAEA;
-border-radius: 3.71528px;
+  color: #201f1f;
+  background: #EAEAEA;
+  border-radius: 0.27vw;
 }
 .squer:hover{
   background: #005DA9;

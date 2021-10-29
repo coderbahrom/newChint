@@ -1,5 +1,10 @@
 
 
+*{
+  /* border: 1px solid red; */
+}
+
+
 #nav {
   height: 10vw;
   /* border :3px solid black; */
@@ -159,7 +164,20 @@
   row-gap: 0.3vw;
   width: 19.693vw;
 }
+.linking{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 27px;
+  color: #d4e7ff;
+  text-decoration: none;
+}
+.linking:hover{
+  color:rgba(255, 249, 249, 0.97)
+}
 .about1 {
+  overflow-y: hidden;
   display: flex;
 
   flex-direction: row;
@@ -167,13 +185,13 @@
 }
 .about2 {
   display: flex;
-
+  overflow-y: hidden;
   flex-direction: row;
   column-gap: 19.253vw;
 }
 .about3 {
   display: flex;
-
+  overflow-y: hidden;
   flex-direction: row;
   column-gap: 8.346vw;
 }
