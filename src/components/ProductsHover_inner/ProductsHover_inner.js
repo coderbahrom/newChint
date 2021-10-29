@@ -21,7 +21,7 @@ function ProductsHover_inner() {
                         <Content_data_left/>
                         <div className='content_data_right'>
                             <div className='rightInner'>
-                                 <Link className='right_inner_one'>
+                                 <Link to='/productHover1/products/product-info' className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
                                      <p>DZ47-60, 1-63А, 4.5кА</p>
                                  </Link>
