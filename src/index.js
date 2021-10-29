@@ -4,13 +4,12 @@ import ReactDOM from 'react-dom';
 
 // import ProductsHover from './components/Hovers/ProductHover1/ProductsHover';
 // import App from './App';
-// import HomePage from './components/HomePage/HomePage';
+import HomePage from './components/HomePage/HomePage';
 // import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 
 // import ProductsHover from './components/Hovers/ProductHover1/ProductsHover';
 // import ChintWorld from './components/ChintWorld/ChintWorld';
 // import App from './App';
-import HomePage from './components/HomePage/HomePage';
 import ProductsHover_inner from './components/ProductsHover_inner/ProductsHover_inner';
 // import ProductsHover_inner2 from './components/ProductsHover_inner2/ProductsHover_inner2';
 // import ChintWorld2 from './components/ChintWorld/ChintWorld2/ChintWorld2';
@@ -45,7 +44,7 @@ ReactDOM.render(
 
      {/* <ChintWorld2/> */}
 
-{/* <HomePage/> */}
+<HomePage/>
 
 
 {/* <ProductsHover_inner3/> */}
@@ -56,7 +55,7 @@ ReactDOM.render(
 
       {/* <ChintWorld/> */}
       {/* <ChintWorld5/> */}
-      <ChintWorld7/>
+      {/* <ChintWorld7/> */}
       {/* <ChintWorld8/> */}
       {/* <ChintWorld9/> */}
     </Router>
