@@ -27,7 +27,6 @@ const styleImage = {
     backgroundRepeat:'no-repeat',
 }
 
-
 function ChintWorld() {
     return (
         <>

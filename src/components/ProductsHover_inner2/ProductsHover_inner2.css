@@ -17,6 +17,7 @@
     display:flex;
     margin-top:4.53vw;
     /* flex-wrap: wrap; */
+    
 }
 .content_data_right{
     flex:5;

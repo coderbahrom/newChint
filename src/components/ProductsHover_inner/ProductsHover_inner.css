@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *{
     font-family: "Lato", sans-serif;
+    /* border:1px solid red; */
 }
-
+.content p,.content h3{
+    width:fit-content;
+}
 .content{
     width: 100%;
     margin: 0 auto;
     background-color:white;
-    margin-bottom:14.6vw;
+    padding-bottom:100vh;
     height:50%;
     overflow: visible;
   }
@@ -18,7 +21,7 @@
 }
 
 .content_data_right{
-    flex:5;
+    width:60%;
     /* background-color:whitesmoke; */
 }
 
