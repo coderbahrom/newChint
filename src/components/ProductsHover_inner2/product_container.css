@@ -13,7 +13,12 @@
     align-items:center;
     justify-content:center;
     margin-bottom:1.09vw;
+
 }
+.product_container p{
+    width:fit-content;
+}
+
 .product_container:hover{
     border:1px solid #1E59A4;
 }
@@ -46,5 +51,7 @@
 }
 .product_container img:nth-child(3){
     transform:rotate(-90deg);
+    height: 2.23vw;
+    width: 2.23vw;
 }
 

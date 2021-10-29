@@ -6,7 +6,7 @@
 .content p,.content h3{
     width:fit-content;
 }
-.content{
+.pro_inner_content{
     width: 100%;
     margin: 0 auto;
     background-color:white;
@@ -14,13 +14,13 @@
     height:50%;
     overflow: visible;
   }
-.content_data{
+.pro_inner_content_data{
     display:flex;
     column-gap:8.34vw;
     margin-top:4.68vw;
 }
 
-.content_data_right{
+.pro_inner_content_data_right{
     width:60%;
     /* background-color:whitesmoke; */
 }
