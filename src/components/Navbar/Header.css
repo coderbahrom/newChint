@@ -133,7 +133,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 11.9333px;
-  line-height: 27px;
+  line-height: 1.97vw;
   color: #d4e7ff;
 }
 .dropdown:hover #Hover {
@@ -168,8 +168,8 @@
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 27px;
+  font-size: 0.87vw;
+  line-height: 1.97vw;
   color: #d4e7ff;
   text-decoration: none;
 }
@@ -204,16 +204,16 @@
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 11.9333px;
-  line-height: 27px;
+  font-size: 0.87vw;
+  line-height: 1.97vw;
   color: #d4e7ff;
 }
 .about h1 {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 13.425px;
-  line-height: 16px;
+  font-size: 0.98vw;
+  line-height: 1.17vw;
   color: #ffffff;
 }
 #Hover p:hover {
@@ -226,41 +226,27 @@
   text-decoration: underline;
 }
 
-.about1 p {
+.about1 p, .about2 p,.about3 p{
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 27px;
+  font-size: 0.87vw;
+  line-height: 1.97vw;
   color: #d4e7ff;
 }
-.about2 p {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 27px;
-  color: #d4e7ff;
-}
-.about3 p {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 27px;
-  color: #d4e7ff;
-}
+
 .down {
   display: flex;
   flex-direction: column;
   row-gap: 1.6vw;
 }
+
 .down h1 {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 13.425px;
-  line-height: 16px;
+  font-size: 0.98vw;
+  line-height: 1.17vw;
   color: #ffffff;
 }
 .dropdown1 > div {

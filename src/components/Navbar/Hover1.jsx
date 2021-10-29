@@ -7,7 +7,7 @@ function Hover1() {
                 <div className="hoverContainer">
                   <div className={"about"}>
                     <h1>Низковольтное оборудование</h1>
-
+                    
                   <Link to='/productHover1'>  <p> Модульное оборудование</p></Link>
                     <p>Силовое оборудование защиты и коммутации</p>
                     <p> Контакторы, реле, пускатели</p>

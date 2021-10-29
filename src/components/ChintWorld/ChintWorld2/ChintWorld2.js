@@ -5,6 +5,7 @@ import NavbarButtom from '../NavbarButtom';
 import ShowImage from '../ShowImage';
 import Case1 from '../Case1';
 import '../rectengular2.css'
+
 import Map from '../../HomePage/Map';
 import Footer from '../../Footer/Footer';
 const hidden = {
