@@ -3,6 +3,7 @@ import "./ProductsHover.css";
 import Head from "./Head";
 import Header from "../../Navbar/Header";
 import ProductMap from "./ProductMap";
+import Footer from "../../Footer/Footer";
 
 const data=[
     {id:1, img:'./', title:"Автоматические выключатели (МАВ)", desc:'Автоматические выключатели CHINT Electric предохраняют от короткого замыкания и перегрузки сети, обеспечивают безопасность кабелей и электрооборудования, а также защищают человека от поражения током при случайном контакте с оголённым проводом.'},
@@ -14,6 +15,7 @@ const data=[
 
 function ProductHover1() {
   return (
+    <>
     <div className="wrapper">
       <Header />
       <Head
@@ -82,7 +84,10 @@ function ProductHover1() {
     
         </div>
       </div>
+      
     </div>
+    <Footer/>
+    </>
   );
 }
 

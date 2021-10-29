@@ -1,5 +1,6 @@
+
 .content_data_left{
-    flex:3;
+    width:32%;
     /* background-color:whitesmoke; */
     display:flex;
     flex-direction: column;
@@ -7,6 +8,12 @@
 .filter{
     display: flex;
     column-gap:1.24vw;
+    flex-direction: row;
+    align-items: center!important;
+}
+.filter img{
+    width:1.9vw;
+    height:1.9vw;
 }
 .filter h3{
     font-family: Lato;
@@ -16,6 +23,8 @@
     line-height: 1.53vw;
     letter-spacing: 0em;
     text-align: left;
+    color:#828282;
+    
 
 }
 .line_title hr{

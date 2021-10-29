@@ -8,7 +8,7 @@ import rasm1 from '../assets/images/rasm1.png'
 import Content_data_left from '../ProductsHover_inner/Content_data_left'
 import doc from '../assets/images/doc.png'
 import Product_container from './Product_container'
-
+import Footer from '../Footer/Footer'
 
 function ProductsHover_inner2(){
     return (
@@ -16,21 +16,24 @@ function ProductsHover_inner2(){
         <div className='container'> 
             <Navbar/>
         </div>
-        <div className='content'> 
+        <div className='pro_inner2_content'> 
             <div className='container'>
                     <Head title1='Главная /Каталог продукции/Автоматические выключатели/DZ47-60, 1-63А, 4.5кА' title2='Автоматические выключатели DZ47-60'/>
-                    <div className='content_data'>
+                    <div className='pro_inner2_content_data'>
                         <Content_data_left/>
-                        <div className='content_data_right'>
-                            <div className='right_inner'>
+                        <div className='pro_inner2_content_data_right'>
+                            <div className='pro_inner2_right_inner'>
                                  <div className='right_inner_1'>
-                                    <p>Автоматические выключатели CHINT DZ47-60</p>
-                                    <p>защищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.</p>
-                                    <div className='doc'>
-                                    <img src={doc} alt='rasm'/>
-                                    <p id={'child'}>Посмотреть брошюру DZ47-60</p>
+                                    <p>
+                                        Автоматические выключатели CHINT DZ47-60
+                                        защищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.
+        
+                                    </p>
+                                    <div className='right_inner_doc'>
+                                        <img src={doc} alt='rasm'/>
+                                        <p >Посмотреть брошюру DZ47-60</p>
                                     </div>
-                                 </div>
+                                 </div> 
                                  <div className='right_inner_2'>
                                      <div className='right_inner_2_1'>
                                         <p>Номинальный ток (In)</p>
@@ -64,7 +67,7 @@ function ProductsHover_inner2(){
             </div>
             
         </div>
-
+        <Footer/>
         </>
     )
 }

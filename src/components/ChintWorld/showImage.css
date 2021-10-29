@@ -15,7 +15,7 @@
 .showimage{
     background-image: url('../assets/images/showimage.png');
     background-color:#1E59A4;
-    background-size:100%;
+    background-size:cover;
     height:31.1vw;
     background-repeat:no-repeat;
 }

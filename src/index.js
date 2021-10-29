@@ -35,7 +35,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       {/* <ChintWorld6/> */}
-      {/* <HomePage/> */}
+      <HomePage/>
 {/* <ChintWorld4/> */}
       {/* <ProductsHover/> */}
 
@@ -44,7 +44,7 @@ ReactDOM.render(
 
      {/* <ChintWorld2/> */}
 
-<HomePage/>
+
 
 
 {/* <ProductsHover_inner3/> */}

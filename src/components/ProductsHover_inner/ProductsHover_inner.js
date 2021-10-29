@@ -5,6 +5,8 @@ import Head from '../Hovers/ProductHover1/Head'
 import rasm1 from '../assets/images/rasm1.png'
 import Content_data_left from './Content_data_left'
 import {Link} from 'react-router-dom'
+import Footer from '../Footer/Footer'
+
 
 function ProductsHover_inner() {
     return (
@@ -12,12 +14,12 @@ function ProductsHover_inner() {
         <div className='container'> 
             <Navbar/>
         </div>
-        <div className='content'> 
+        <div className='pro_inner_content'> 
             <div className='container'>
                     <Head title1='Главная /Каталог продукции/Автоматические выключатели' title2='Автоматические выключатели'/>
-                    <div className='content_data'>
+                    <div className='pro_inner_content_data'>
                         <Content_data_left/>
-                        <div className='content_data_right'>
+                        <div className='pro_inner_content_data_right'>
                             <div className='rightInner'>
                                  <Link to='/productHover1/products/product-info' className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
@@ -48,6 +50,7 @@ function ProductsHover_inner() {
                     </div>
             </div>
         </div>
+        <Footer/>
         </>
     )
 }

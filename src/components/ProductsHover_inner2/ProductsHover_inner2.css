@@ -1,31 +1,33 @@
-
-
 @font-face {
     font-family:"SF Pro Display";
     src: url('../font-family/FontsFree-Net-SFProDisplay-Regular.ttf')
 }
 
 
-.content{
+.pro_inner2_content{
     width: 100%;
     margin: 0 auto;
     background-color:white;
     height:50%;
     overflow: visible;
-  }
-.content_data{
+    padding-bottom:100vh;
+}
+
+.pro_inner2_content_data{
     display:flex;
     margin-top:4.53vw;
+    column-gap:5.56vw;
     /* flex-wrap: wrap; */
+    
 }
-.content_data_right{
+.pro_inner2_content_data_right{
     flex:5;
     /* background-color:whitesmoke; */
     
 }
 
-.right_inner{
-    padding:3vw 3.14vw 3.44vw 3.07vw;
+.pro_inner2_right_inner{
+    padding:2.9vw 3.44vw 3.6vw 3.14vw;
     height: 26.5vw;
     width: 42.4vw;
     border-radius: 1.36vw;
@@ -34,26 +36,20 @@
     flex-direction: column;   
     margin-bottom:4.61vw;
 }
-.right_inner:hover{
+.pro_inner2_right_inner:hover{
     border:1px solid #8EACD1;
 }
 
 .right_inner_1{
     margin:0px 0 1.68vw 0;
     width:95%;
-    
+   
+}
+.right_inner_1 img{
+    width:1.12vw;
+    height:1.53vw;
 }
 .right_inner_1 p:nth-child(1){
-    font-weight: 700;
-    font-family: SF Pro Display;  
-    font-size: 1.02vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.46vw;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.right_inner_1 p:nth-child(2){
     font-family: SF Pro Display;
     font-size: 1.02vw;
     font-style: normal;
@@ -61,31 +57,50 @@
     line-height: 1.46vw;
     letter-spacing: 0em;
     text-align: left;
+    color:#393939;
 }
-
-.doc{
-    display: flex;
-    margin-top:2.19vw;
-    align-items:center;
-    column-gap:0.43vw;
-    font-family: Urbanist;
+.right_inner_1 p::first-line{
+    font-weight: 700;
+}
+.right_inner_1 p:nth-child(4){
+    font-family: SF Pro Display;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
     line-height: 1.46vw;
     letter-spacing: 0em;
     text-align: left;
-    margin-top:2.19vw;
+    color:#393939;
+}
+.right_inner_doc{
+    display: flex;
+    margin-top:2vw;
+    
+    column-gap:0.43vw;
+   
+}
+.right_inner_doc img{
+    width:1.12vw;
+    height:1.53vw;
+}
+.right_inner_doc p{
+    font-family: Urbanist;
+    font-size: 1.02vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.46vw;
+    letter-spacing: 0em;
     color:#1E59A4;
 }
 .right_inner_2{
-    width:75%;
+    width:80%;
     display: flex;
     flex-wrap: wrap;
+   
 }
 .right_inner_2_1{
-    flex:50%;
-    margin-bottom:1.61vw;
+    width:50%;
+    margin-bottom:1.39vw;
 }
 .right_inner_2_1 p:nth-child(1){
     font-family: SF Pro Display;
@@ -108,4 +123,3 @@
     color:#1E59A4;
 
 }
-
