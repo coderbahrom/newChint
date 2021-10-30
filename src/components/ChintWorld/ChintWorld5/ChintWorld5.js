@@ -10,7 +10,7 @@ const styleTop = {
 function ChintWorld5() {
   return (
     <>
-      <div className="container">
+      <div className="world5_main_container">
         <Header />
       </div>
       <div className="world5_content">

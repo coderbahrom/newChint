@@ -18,7 +18,7 @@ const styleBackground ={
 function ChintWorld8(){
     return (
         <>
-            <div className="container">
+            <div className="world8_main_container">
                 <Header />
             </div>
 

@@ -3,7 +3,14 @@
     src: url('../font-family/FontsFree-Net-SFProDisplay-Regular.ttf')
 }
 
-
+.pro_inner2_main_container{
+    width: 72.5%;
+    margin: 0 auto;
+}
+.pro_inner2_container{
+    width: 72.5%;
+    margin: 0 auto;
+}
 .pro_inner2_content{
     width: 100%;
     margin: 0 auto;

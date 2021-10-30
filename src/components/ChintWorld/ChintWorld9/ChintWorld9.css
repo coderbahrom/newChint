@@ -1,3 +1,8 @@
+.world9_main_container{
+  width: 72.5%;
+  margin: 0 auto;
+}
+
 .world9_content{
     background-color:white;
     padding-bottom: 11.5vw;
@@ -29,7 +34,7 @@
     display:flex;
     flex-direction:column;
     row-gap:1vw;
-    /* list-style-type: circle; */
+    
 }
 
 .world9_container li{
@@ -40,5 +45,6 @@
     line-height: 1.97vw;
     letter-spacing: 0em;
     color:#393939;
+    list-style-type: disc;
 }
 

@@ -3,6 +3,14 @@
     font-family: "Lato", sans-serif;
     /* border:1px solid red; */
 }
+.pro_inner_main_container{
+    width: 72.5%;
+    margin: 0 auto;
+}
+.pro_inner_container{
+    width: 72.5%;
+    margin: 0 auto;
+}
 .content p,.content h3{
     width:fit-content;
 }

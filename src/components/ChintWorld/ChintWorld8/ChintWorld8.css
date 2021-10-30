@@ -1,3 +1,8 @@
+.world8_main_container{
+    width: 72.5%;
+    margin: 0 auto;
+}
+
 .world8_content{
     background-color:white;
     padding-bottom: 11.5vw;

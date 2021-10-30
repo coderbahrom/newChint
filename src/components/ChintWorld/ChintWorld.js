@@ -30,7 +30,7 @@ const styleImage = {
 function ChintWorld() {
     return (
         <>
-            <div className='container'>
+            <div className='world_main_container'>
                 <Navbar/>
             </div>
             <div className='second_content'>

@@ -2,7 +2,10 @@
     background-color: var(--primary);
     padding: 4vw 0;
   }
-  
+.footer_container{
+  width: 72.5%;
+  margin: 0 auto;
+}
   #footer .footer_col_title {
     font-size: var(--text14px);
     color: #fff;

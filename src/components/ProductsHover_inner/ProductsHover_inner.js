@@ -11,11 +11,11 @@ import Footer from '../Footer/Footer'
 function ProductsHover_inner() {
     return (
         <>
-        <div className='container'> 
+        <div className='pro_inner_main_container'> 
             <Navbar/>
         </div>
         <div className='pro_inner_content'> 
-            <div className='container'>
+            <div className='pro_inner_container'>
                     <Head title1='Главная /Каталог продукции/Автоматические выключатели' title2='Автоматические выключатели'/>
                     <div className='pro_inner_content_data'>
                         <Content_data_left/>

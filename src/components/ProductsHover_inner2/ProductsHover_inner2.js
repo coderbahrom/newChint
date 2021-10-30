@@ -13,11 +13,11 @@ import Footer from '../Footer/Footer'
 function ProductsHover_inner2(){
     return (
         <>
-        <div className='container'> 
+        <div className='pro_inner2_main_container'> 
             <Navbar/>
         </div>
         <div className='pro_inner2_content'> 
-            <div className='container'>
+            <div className='pro_inner2_container'>
                     <Head title1='Главная /Каталог продукции/Автоматические выключатели/DZ47-60, 1-63А, 4.5кА' title2='Автоматические выключатели DZ47-60'/>
                     <div className='pro_inner2_content_data'>
                         <Content_data_left/>

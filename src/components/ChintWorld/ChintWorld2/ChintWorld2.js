@@ -17,7 +17,7 @@ const arr2 = ['Дочернее подразделение международ�
 function ChintWorld2() {
     return (
         <>
-            <div className='container'>
+            <div className='world2_main_container'>
                 <Header/>
             </div>
 

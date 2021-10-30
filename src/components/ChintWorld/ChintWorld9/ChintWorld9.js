@@ -22,7 +22,7 @@ const styleBackground ={
 function ChintWorld9() {
     return (
         <>
-            <div className="container">
+            <div className="world9_main_container">
                 <Header />
             </div>
 

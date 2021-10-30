@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <footer id="footer">
-      <div class="container">
+      <div class="footer_container">
         <div class="footer_columns">
           <div class="footer_column">
             <h2 class="footer_col_title">Низковольтное оборудование</h2>

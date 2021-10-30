@@ -21,7 +21,7 @@ function ChintWorld7(){
 
     return (
         <>
-        <div className='container'>
+        <div className='world7_container'>
             <Header/>
         </div>
         <div className="world7_content">
