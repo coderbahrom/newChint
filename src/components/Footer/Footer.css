@@ -28,6 +28,28 @@
     display: flex;
     justify-content: space-between;
   }
+
+  #footer .footer_column h2{
+    font-family: SF Pro Display;
+    font-size: 1.02vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+  }
+  #footer .footer_column h2{
+    font-family: SF Pro Display;
+    font-size: 1.02vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+  }
+  
   
   #footer .footer_oultined_btn {
     border: 1px solid #ffffff;

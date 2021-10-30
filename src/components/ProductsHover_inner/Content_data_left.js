@@ -5,7 +5,7 @@ import './Content_data_left.css'
 function Content_data_left() {
     return (
         <div className='content_data_left'>
-                            <div className='filter'>
+                            <div className='filter_justify'>
                                 <img src={filter1} alt="rasm"/>
                                 <h3>Фильтр товаров</h3>
                             </div>

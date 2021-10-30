@@ -1,4 +1,4 @@
-.downloadContainer{
+.skachatContainer{
     height: 5.7vw;
     width: 33.74vw;
     border-radius: 11.949141502380371px;
@@ -9,12 +9,12 @@
     padding:1.55vw 2.26vw 1.67vw 2.4vw;
     background-color:#F7FAFF;
 }
-.downloadContainer img:nth-child(1){
+.skachatContainer img:nth-child(1){
     width:2.53vw;
     height:2.65vw;
 }
 
-.downloadContainer p:nth-child(2){
+.skachatContainer p:nth-child(2){
     font-family: Urbanist;
     font-size: 0.87vw;
     font-style: normal;
@@ -26,7 +26,7 @@
     margin:0 2.34vw 0 2.23vw;    
 }
 
-.downloadContainer p:nth-child(3){
+.skachatContainer p:nth-child(3){
     margin-left: auto;
     font-family: Urbanist;
     font-size:  0.87vw;
@@ -39,7 +39,7 @@
     margin-right:0.95vw;
 
 }
-.downloadContainer img:nth-child(4){
+.skachatContainer img:nth-child(4){
     width:2.39vw;
     height:2.36vw;
 }

@@ -5,17 +5,17 @@
     display:flex;
     flex-direction: column;
 }
-.filter{
+.filter_justify{
     display: flex;
     column-gap:1.24vw;
     flex-direction: row;
     align-items: center!important;
 }
-.filter img{
+.filter_justify img{
     width:1.9vw;
     height:1.9vw;
 }
-.filter h3{
+.filter_justify h3{
     font-family: Lato;
     font-size: 1.31vw;
     font-style: normal;
