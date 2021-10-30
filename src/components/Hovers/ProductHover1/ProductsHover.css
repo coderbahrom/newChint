@@ -15,31 +15,35 @@ ul {
   flex-direction: column;
   margin: 0 auto;
   gap: 25px;
+  height: 100%;
+  margin-bottom: 50px;
 }
 .wrapall{
   display: flex;
-  flex-direction: row;
- column-gap: 20px;
- /* flex-wrap: wrap; */
- width: 72.5%;
- /* overflow-y: hidden; */
-  /* align-items: center; */
+
+ flex-wrap: wrap;  
+ width: 100%;
+
+}
+*{
+  /* border:1px solid red */
 }
 .rightside{
   display: flex;
   flex-direction:column;
-  /* flex:5; */
+  margin-left:  6.589vw;
   row-gap: 36px;
-  width:100%;
+  
   
  
 }
 .left-side {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  /* flex:1; */
-  width: 100%;
+  /* gap: 25px; */
+  /* width: 33.203vw; */
+  /* row-gap: 25px; */
+ 
 }
 .left-side span {
   margin-top: 42px;
@@ -53,10 +57,7 @@ ul {
   
 border: 1px solid #DBDBDB;
 }
-.hr2{
-  width: 20%;
-  border: 1px solid #1E59A4;
-}
+
 .span1{
   
   display: flex;
@@ -71,6 +72,7 @@ border: 1px solid #DBDBDB;
   font-size: 14px;
   line-height: 17px;
   color: #686868;
+  /* width: 60%; */
 }
 .left-side h2 {
   font-family: Urbanist;
@@ -136,6 +138,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 color: #393939;
+width: 16.764vw;
 }
 .foot hr{
   width: 280px;

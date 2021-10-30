@@ -34,7 +34,7 @@ function ProductHover1() {
             <hr className={"hr1"} />
             <div className={"span1"}>
               <h2>Модульное оборудование</h2>
-              <hr className={"hr2"} />
+             
             </div>
             <ul className="list">
               <li>Силовое оборудование защиты и коммутации</li>
@@ -86,7 +86,7 @@ function ProductHover1() {
       </div>
       
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

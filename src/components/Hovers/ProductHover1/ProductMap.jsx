@@ -2,10 +2,12 @@ import React from "react";
 import "./ProductMap.css"
 import { Link } from "react-router-dom";
 function ProductMap(props) {
-
+const reed={
+  Background:'red'
+}
   return (
     <div className={"mapping"}>
-      <div className="switching">
+      <div style={reed} className="switching">
         <img src="./assets/images/image2.png" alt="" />
       </div>
       <div className={"text-area"}> 
