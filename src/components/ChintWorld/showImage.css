@@ -35,7 +35,9 @@
     line-height: 4.31vw;
     letter-spacing: 0em;
     color:#FFFFFF;
+    width:fit-content;
 }
+
 .common_container  p:nth-child(2){
     font-family: Urbanist;
     font-size: 1.46vw;
@@ -47,6 +49,7 @@
     color:#FFFFFF;
     margin:0.43vw 0 3vw 0;
 }
+
 .common_container  p:nth-child(3){
     font-family: Urbanist;
     font-size: 1.17vw;
