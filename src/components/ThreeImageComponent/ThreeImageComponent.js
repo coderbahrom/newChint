@@ -1,4 +1,4 @@
-
+import './news.css'
 
 function ThreeImageComponent() {
   return (

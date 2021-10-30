@@ -9,7 +9,7 @@ import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
 import {Switch,Link,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
-import './news.css'
+
 import './products.css'
 import './custom_radio_lang.css'
 import './custom_radio_products.css'
@@ -468,42 +468,42 @@ function HomePage() {
       <div class="footer_very_bottom"></div>
        </Route>
 
-       <Route exact path="/productHover1">
-         <ProductsHover1/>
-       </Route>
-       <Route exact  path="/productHover1/products" >
-         <ProductsHover_inner/>
+         <Route exact path="/productHover1">
+            <ProductsHover1/>
+         </Route>
+          <Route exact  path="/productHover1/products" >
+             <ProductsHover_inner/>
          </Route>
          <Route exact  path="/productHover1/products/product-info" >
-         <ProductsHover_inner2/>
+            <ProductsHover_inner2/>
          </Route>
     
          <Route exact  path="/chintworld" >
-         <ChintWorld2/>
+            <ChintWorld2/>
          </Route>
          <Route exact  path="/history" >
-         <ChintWorld6/>
+            <ChintWorld6/>
          </Route>
          <Route exact  path="/download" >
-         <ChintWorld7/>
+             <ChintWorld7/>
          </Route>
          <Route exact  path="/production" >
-         <ChintInWorld3/>
+             <ChintInWorld3/>
          </Route>
          <Route exact  path="/cooperation" >
-         <Chintworld4/>
+             <Chintworld4/>
          </Route>
          <Route exact  path="/news" >
-         <ChintWorld5/>
+             <ChintWorld5/>
          </Route>
          <Route exact  path="/support" >
-         <ChintWorld8/>
+             <ChintWorld8/>
          </Route>
          <Route exact  path="/tech-consult" >
-         <ChintWorld9/>
+            <ChintWorld9/>
          </Route>
          <Route exact  path="/about" >
-         <ChintWorld/>
+            <ChintWorld/>
          </Route>
      </Switch>
   

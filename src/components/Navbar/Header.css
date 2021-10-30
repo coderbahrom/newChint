@@ -160,6 +160,7 @@
 
 .nav_ul li:hover {
   text-decoration: underline;
+  font-size: var(--text14px);
 }
 .about {
   display: flex;
@@ -167,6 +168,13 @@
   row-gap:0px;
   width: 19.693vw;
 }
+.dropdown1_link_underline{
+  text-decoration: none;
+  font-size: var(--text14px);
+  color: #393939;
+
+}
+
 .linking{
   font-family: Lato;
   font-style: normal;

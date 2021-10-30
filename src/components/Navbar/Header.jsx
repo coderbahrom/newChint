@@ -55,7 +55,7 @@ function Header() {
              
             </li>
             <li className={"dropdown1"}>
-              <Link to='/about'>  <span> О компании </span> </Link>
+              <Link  className={'dropdown1_link_underline'} to='/about'>  <span> О компании </span> </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
@@ -75,7 +75,7 @@ function Header() {
               </div>
             </li>
             <li className={"dropdown1"}>
-              <span><Link   to='/download'>Скачать </Link></span>
+              <span><Link  className={'dropdown1_link_underline'}  to='/download'>Скачать </Link></span>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about2"}>

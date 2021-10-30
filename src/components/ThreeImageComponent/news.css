@@ -29,6 +29,8 @@
 #news .news_desc {
   font-weight: 700;
   font-size: 1vw;
+  width:fit-content;
+  color:#393939;
 }
 
 #news .news_list {
