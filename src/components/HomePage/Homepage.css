@@ -2,5 +2,29 @@
     width: 72.5%;
     margin: 0 auto;
 }
+.section_title_wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.5vw;
+}
+  
+.section_title_wrap .section_title {
+    color: var(--primary);
+    font-size: 1.6vw;
+    cursor: pointer;
+}
 
+.section_title_wrap .section_title_underline {
+    width: 3.8vw;
+    height: 0.2vw;
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+    margin-top: 0.5rem;
+    transition: 0.4s;
+}
+.section_title_wrap .section_title:hover + .section_title_underline{
+    width: 6vw;
+}
   
