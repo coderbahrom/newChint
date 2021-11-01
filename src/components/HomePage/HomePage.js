@@ -25,6 +25,8 @@ import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
 import ProductsHover_inner3 from '../ProductsHover_inner/ProductsHover_inner3';
 import slideimage1 from '../assets/images/slideimage1.png'
 import slideimage2 from '../assets/images/slideimage2.png'
+import slideimage3 from '../assets/images/slideimage3.png'
+import slideimage4 from '../assets/images/slideimage4.png'
 import Vertorbottom from '../assets/images/Vectorbuttom.png'
 import SlideData from './SlideData';
 import ProductBox from './ProductBox';
@@ -40,7 +42,7 @@ import product5 from '../assets/images/product5.png'
 import product6 from '../assets/images/product6.png'
 import product7 from '../assets/images/product7.png'
 import product8 from '../assets/images/product8.png'
-import product9 from '../assets/images/product10.png'
+import product9 from '../assets/images/product9.png'
 import download from '../assets/images/downloadhome.png'
 import location from '../assets/images/location.png'
 
@@ -51,17 +53,17 @@ import SwiperCore, {
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
 const productdata = [
-  {img1:product1, title1:'Модульное оборудование CHINT',imghidden:{display:'block'}},
-  {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block'}},
-  {img1:product2, title1:'Кнопки управления, индикаторы CHINT', imghidden:{display:'block'}},
-  {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block'}},
-  {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block'}},
-  {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block'}},
-  {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block'}},
-  {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block'}},
-  {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block'}},
-  {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block'}},
-  {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block'}},
+  {img1:product1, title1:'Модульное оборудование CHINT',imghidden:{display:'block',width:'1.9vw', height:'3.8vw'}},
+  {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
+  {img1:product2, title1:'Кнопки управления, индикаторы CHINT', imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
+  {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block',width:'2.04vw', height:'4vw'}},
+  {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.51vw'}},
+  {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block',width:'3.14vw', height:'2.34vw'}},
+  {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block',width:'3.29vw', height:'3.51vw'}},
+  {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block',width:'2.04vw', height:'3.73vw'}},
+  {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block',width:'2.61vw', height:'3.12vw'}},
+  {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
+  {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
   {img1:'', title1:'',imghidden:{display:'none'}},
   
 ]
@@ -122,15 +124,16 @@ function HomePage() {
           </SwiperSlide>
           <SwiperSlide>
           <SlideData 
-              left_title='Официальный дистрибьютор  в Узбекистане' 
-              slideImageNone={{display:'none'}}
+             left_title='Откидной выключатель-разъединитель серии &nbsp; NHR17' 
+             right_imge={slideimage3}
+             right_image_width_height={{width:'25.9w',height:'25.1vw'}}
               />
           </SwiperSlide>
           <SwiperSlide>
               <SlideData
-               left_title='Автоматический выключатель' 
-               right_imge={slideimage1}
-               right_image_width_height={{width:'21.9vw',height:'19.9vw'}}
+               left_title='Откидной выключатель-разъединитель серии &nbsp; NHR17' 
+               right_imge={slideimage4}
+               right_image_width_height={{width:'25.3vw',height:'23.37vw'}}
               />
           </SwiperSlide>
       </Swiper>

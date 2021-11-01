@@ -6,7 +6,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-
 }
 .swiper-container{
   overflow-x: hidden;

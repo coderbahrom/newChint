@@ -43,6 +43,11 @@ function ThreeImageComponent() {
             </p>
           </div>
         </div>
+        <div className={'news_btn_wrapper'}>
+              <div className={'news_btn'}>
+                  <p>Показать ещё</p>
+              </div>
+        </div>
       </div> 
   )
 }
