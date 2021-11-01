@@ -29,17 +29,19 @@
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content: center;
+    padding-left: 1.75vw;
+    column-gap:1.2vw;
     Width:13.1vw;
     Height:2.93vw;
     color:#FFFFFF;
     border: 0.82px solid #FFFFFF;
     background-color: transparent;
     cursor:pointer;
+    transition: 0.4s;
 
 }
 .slidedata_left .slidedata_left_btn img{
-    width: fit-content;
+    width:2.19vw;
 
 }
 .slidedata_left .slidedata_left_btn p{
@@ -50,7 +52,7 @@
     line-height: 0.95vw;
 }
 .slidedata .slidedata_left .slidedata_left_btn:hover{
-    /* column-gap:25px; */
+    column-gap:1.8vw;
 }
 .swiper-pagination-bullet{
     background-color:white!important;
