@@ -15,6 +15,7 @@
   align-items:center;
   flex-direction: column;
 }
+
 .homepage_pro_contaier_title h1{
   font-family: Urbanist;
   font-size: 1.75vw;
@@ -26,13 +27,17 @@
 .homepage_pro_contaier_title span{
   display: inline-block;
   width:3.8vw;
-  height:0.3vw;
+  height:0.18vw;
   background-color:white;
+  transition: 0.4s;
+}
+.homepage_pro_contaier_title:hover span{
+  width:8.8vw;  
 }
 
 .homepage_pro_contaier_menyu{
   display: flex;
-  column-gap:21px;
+  column-gap:1.53vw;
   flex-wrap: wrap;
   margin:7.17vw 0 4.68vw 0;
 }
@@ -44,7 +49,7 @@
     justify-content: center;
     justify-content: center;
     width:21.88vw;
-    height:60px;  
+    height:4.39vw;  
     color:#63A2F2; 
     border: 1px solid #63A2F2;
     border-radius:0.73vw;
@@ -55,7 +60,7 @@
   text-align: center;
  
   font-family: SF Pro Display;
-  font-size: 1.02;
+  font-size: 1.02vw;
   font-style: normal;
   font-weight: 700;
   margin:0;

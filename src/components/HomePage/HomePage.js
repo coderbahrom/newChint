@@ -41,7 +41,7 @@ import product6 from '../assets/images/product6.png'
 import product7 from '../assets/images/product7.png'
 import product8 from '../assets/images/product8.png'
 import product9 from '../assets/images/product10.png'
-import download from '../assets/images/downloadStrelka.png'
+import download from '../assets/images/downloadhome.png'
 import location from '../assets/images/location.png'
 
 

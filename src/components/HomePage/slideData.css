@@ -21,11 +21,15 @@
     color:#FFFFFF;
 
 }
-
+.slidedata_left_btn p{
+    width:fit-content;
+    margin:0;
+}
 .slidedata_left .slidedata_left_btn{
     display: flex;
     flex-direction: row;
     align-items:center;
+    justify-content: center;
     Width:13.1vw;
     Height:2.93vw;
     color:#FFFFFF;

@@ -12,7 +12,7 @@ function SlideData({left_title, right_imge, right_image_width_height,slideImageN
                     <p>
                             Cкачать каталог
                     </p>
-                    {/* <img src ={rightArrow} alt='rasm'/> */}
+                    <img src ={rightArrow} alt='rasm'/>
                 </div>
             </div>
             
