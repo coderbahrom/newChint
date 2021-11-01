@@ -91,12 +91,12 @@ function Header() {
               </div>
             </li>
             <li>  
-             <Link className={"dropdown1_link_underline position"}>
+             <Link to='/' className={"dropdown1_link_underline position"}>
              <span className={"under under-center"}>Где купить</span>
             </Link>
             </li>
             <li className={"dropdown1"}>
-              <Link className={"dropdown1_link_underline position"}>
+              <Link to='/' className={"dropdown1_link_underline position"}>
               <span className={"under under-center"}>Поддержка</span>
               </Link>
               <div id="Hover1">
@@ -114,7 +114,7 @@ function Header() {
               </div>
             </li>
             <li>
-            <Link className={"dropdown1_link_underline position"}>
+            <Link to='/' className={"dropdown1_link_underline position"}>
              <span className={"under under-center"}>Контакты</span>
             </Link>
             </li>
