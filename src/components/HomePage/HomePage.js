@@ -41,6 +41,8 @@ import product6 from '../assets/images/product6.png'
 import product7 from '../assets/images/product7.png'
 import product8 from '../assets/images/product8.png'
 import product9 from '../assets/images/product10.png'
+import download from '../assets/images/downloadStrelka.png'
+import location from '../assets/images/location.png'
 
 
 import SwiperCore, {
@@ -71,6 +73,7 @@ const styleDot = {
   backgroundColor:'#FFFFFF',
   border:'1px solid #FFFFFF'
 }
+
 const styleCarousel ={
   width:'70vw',
 }
@@ -167,9 +170,21 @@ function HomePage() {
                   productdata.map((item)=>{
                     return <ProductBox pro_box_img={item.img1} pro_box_title={item.title1} imghidden={item.imghidden}/>
                   })
-                }
-                
+                }    
             </div>
+
+            <div className='homepage_pro_down_loc'> 
+                <div className='homepage_pro_download'> 
+                        <img src={download} alt='rasm'/>
+                        <p>Cкачать каталог</p>
+                </div>
+                <div className='homepage_pro_location'> 
+                        <img src={location} alt='rasm'/>
+                        <p>Где купить</p>
+                </div>        
+            </div>
+
+
         </div>
     </div>
      

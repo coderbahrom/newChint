@@ -72,5 +72,52 @@
   flex-direction: row;
   flex-wrap: wrap;  
   column-gap:20px;
-  row-gap: 20px;
+  row-gap: 20px; 
+}
+
+.homepage_pro_down_loc{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  column-gap:19px;
+  margin-top:103px;
+}
+
+.homepage_pro_download{
+  border:1px solid red;
+  display:flex;
+  padding-left:28px;
+  align-items:center;
+  width:229.13px;
+  height:59.19px;
+  column-gap:20px;
+  border: 1px solid #FFFFFF;
+  border-radius:8.95px;
+}
+
+.homepage_pro_location{
+  border:1px solid red;
+  display:flex;
+  align-items:center;
+  padding-left:28px;
+  column-gap:20px;
+  width:229.13px;
+  height:59.19px;
+  border: 1px solid #FFFFFF;
+  border-radius:8.95px;
+}
+
+.homepage_pro_download p,.homepage_pro_location p{
+  width:fit-content;
+  margin:0;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color:white;
+}
+.homepage_pro_download:hover,.homepage_pro_location:hover{
+  background-color:white;
 }
