@@ -10,7 +10,7 @@
 .contain{
     background-color:white;
 }
-.textareas{
+.text-areas{
     display: flex;
     flex-direction: column;
     width:72.5%;
@@ -18,7 +18,7 @@
     background-color:white;
     margin-bottom: 277px;
 }
-.textareas h1{
+.text-areas h1{
     font-family: Urbanist;
 font-style: normal;
 font-weight: 800;
@@ -27,7 +27,7 @@ line-height: 36px;
 color: #1E59A4;
 margin-bottom: 35px;
 }
-.textareas p{
+.text-areas p{
     
     font-family: SF Pro Display;
     font-style: normal;
@@ -36,6 +36,7 @@ margin-bottom: 35px;
     line-height: 27px;
     text-align: justify;
     color: #393939;
+    width: 69.533vw;
 }
 .footer{
     

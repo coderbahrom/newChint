@@ -49,13 +49,15 @@ function Header() {
         </div>
         <div class="navigation">
           <ul class="nav_ul">
-            <li className={"dropdown"}>
-              <span>Продукция</span>
+            <li className={'dropdown'}>
+              <div className="position">
+              <span  className={"under under-center"}>Продукция</span>
+              </div>
             <Hover1/>
              
             </li>
             <li className={"dropdown1"}>
-              <Link  className={'dropdown1_link_underline'} to='/about'>  <span> О компании </span> </Link>
+              <Link  className={'dropdown1_link_underline position'} to='/about'>  <span className={"under under-center"} > О компании </span> </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
@@ -75,7 +77,9 @@ function Header() {
               </div>
             </li>
             <li className={"dropdown1"}>
-              <span><Link  className={'dropdown1_link_underline'}  to='/download'>Скачать </Link></span>
+            
+              <span className={"position"}><Link  className={'dropdown1_link_underline under under-center'}  to='/download'>Скачать </Link></span>
+             
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about2"}>
@@ -86,9 +90,15 @@ function Header() {
                 </div>
               </div>
             </li>
-            <li>Где купить</li>
+            <li>  
+             <Link className={"dropdown1_link_underline position"}>
+             <span className={"under under-center"}>Где купить</span>
+            </Link>
+            </li>
             <li className={"dropdown1"}>
-              <span>Поддержка </span>
+              <Link className={"dropdown1_link_underline position"}>
+              <span className={"under under-center"}>Поддержка</span>
+              </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about3"}>
@@ -103,7 +113,11 @@ function Header() {
                 </div>
               </div>
             </li>
-            <li>Контакты</li>
+            <li>
+            <Link className={"dropdown1_link_underline position"}>
+             <span className={"under under-center"}>Контакты</span>
+            </Link>
+            </li>
             <li className='lang'>
               <select name="" id="">
                 <option value="">Ru</option>

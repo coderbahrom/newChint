@@ -15,7 +15,7 @@ function ChintWorld6() {
 
         <NavbarButtom link1={'Главная /'} link2={'О компании / '} link3={'CHINT в мире'}/>
         
-        <div className="textareas">
+        <div className="text-areas">
             <h1>История компании</h1>
             <p>
             В 1984 г. была основана CHINT – Завод электровыключателей «Чюцин»
