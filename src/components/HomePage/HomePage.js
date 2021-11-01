@@ -1,32 +1,41 @@
-
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
-
 import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
-// import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import {Switch,Link,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
-
 import './products.css'
 import './custom_radio_lang.css'
 import './custom_radio_products.css'
 import './advantages.css'
+import './Homepage.css'
 import Map from './Map';
-import { CarouselProvider, Slider, Slide,Dot, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import ChintWorld6 from '../ChintWorld/ChintWorld6/ChintWorld6';
 import ChintWorld7 from '../ChintWorld/ChintWorld7/ChintWorld7';
 import ChintInWorld3 from '../ChintWorld/ChintInWorld3/ChintInWorld3';
 import Chintworld4 from '../ChintWorld/ChintWorld4/ChintWorld4'
 import ChintWorld5 from '../ChintWorld/ChintWorld5/ChintWorld5'
-import  ChintWorld2 from '../ChintWorld/ChintWorld2/ChintWorld2'
+import ChintWorld2 from '../ChintWorld/ChintWorld2/ChintWorld2'
 import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
 import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
 import ChintWorld from '../ChintWorld/ChintWorld'
 import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
+import slideimage1 from '../assets/images/slideimage1.png'
+import slideimage2 from '../assets/images/slideimage2.png'
+import Vertorbottom from '../assets/images/Vectorbuttom.png'
+import SlideData from './SlideData';
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from 'swiper';
+
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+import SwiperCore, {
+  Pagination,Navigation,Mousewheel,Keyboard
+} from 'swiper';
+SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
+
 
 const styleDot = {
   width:'0.58vw',
@@ -38,7 +47,6 @@ const styleDot = {
 }
 const styleCarousel ={
   width:'70vw',
-  
 }
 
 function HomePage() {
@@ -47,299 +55,71 @@ function HomePage() {
   <>
   <Switch>
   <Route exact path="/">
-  <div className="container">
+  <div className="homepage_main_container">
     <Header/>
-    {/* search */}
-    <div id="search">
-      <div class="input_with_prefix">
-        <input type="text" placeholder="Поиск по товарам ..." />
-        <span class="prefix">Поиск</span>
-      </div>
-    </div>
+  </div>
 
-    {/* SHOWCASE  */}
-      <div id="showcase">
-        <div class="showcase_content">
-          <h1 class="showcase_title">
-            Официальный <br />
-            дистрибьютор в Узбекистане
-          </h1>
-          <button class="text_btn">
-            <span>Cкачать каталог</span>
-            <svg
-              width="30"
-              height="14"
-              viewBox="0 0 30 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M29.6364 7.6364C29.9879 7.28493 29.9879 6.71508 29.6364 6.36361L23.9088 0.636041C23.5574 0.284569 22.9875 0.284569 22.636 0.636041C22.2846 0.987513 22.2846 1.55736 22.636 1.90883L27.7272 7L22.636 12.0912C22.2846 12.4426 22.2846 13.0125 22.636 13.364C22.9875 13.7154 23.5574 13.7154 23.9088 13.364L29.6364 7.6364ZM-7.86805e-08 7.9L29 7.9L29 6.1L7.86805e-08 6.1L-7.86805e-08 7.9Z"
-                fill="white"
+  {/* SHOWCASE  */}
+  <div className='homepage_showcase'>
+      <Swiper 
+      cssMode={true} 
+      navigation={true}
+      mousewheel={true}
+      keyboard={true}
+      spaceBetween={30}
+      pagination={{"clickable": true}}
+      className="mySwiper"
+      autoplay={{ delay: 5000 }}
+      >
+          <SwiperSlide>
+              <SlideData 
+              left_title='Официальный дистрибьютор  в Узбекистане' 
+              slideImageNone={{display:'none'}}
               />
-            </svg>
-          </button>
+          </SwiperSlide>
+          <SwiperSlide>
+              <SlideData
+               left_title='Автоматический выключатель' 
+               right_imge={slideimage1}
+               right_image_width_height={{width:'21.9vw',height:'19.9vw'}}
+              />
+          </SwiperSlide>
+          <SwiperSlide>
+          <SlideData
+               left_title='Автоматические выключатели в литом корпусе серий' 
+               right_imge={slideimage2}
+               right_image_width_height={{width:'22.9w',height:'27.5vw'}}
+              />
+          </SwiperSlide>
+          <SwiperSlide>
+          <SlideData 
+              left_title='Официальный дистрибьютор  в Узбекистане' 
+              slideImageNone={{display:'none'}}
+              />
+          </SwiperSlide>
+          <SwiperSlide>
+              <SlideData
+               left_title='Автоматический выключатель' 
+               right_imge={slideimage1}
+               right_image_width_height={{width:'21.9vw',height:'19.9vw'}}
+              />
+          </SwiperSlide>
+      </Swiper>
+      <img className='vectorbuttom' src={Vertorbottom} alt='rasm'/>
+    </div>
+    <div className='hompage_content'>
+        <div className='hompage_content_inner'>
+            <ThreeImageComponent/>
         </div>
-        <div class="language">
-          <form action="#">
-            <p class="lang_option_wrap">
-              <input type="radio" id="test1" name="radio-group" checked />
-              <label class="lang_option_label" for="test1">UZ</label>
-            </p>
-            <p class="lang_option_wrap">
-              <input type="radio" id="test2" name="radio-group" />
-              <label class="lang_option_label" for="test2">RU</label>
-            </p>
-            <p class="lang_option_wrap">
-              <input type="radio" id="test3" name="radio-group" />
-              <label class="lang_option_label" for="test3">ENG</label>
-            </p>
-          </form>
-        </div>
-      </div>
-      <ThreeImageComponent/>
-      </div>
+    </div>
        {/* PRODUCTS  */}
-
-      <div id="products">
-        <div class="container">
-          <div class="section_title_wrap">
-            <h1 class="section_title">Продукция</h1>
-          </div>
-
-          <form action="#" class="custom_radio_container">
-            <p class="lang_option_wrap">
-              <input type="radio" id="prod1" name="radio-group" checked />
-              <label class="lang_option_label" for="prod1"
-                >Низковольтное <br />
-                оборудование</label
-              >
-            </p>
-            <p class="lang_option_wrap">
-              <input type="radio" id="prod2" name="radio-group" />
-              <label class="lang_option_label" for="prod2"
-                >Оборудование <br />
-                распределения и передачи</label
-              >
-            </p>
-            <p class="lang_option_wrap">
-              <input type="radio" id="prod3" name="radio-group" />
-              <label class="lang_option_label" for="prod3"
-                >Электроустановочные изделия</label
-              >
-            </p>
-          </form>
-
-          <div class="products_list">
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-            <div class="products_list__prouduct">
-              <object
-                class="products_list__prouduct1"
-                data="./assets/icons/prod1v1.svg"
-                type="image/svg+xml"
-              > </object>
-              <object
-                class="products_list__prouduct2"
-                data="./assets/icons/prod1v2.svg"
-                type="image/svg+xml"
-              > </object>
-              <p class="product_name">Модульное оборудование CHINT</p>
-              <object
-                data="./assets/icons/circle_arrow.svg"
-                type="image/svg+xml"
-              > </object>
-            </div>
-          </div>
-
-          <div class="product_bottom_btns">
-            <div class="product_bottom_btn outlined">
-              <object
-                data="./assets/icons/download.svg"
-                type="image/svg+xml"
-              > </object>
-              Cкачать каталог
-            </div>
-            <div class="product_bottom_btn filled">
-              <object
-                data="./assets/icons/location.svg"
-                type="image/svg+xml"
-              > </object>
-              Cкачать каталог
-            </div>
-          </div>
+    <div className='hompage_product'>
+        <div className='hompage_content2_inner'>
+            
         </div>
-      </div>
-      
-    <div class="container">
+    </div>
+     
+    <div class="homepage_main_container">
       {/* ADVANTAGES  */}
        <div id="advantages">
           <div class="section_title_wrap">
@@ -505,10 +285,7 @@ function HomePage() {
          <Route exact  path="/about" >
             <ChintWorld/>
          </Route>
-     </Switch>
-  
- 
-     
+     </Switch>     
     </>
   )
 }
