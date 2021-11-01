@@ -1,13 +1,76 @@
-.hompage_content2{
+.homepage_product{
     background-color:#1D569C;
 }
 
-.hompage_content2_inner{
-    width:72.5%;
-    margin:0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
+.homepage_product_container{
+  width:72.5%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  padding:109px 0 109px 0;
 
 }
+.homepage_pro_contaier_title{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+.homepage_pro_contaier_title h1{
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  color:white;
+}
+.homepage_pro_contaier_title span{
+  display: inline-block;
+  width:52px;
+  height:3px;
+  background-color:white;
+}
 
+.homepage_pro_contaier_menyu{
+  display: flex;
+  column-gap:21px;
+  flex-wrap: wrap;
+  margin:98px 0 64px 0;
+}
+
+
+.homepage_pro_contaier_men1{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    justify-content: center;
+    width:299px;
+    height:60px;  
+    color:#63A2F2; 
+    border: 1.5px solid #63A2F2;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.homepage_pro_contaier_men1 h6{
+  text-align: center;
+ 
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin:0;
+
+}
+.homepage_pro_contaier_men1:hover{
+  color:white;
+  border: 1.5px solid #FFFFFF;
+  transition: 0.4s;
+}
+
+.homepage_pro_contaier_box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  column-gap:20px;
+  row-gap: 20px;
+}

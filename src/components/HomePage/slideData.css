@@ -22,10 +22,9 @@
 
 }
 
-.slidedata_left div{
+.slidedata_left .slidedata_left_btn{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items:center;
     Width:13.1vw;
     Height:2.93vw;
@@ -35,18 +34,18 @@
     cursor:pointer;
 
 }
-.slidedata_left div img{
+.slidedata_left .slidedata_left_btn img{
     width: fit-content;
 
 }
-.slidedata_left div p{
+.slidedata_left .slidedata_left_btn p{
     font-family: SF Pro Display;
     font-size: 0.87vw;
     font-style: normal;
     font-weight: 400;
     line-height: 0.95vw;
 }
-.slidedata .slidedata_left div:hover{
+.slidedata .slidedata_left .slidedata_left_btn:hover{
     /* column-gap:25px; */
 }
 .swiper-pagination-bullet{

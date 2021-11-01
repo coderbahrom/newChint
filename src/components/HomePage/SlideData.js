@@ -8,11 +8,11 @@ function SlideData({left_title, right_imge, right_image_width_height,slideImageN
                 <p>
                     {left_title}
                 </p>
-                <div>
+                <div className='slidedata_left_btn'>
                     <p>
                             Cкачать каталог
                     </p>
-                    <img src ={rightArrow} alt='rasm'/>
+                    {/* <img src ={rightArrow} alt='rasm'/> */}
                 </div>
             </div>
             

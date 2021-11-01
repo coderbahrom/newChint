@@ -81,3 +81,8 @@
   width:2.49vw;
   height:1.09vw;
 }
+.swiper-pagination-bullet{
+  background-color:white!important;
+  width:0.585vw!important;
+  height:0.585vw!important;
+}

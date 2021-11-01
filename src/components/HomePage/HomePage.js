@@ -27,17 +27,42 @@ import slideimage1 from '../assets/images/slideimage1.png'
 import slideimage2 from '../assets/images/slideimage2.png'
 import Vertorbottom from '../assets/images/Vectorbuttom.png'
 import SlideData from './SlideData';
+import ProductBox from './ProductBox';
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from 'swiper';
-
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
+import product1 from '../assets/images/product1.png'
+import product2 from '../assets/images/product2.png'
+import product3 from '../assets/images/product3.png'
+import product4 from '../assets/images/product4.png'
+import product5 from '../assets/images/product5.png'
+import product6 from '../assets/images/product6.png'
+import product7 from '../assets/images/product7.png'
+import product8 from '../assets/images/product8.png'
+import product9 from '../assets/images/product10.png'
+
+
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
-
+const productdata = [
+  {img1:product1, title1:'Модульное оборудование CHINT',imghidden:{display:'block'}},
+  {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block'}},
+  {img1:product2, title1:'Кнопки управления, индикаторы CHINT', imghidden:{display:'block'}},
+  {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block'}},
+  {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block'}},
+  {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block'}},
+  {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block'}},
+  {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block'}},
+  {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block'}},
+  {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block'}},
+  {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block'}},
+  {img1:'', title1:'',imghidden:{display:'none'}},
+  
+]
 const styleDot = {
   width:'0.58vw',
   height:'0.58vw',
@@ -114,9 +139,37 @@ function HomePage() {
         </div>
     </div>
        {/* PRODUCTS  */}
-    <div className='hompage_product'>
-        <div className='hompage_content2_inner'>
-            
+    <div className='homepage_product'>
+        <div className='homepage_product_container'>
+            <div className='homepage_pro_contaier_title'>
+                  <h1>Продукция</h1>
+                  <span></span>
+            </div>
+            <div className='homepage_pro_contaier_menyu'>
+                <div className='homepage_pro_contaier_men1'>
+                    <h6>
+                        Низковольтное оборудование
+                    </h6>
+                </div>
+                <div className='homepage_pro_contaier_men1'>
+                    <h6>
+                        Оборудование <br/>распределения и передачи
+                    </h6>
+                </div>
+                <div className='homepage_pro_contaier_men1'>
+                    <h6>
+                        Электроустановочные <br/>изделия
+                    </h6>
+                </div>
+            </div>
+            <div className='homepage_pro_contaier_box'>
+                {
+                  productdata.map((item)=>{
+                    return <ProductBox pro_box_img={item.img1} pro_box_title={item.title1} imghidden={item.imghidden}/>
+                  })
+                }
+                
+            </div>
         </div>
     </div>
      
