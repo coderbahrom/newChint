@@ -22,14 +22,18 @@ const data = [
 ];
 function ProductsHover_inner3(props) {
   return (
+    <>
     <div className={"wrapping"}>
-      <div>
+      
         <Header />
+        </div>
+        <div className="containall">
+          <div className="wrapbody">
         <Head
+         
           title1="Главная /Каталог продукции/Автоматические выключатели/DZ47-60, 1-63А, 4.5кА"
           title2="Автоматический выключатель DZ47-60 1P 16А 4.5кА х-ка C (CHINT)"
         />{" "}
-      </div>
       <div className="body2">
         <div className="switch">
           <img src="./assets/images/switch1.jpg " alt="" />
@@ -84,15 +88,15 @@ function ProductsHover_inner3(props) {
               </li>
               <li>
                 <img src="./assets/images/pdf.png" alt="" />{" "}
-                <p>Каталог продукции CHINT для инженеров.pdf </p>{" "}
+                <font>Каталог продукции CHINT для инженеров.pdf </font>{" "}
               </li>
               <li>
                 <img src="./assets/images/pdf.png" alt="" />{" "}
-                <p> 2D-модель DZ47-60 1P 16A 4.5kA х-ка C.dwg</p>
+                <font> 2D-модель DZ47-60 1P 16A 4.5kA х-ка C.dwg</font>
               </li>
               <li>
                 <img src="./assets/images/pdf.png" alt="" />{" "}
-                <p>Каталог продукции CHINT с ценами.pdf </p>{" "}
+                <font>Каталог продукции CHINT с ценами.pdf </font>{" "}
               </li>
             </ul>
           </div>
@@ -203,9 +207,11 @@ function ProductsHover_inner3(props) {
       </div>
       <div className="footer">
 
+      </div>
+      </div>
       <Footer/>
       </div>
-    </div>
+    </>
   );
 }
 

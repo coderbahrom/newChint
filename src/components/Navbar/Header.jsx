@@ -104,7 +104,13 @@ function Header() {
               </div>
             </li>
             <li>Контакты</li>
-            
+            <li className='lang'>
+              <select name="" id="">
+                <option value="">Ru</option>
+                <option value="">Uz</option>
+                <option value="">Eng</option>
+              </select>
+            </li>
           </ul>
           <div className="call">
             <div class="call_center">

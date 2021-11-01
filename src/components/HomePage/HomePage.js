@@ -22,6 +22,7 @@ import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
 import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
 import ChintWorld from '../ChintWorld/ChintWorld'
 import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
+
 import slideimage1 from '../assets/images/slideimage1.png'
 import slideimage2 from '../assets/images/slideimage2.png'
 import Vertorbottom from '../assets/images/Vectorbuttom.png'
@@ -36,6 +37,7 @@ import SwiperCore, {
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
+import ProductsHover_inner3 from '../ProductsHover_inner/ProductsHover_inner3';
 
 const styleDot = {
   width:'0.58vw',
@@ -285,7 +287,17 @@ function HomePage() {
          <Route exact  path="/about" >
             <ChintWorld/>
          </Route>
+<<<<<<< HEAD
      </Switch>     
+=======
+         <Route exact  path="/avtomaticheskiy" >
+            <ProductsHover_inner3/>
+         </Route>
+     </Switch>
+  
+ 
+     
+>>>>>>> 90a820cab2b7c0bf9c853c6f6b5160b152b20766
     </>
   )
 }

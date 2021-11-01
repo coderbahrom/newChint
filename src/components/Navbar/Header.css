@@ -18,6 +18,14 @@
   background-color: var(--secondary);
   justify-content: space-between;
 }
+#nav ul li{
+  font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+color: #393939;
+}
 #nav ul li,
 #nav .nav_logo,
 #nav .call {
@@ -259,4 +267,15 @@
 }
 .dropdown1 > div {
   overflow-y: hidden;
+}
+.lang select{
+  outline: none;
+  border: none;
+  background:none;
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+color: #3A6EAF;
 }

@@ -2,8 +2,10 @@ import React from 'react'
 import './product_container.css'
 import rasm2 from '../assets/images/rasm2.png'
 import strelka from '../assets/images/strelka.png'
+import { Link } from 'react-router-dom'
 function Product_container() {
     return (
+        <Link to='/avtomaticheskiy'>
         <div className={'product_container'}>
                 <img src={rasm2} alt='rasm'/>
                 <div className='product_title'>
@@ -12,6 +14,7 @@ function Product_container() {
                 </div>
                 <img src={strelka} alt='rasm'/>
         </div>
+        </Link>
     )
 }
 
