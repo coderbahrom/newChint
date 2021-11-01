@@ -1,0 +1,55 @@
+.slidedata{
+    width:62.2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.slidedata_left{
+    display: flex;
+    flex-direction: column;
+    row-gap:5.8vw;
+}
+.slidedata_left > p{
+    font-family: Lato;
+    font-size: 2.63vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.17vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+
+}
+
+.slidedata_left .slidedata_left_btn{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    Width:13.1vw;
+    Height:2.93vw;
+    color:#FFFFFF;
+    border: 0.82px solid #FFFFFF;
+    background-color: transparent;
+    cursor:pointer;
+
+}
+.slidedata_left .slidedata_left_btn img{
+    width: fit-content;
+
+}
+.slidedata_left .slidedata_left_btn p{
+    font-family: SF Pro Display;
+    font-size: 0.87vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.95vw;
+}
+.slidedata .slidedata_left .slidedata_left_btn:hover{
+    /* column-gap:25px; */
+}
+.swiper-pagination-bullet{
+    background-color:white!important;
+    width:0.585vw!important;
+    height:0.585vw!important;
+}

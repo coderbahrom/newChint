@@ -1,0 +1,35 @@
+.product_box{
+    display: flex;
+    align-items:center;
+    padding:22px 70px 22px 47px;
+    column-gap:37px;
+    background-color:#2465B8;
+    color:white;
+    flex:40%;
+    border:1px solid #2465B8;
+    border-radius:10px;
+    cursor: pointer;
+
+}
+.product_box:hover{
+    background-color:white;
+    border:1px solid white;
+    color:#1B549E;
+    
+}
+
+
+.product_box:hover p{
+    color:#1B549E;
+}
+
+.product_box p{
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    width:fit-content;
+    margin:0;
+    
+}
