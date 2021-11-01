@@ -287,17 +287,10 @@ function HomePage() {
          <Route exact  path="/about" >
             <ChintWorld/>
          </Route>
-<<<<<<< HEAD
-     </Switch>     
-=======
          <Route exact  path="/avtomaticheskiy" >
             <ProductsHover_inner3/>
          </Route>
-     </Switch>
-  
- 
-     
->>>>>>> 90a820cab2b7c0bf9c853c6f6b5160b152b20766
+     </Switch>       
     </>
   )
 }
