@@ -37,7 +37,7 @@
     background-color: transparent;
     cursor:pointer;
     transition: 0.4s;
-
+    text-decoration: none;
 }
 .slidedata_left .slidedata_left_btn img{
     width:2.19vw;

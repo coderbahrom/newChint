@@ -1,6 +1,7 @@
 import React from 'react'
 import './slideData.css'
 import rightArrow from '../assets/images/rightArrow.png'
+import {Link} from 'react-router-dom'
 function SlideData({left_title, right_imge, right_image_width_height,slideImageNone}) {
     return (
         <div className='slidedata'>
@@ -8,12 +9,12 @@ function SlideData({left_title, right_imge, right_image_width_height,slideImageN
                 <p>
                     {left_title}
                 </p>
-                <div className='slidedata_left_btn'>
+                <Link className='slidedata_left_btn'>
                     <p>
                             Cкачать каталог
                     </p>
                     <img src ={rightArrow} alt='rasm'/>
-                </div>
+                </Link>
             </div>
             
             <div style={slideImageNone} className='slidedata_right'>
