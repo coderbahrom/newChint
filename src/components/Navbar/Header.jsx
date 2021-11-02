@@ -2,18 +2,16 @@ import React from "react";
 import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
-const linking={
-  color:'white'
-}
-const downloading={
-  
+const linking = {
+  color: "white",
+};
+const downloading = {
   listStyleType: "none",
-  margin:' 0 4vw',
-  cursor: 'pointer',
-  color: '#393939',
-}
+  margin: " 0 4vw",
+  cursor: "pointer",
+  color: "#393939",
+};
 function Header() {
-
   return (
     <>
       <nav id="nav">
@@ -49,76 +47,134 @@ function Header() {
         </div>
         <div class="navigation">
           <ul class="nav_ul">
-            <li className={'dropdown'}>
+            <li className={"dropdown"}>
               <div className="position">
-              <span  className={"under under-center"}>Продукция</span>
+                <span className={"under under-center"}>Продукция</span>
               </div>
-            <Hover1/>
-             
+              <Hover1 />
             </li>
             <li className={"dropdown1"}>
-              <Link  className={'dropdown1_link_underline position'} to='/about'>  <span className={"under under-center"} > О компании </span> </Link>
+              <Link className={"dropdown1_link_underline position"} to="/about">
+                {" "}
+                <span className={"under under-center"}> О компании </span>{" "}
+              </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about1"}>
-                    
-                    <p> 
-                      <Link className={'linking'} to='/chintworld'> CHINT в мире </Link>
-                       </p>
-                    <p > <Link className={'linking'}  to='/production'> Наше производство </Link> </p>
-                    <p>Акции </p>
-                    <p> <Link className={'linking'}  to='/cooperation'> Сотрудничество </Link></p>
                     <p>
-                    <Link className={'linking'}  to='/news'>   Новости и газета </Link>
+                      <Link className={"linking"} to="/chintworld">
+                        {" "}
+                        CHINT в мире{" "}
+                      </Link>
                     </p>
-                    <p> <Link className={'linking'}  to='/history'> История компании </Link></p>
+                    <p>
+                      {" "}
+                      <Link className={"linking"} to="/production">
+                        {" "}
+                        Наше производство{" "}
+                      </Link>{" "}
+                    </p>
+                    <p>Акции </p>
+                    <p>
+                      {" "}
+                      <Link className={"linking"} to="/cooperation">
+                        {" "}
+                        Сотрудничество{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      <Link className={"linking"} to="/news">
+                        {" "}
+                        Новости и газета{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      {" "}
+                      <Link className={"linking"} to="/history">
+                        {" "}
+                        История компании{" "}
+                      </Link>
+                    </p>
                   </div>
                 </div>
               </div>
             </li>
             <li className={"dropdown1"}>
-            
-              <span className={"position"}><Link  className={'dropdown1_link_underline under under-center'}  to='/download'>Скачать </Link></span>
-             
+              <span className={"position"}>
+                <Link
+                  className={"dropdown1_link_underline under under-center"}
+                  to="/download"
+                >
+                  Скачать{" "}
+                </Link>
+              </span>
+
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about2"}>
-                    <p> <Link style={linking} to='/download'> Рекламные материалы </Link></p>
-                    <p > <Link  style={linking} to='/download'>Сертификаты </Link></p>
-                    <p> <Link style={linking} to='/download'> Паспорта устройств, РЭ </Link> </p>
+                    <p>
+                      {" "}
+                      <Link style={linking} to="/download">
+                        {" "}
+                        Рекламные материалы{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      {" "}
+                      <Link style={linking} to="/download">
+                        Сертификаты{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      {" "}
+                      <Link style={linking} to="/download">
+                        {" "}
+                        Паспорта устройств, РЭ{" "}
+                      </Link>{" "}
+                    </p>
                   </div>
                 </div>
               </div>
             </li>
-            <li>  
-             <Link to='/' className={"dropdown1_link_underline position"}>
-             <span className={"under under-center"}>Где купить</span>
-            </Link>
+            <li>
+              <Link to="/" className={"dropdown1_link_underline position"}>
+                <span className={"under under-center"}>Где купить</span>
+              </Link>
             </li>
             <li className={"dropdown1"}>
-              <Link to='/' className={"dropdown1_link_underline position"}>
-              <span className={"under under-center"}>Поддержка</span>
+              <Link to="/" className={"dropdown1_link_underline position"}>
+                <span className={"under under-center"}>Поддержка</span>
               </Link>
               <div id="Hover1">
                 <div className="hoverContainer1">
                   <div className={"about3"}>
-                    <p> 
-                    <Link className={'linking'} to='/download'>Скачать </Link></p>
                     <p>
-                    <Link className={'linking'} to='/support'> Гарантия и ремонт </Link></p>
-                    <p> 
-                    <Link className={'linking'} to='/tech-consult'>Техническое консультирование </Link></p>
+                      <Link className={"linking"} to="/download">
+                        Скачать{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      <Link className={"linking"} to="/support">
+                        {" "}
+                        Гарантия и ремонт{" "}
+                      </Link>
+                    </p>
+                    <p>
+                      <Link className={"linking"} to="/tech-consult">
+                        Техническое консультирование{" "}
+                      </Link>
+                    </p>
                     <p> Программное обеспечение </p>
                   </div>
                 </div>
               </div>
             </li>
             <li>
-            <Link to='/' className={"dropdown1_link_underline position"}>
-             <span className={"under under-center"}>Контакты</span>
-            </Link>
+              <Link to="/" className={"dropdown1_link_underline position"}>
+                <span className={"under under-center"}>Контакты</span>
+              </Link>
             </li>
-            <li className='lang'>
+            <li className="lang">
               <select name="" id="">
                 <option value="">Ru</option>
                 <option value="">Uz</option>

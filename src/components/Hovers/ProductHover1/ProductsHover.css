@@ -2,12 +2,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family:"Urbanist"
+  font-family: "Urbanist";
 }
 ul {
-  padding-left: 0
+  padding-left: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
 .wrapper {
   display: flex;
@@ -18,32 +18,37 @@ ul {
   height: 100%;
   margin-bottom: 50px;
 }
-.wrapall{
-  display: flex;
 
- flex-wrap: wrap;  
- width: 100%;
-
-}
-*{
+* {
   /* border:1px solid red */
 }
-.rightside{
+.body1 {
+  width: 100%;
+
+  background: white;
+}
+.wrapall {
+  width: 72.5%;
+  margin: 0 auto;
+}
+.coverElments {
+  margin-top: 10vh;
   display: flex;
-  flex-direction:column;
-  margin-left:  6.589vw;
+  flex-direction: row;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6.589vw;
   row-gap: 36px;
-  
-  
- 
 }
 .left-side {
   display: flex;
   flex-direction: column;
-  /* gap: 25px; */
-  /* width: 33.203vw; */
-  /* row-gap: 25px; */
- 
+  row-gap: 5vw;
+
+  cursor: pointer;
 }
 .left-side span {
   margin-top: 42px;
@@ -51,21 +56,19 @@ ul {
   flex-direction: row;
   gap: 19px;
 }
-.hr1{
+.hr1 {
   width: 200px;
   margin-top: 2px;
-  
-border: 1px solid #DBDBDB;
+
+  border: 1px solid #dbdbdb;
 }
 
-.span1{
-  
+.span1 {
   display: flex;
   flex-direction: column;
-  gap:7px
+  gap: 7px;
 }
 .left-side span h1 {
- 
   font-family: Urbanist;
   font-style: normal;
   font-weight: 600;
@@ -73,6 +76,7 @@ border: 1px solid #DBDBDB;
   line-height: 17px;
   color: #686868;
   /* width: 60%; */
+  cursor: pointer;
 }
 .left-side h2 {
   font-family: Urbanist;
@@ -102,12 +106,12 @@ border: 1px solid #DBDBDB;
   align-items: center;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 1.6px solid #1E59A4;
-
+  border: 1.6px solid #1e59a4;
 }
-.arrow1 img{
+.arrow1 img {
   width: 8px;
   height: 10px;
+  cursor: pointer;
 }
 
 .list {
@@ -116,7 +120,6 @@ border: 1px solid #DBDBDB;
   gap: 23px;
 }
 ul li {
-  
   font-family: Urbanist;
   font-style: normal;
   font-weight: normal;
@@ -127,21 +130,21 @@ ul li {
   text-align: left;
   list-style: none;
 }
-.foot{
+.foot {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-.foot h1{
+.foot h1 {
   font-family: Urbanist;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #393939;
-width: 16.764vw;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #393939;
+  width: 16.764vw;
 }
-.foot hr{
+.foot hr {
   width: 280px;
   margin-top: 12px;
-  border: 0.783848px solid #DBDBDB;
+  border: 0.783848px solid #dbdbdb;
 }
