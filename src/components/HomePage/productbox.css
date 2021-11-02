@@ -1,10 +1,11 @@
 .product_box{
     display: flex;
     align-items:center;
-    padding-left:3.36vw;
+    padding-left:2.26vw;
+    padding-right: 5vw;
     width:33.6vw;
     height:6.8vw;
-    column-gap:2.7vw;
+    column-gap:1.46vw;
     background-color:#2465B8;
     color:white;
     flex:40%;
@@ -20,19 +21,24 @@
     transition: 0.4s;
     
 }
+.product_box_innerimg{
+    width:4.3vw!important;
+    display:flex;
+    justify-content: center;
+}
 
 
 .product_box:hover p{
     color:#1B549E;
 }
 
-.product_box p{
+.product_box > p{
     font-family: SF Pro Display;
     font-size: 1.17vw;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0em;
-    width:fit-content;
+    width:20vw;
     margin:0;
     
 }
