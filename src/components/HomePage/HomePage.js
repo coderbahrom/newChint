@@ -52,21 +52,21 @@ import SwiperCore, {
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
-const productdata = [
-  {img1:product1, title1:'Модульное оборудование CHINT',imghidden:{display:'block',width:'1.9vw', height:'3.8vw'}},
-  {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-  {img1:product2, title1:'Кнопки управления, индикаторы CHINT', imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-  {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block',width:'2.04vw', height:'4vw'}},
-  {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.51vw'}},
-  {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block',width:'3.14vw', height:'2.34vw'}},
-  {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block',width:'3.29vw', height:'3.51vw'}},
-  {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block',width:'2.04vw', height:'3.73vw'}},
-  {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block',width:'2.61vw', height:'3.12vw'}},
-  {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-  {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-  {img1:'', title1:'',imghidden:{display:'none'}},
-  
-]
+  const productdata = [
+    {img1:product1, title1:`Модульное оборудование  CHINT`,imghidden:{display:'block',width:'1.9vw', height:'3.8vw'}},
+    {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
+    {img1:product2, title1:'Контакторы, реле, пускатели CHINT', imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
+    {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block',width:'2.04vw', height:'4vw'}},
+    {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.51vw'}},
+    {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block',width:'3.14vw', height:'2.34vw'}},
+    {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block',width:'3.29vw', height:'3.51vw'}},
+    {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block',width:'2.04vw', height:'3.73vw'}},
+    {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block',width:'2.61vw', height:'3.12vw'}},
+    {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
+    {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
+    {img1:'', title1:'',imghidden:{display:'none'}},
+  ]
+
 const styleDot = {
   width:'0.58vw',
   height:'0.58vw',
