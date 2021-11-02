@@ -1,33 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
-@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
-  font-family:Urbanist;
-  src: url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
-}
-/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
-@font-face {
-  font-family:Lato;
-  src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
-}
-@font-face {
-  font-family:SF Pro Display;
-  src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
-}
-/* @import url('https://fonts.googleapis.com/css2?family=Lato&family=Urbanist:wght@300;400&display=swap'); */
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 100;
+  src:url('./components/font-family/SFProDisplayThin.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    src:url('./components/font-family/NetSFProDisplayUltralight.ttf') format('ttf');
+    }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src:url('./components/font-family/SFPRODISPLAYREGULAR.woff') format('woff');
+    }
+
+  @font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  src:url('./components/font-family/SFPRODISPLAYMEDIUM.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    src:url('./components/font-family/SFProDisplaySemibold.ttf') format('ttf');
+    }
+  
+  @font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 700;
+  src:url('./components/font-family/SFPRODISPLAYBOLD.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 900;
+    src:url('./components/font-family/SFProDisplayBlack.ttf') format('ttf');
+    }
 
 *{
   padding:0;
   margin:0;
   /* font-family: "Lato", sans-serif;   */
   box-sizing: border-box;
+  
 }
+
 
 body {
   background-color: var(--secondary);
 }
-
-
 
 
 :root {
@@ -62,25 +92,4 @@ input:focus {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #0d386466;
-}
-
-.section_title_wrap {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3.5vw;
-}
-
-.section_title_wrap .section_title {
-  color: var(--primary);
-  font-size: 1.6vw;
-}
-
-.section_title_wrap .section_title_underline {
-  width: 6.7vw;
-  height: 0.2vw;
-  border-radius: 10px;
-  background-color: var(--secondary-dark);
-  margin-top: 1rem;
 }

@@ -1,15 +1,4 @@
-@font-face {
-    font-family:Urbanist;
-    src: url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
-  }
-  @font-face {
-    font-family:Lato;
-    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
-  }
-  @font-face {
-    font-family:SF Pro Display;
-    src: url('http://fonts.cdnfonts.com/css/sf-pro-display');
-  }
+
 
 .rectengular2{
     background-image: url('../assets/images/rectengular.png');

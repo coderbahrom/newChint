@@ -7,34 +7,40 @@
   margin:0 auto;
   display:flex;
   flex-direction: column;
-  padding:109px 0 109px 0;
+  padding:7.97vw 0 7.97vw 0;
 
 }
 .homepage_pro_contaier_title{
   display:flex;
   align-items:center;
   flex-direction: column;
+  cursor: pointer;
 }
+
 .homepage_pro_contaier_title h1{
   font-family: Urbanist;
-  font-size: 24px;
+  font-size: 1.75vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 2.12vw;
   color:white;
 }
 .homepage_pro_contaier_title span{
   display: inline-block;
-  width:52px;
-  height:3px;
+  width:3.8vw;
+  height:0.18vw;
   background-color:white;
+  transition: 0.4s;
+}
+.homepage_pro_contaier_title:hover span{
+  width:8.8vw;  
 }
 
 .homepage_pro_contaier_menyu{
   display: flex;
-  column-gap:21px;
+  column-gap:1.53vw;
   flex-wrap: wrap;
-  margin:98px 0 64px 0;
+  margin:7.17vw 0 4.68vw 0;
 }
 
 
@@ -43,11 +49,11 @@
     align-items:center;
     justify-content: center;
     justify-content: center;
-    width:299px;
-    height:60px;  
+    width:21.88vw;
+    height:4.39vw;  
     color:#63A2F2; 
-    border: 1.5px solid #63A2F2;
-    border-radius:10px;
+    border: 1px solid #63A2F2;
+    border-radius:0.73vw;
     cursor: pointer;
 }
 
@@ -55,7 +61,7 @@
   text-align: center;
  
   font-family: SF Pro Display;
-  font-size: 14px;
+  font-size: 1.02vw;
   font-style: normal;
   font-weight: 700;
   margin:0;
@@ -71,6 +77,68 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
-  column-gap:20px;
-  row-gap: 20px;
+  column-gap:1.46vw;
+  row-gap: 1.46vw; 
+}
+
+.homepage_pro_down_loc{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  column-gap:1.39vw;
+  margin-top:7.54vw;
+}
+
+.homepage_pro_download{
+  border:1px solid red;
+  display:flex;
+  padding-left:2.04vw;
+  align-items:center;
+  width:16.7vw;
+  height: 4.31vw;;
+  column-gap:1.46vw;
+  border: 1px solid #FFFFFF;
+  border-radius:0.65vw;
+  cursor: pointer;
+}
+.homepage_pro_download img{
+  Width:1.81vw;
+  height:1.82vw;
+}
+
+.homepage_pro_location img{
+  width:1.34vw;
+  height:1.82vw;
+}
+
+.homepage_pro_location{
+  display:flex;
+  align-items:center;
+  padding-left:2.04vw;
+  column-gap:1.46vw;
+  width:16.77vw;
+  height:4.33vw;
+  border: 1px solid #FFFFFF;
+  border-radius:0.65vw;
+  cursor: pointer;
+}
+
+.homepage_pro_download p,.homepage_pro_location p{
+  width:fit-content;
+  margin:0;
+  font-family: Lato;
+  font-size: 0.87vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.02vw;
+  letter-spacing: 0em;
+  color:white;
+}
+.homepage_pro_download:hover,.homepage_pro_location:hover{
+  background-color:white;
+  transition:0.4s;
+}
+.homepage_pro_download:hover p,.homepage_pro_location:hover p{
+  color:#1C559F;
+  transition:0.4s;
 }

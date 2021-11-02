@@ -51,7 +51,11 @@ function Header() {
               <div className="position">
                 <span className={"under under-center"}>Продукция</span>
               </div>
+
               <Hover1 />
+
+            <Hover1/>
+            
             </li>
             <li className={"dropdown1"}>
               <Link className={"dropdown1_link_underline position"} to="/about">

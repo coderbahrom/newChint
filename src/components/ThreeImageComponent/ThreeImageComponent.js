@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './news.css'
 
 function ThreeImageComponent() {
@@ -5,7 +6,7 @@ function ThreeImageComponent() {
     //  NEWS 
       <div id="news">
         <div class="section_title_wrap">
-          <h1 class="section_title">Новости</h1>
+          <Link class="section_title">Новости</Link>
           <div class="section_title_underline"></div>
         </div>
 
@@ -42,6 +43,11 @@ function ThreeImageComponent() {
               Москва
             </p>
           </div>
+        </div>
+        <div className={'news_btn_wrapper'}>
+              <div className={'news_btn'}>
+                  <p>Показать ещё</p>
+              </div>
         </div>
       </div> 
   )

@@ -76,6 +76,7 @@
   border-radius: 1.6vw;
   padding: 3vw;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 #advantages .advantage_cards__card ul {

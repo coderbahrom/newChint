@@ -43,3 +43,15 @@
   display: flex;
   justify-content: space-between;
 }
+svg path{
+  fill:rgba(30, 89, 164, 1);
+  stroke:white;
+  stroke-width:0.45px;
+}
+svg path:hover{
+  fill:white;
+  stroke:rgba(30, 89, 164, 1);
+  stroke-width:2px;
+  transition:.4s;
+  cursor:pointer;
+}
