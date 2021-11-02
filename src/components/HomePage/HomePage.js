@@ -28,44 +28,24 @@ import slideimage2 from '../assets/images/slideimage2.png'
 import slideimage3 from '../assets/images/slideimage3.png'
 import slideimage4 from '../assets/images/slideimage4.png'
 import Vertorbottom from '../assets/images/Vectorbuttom.png'
+import skachat1 from '../assets/icons/skachat1.svg'
+import skachat1_2 from '../assets/icons/skachat1_2.svg'
+import location1 from '../assets/icons/location1.svg'
+import location1_2 from '../assets/icons/location1_2.svg'
 import SlideData from './SlideData';
 import ProductBox from './ProductBox';
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-import product1 from '../assets/images/product1.png'
-import product2 from '../assets/images/product2.png'
-import product3 from '../assets/images/product3.png'
-import product4 from '../assets/images/product4.png'
-import product5 from '../assets/images/product5.png'
-import product6 from '../assets/images/product6.png'
-import product7 from '../assets/images/product7.png'
-import product8 from '../assets/images/product8.png'
-import product9 from '../assets/images/product9.png'
-import download from '../assets/images/downloadhome.png'
-import location from '../assets/images/location.png'
-
+import { ProductBoxData } from './ProductBoxData';
 
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
-  const productdata = [
-    {img1:product1, title1:`Модульное оборудование  CHINT`,imghidden:{display:'block',width:'1.9vw', height:'3.8vw'}},
-    {img1:product2, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-    {img1:product2, title1:'Контакторы, реле, пускатели CHINT', imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-    {img1:product3, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block',width:'2.04vw', height:'4vw'}},
-    {img1:product4, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.51vw'}},
-    {img1:product5, title1:'Оборудование электропитания CHINT',imghidden:{display:'block',width:'3.14vw', height:'2.34vw'}},
-    {img1:product6, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block',width:'3.29vw', height:'3.51vw'}},
-    {img1:product7, title1:'Приводная техника CHINT',imghidden:{display:'block',width:'2.04vw', height:'3.73vw'}},
-    {img1:product8, title1:'Щиты и шкафы CHINT',imghidden:{display:'block',width:'2.61vw', height:'3.12vw'}},
-    {img1:product9, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-    {img1:product9, title1:'Цифровые измерительные приборы',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-    {img1:'', title1:'',imghidden:{display:'none'}},
-  ]
+  
 
 const styleDot = {
   width:'0.58vw',
@@ -170,19 +150,37 @@ function HomePage() {
             </div>
             <div className='homepage_pro_contaier_box'>
                 {
-                  productdata.map((item)=>{
-                    return <ProductBox pro_box_img={item.img1} pro_box_title={item.title1} imghidden={item.imghidden}/>
+                 ProductBoxData.map((item)=>{
+                    return <ProductBox images={item.images} pro_box_title={item.title1} imghidden={item.imghidden}/>
                   })
                 }    
             </div>
 
             <div className='homepage_pro_down_loc'> 
                 <div className='homepage_pro_download'> 
-                        <img src={download} alt='rasm'/>
+                        <object
+                        className='home_skachat1'
+                        data={skachat1}
+                        type="image/svg+xml"
+                        > </object> 
+                        <object
+                        className='home_skachat1_2'
+                        data={skachat1_2}
+                        type="image/svg+xml"
+                        > </object> 
                         <p>Cкачать каталог</p>
                 </div>
-                <div className='homepage_pro_location'> 
-                        <img src={location} alt='rasm'/>
+                <div className='homepage_pro_location'>
+                        <object
+                        className='home_location1'
+                        data={location1}
+                        type="image/svg+xml"
+                        > </object>
+                        <object
+                        className='home_location1_2'
+                        data={location1_2}
+                        type="image/svg+xml"
+                        > </object>  
                         <p>Где купить</p>
                 </div>        
             </div>
@@ -311,8 +309,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-        
-        
+         
          {/* MAP  */}
           <Map/>
       </div>

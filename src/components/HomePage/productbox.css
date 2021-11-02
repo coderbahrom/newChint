@@ -22,7 +22,7 @@
     
 }
 .product_box_innerimg{
-    width:4.3vw!important;
+    width:4.3vw;
     display:flex;
     justify-content: center;
 }
@@ -41,4 +41,17 @@
     width:20vw;
     margin:0;
     
+}
+.product_box_icon1,.product_box_icon2{
+    height:3vw;      
+}
+.product_box_icon2{
+    display: none;
+    
+}
+.product_box:hover .product_box_icon2{
+    display: block;
+}
+.product_box:hover .product_box_icon1{
+    display: none;
 }

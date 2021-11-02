@@ -101,12 +101,34 @@
   border-radius:0.65vw;
   cursor: pointer;
 }
-.homepage_pro_download img{
+
+.homepage_pro_download .home_skachat1_2{
+  display:none;
+}
+
+.homepage_pro_download:hover .home_skachat1{
+  display:none;
+}
+.homepage_pro_download:hover .home_skachat1_2{
+  display:block;
+}
+
+.homepage_pro_location .home_location1_2{
+  display: none;
+}
+.homepage_pro_location:hover .home_location1_2{
+  display: block;
+}
+.homepage_pro_location:hover .home_location1{
+  display: none;
+}
+
+.homepage_pro_download .home_skachat1,.homepage_pro_download .home_skachat1_2{
   Width:1.81vw;
   height:1.82vw;
 }
 
-.homepage_pro_location img{
+.homepage_pro_location .home_location1,.homepage_pro_location .home_location1_2{
   width:1.34vw;
   height:1.82vw;
 }
