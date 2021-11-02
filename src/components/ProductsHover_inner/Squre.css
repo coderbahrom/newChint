@@ -1,4 +1,4 @@
-button{
+.squreRang{
     height:2.34vw;
     width: 6.29vw;
     font-family: Lato;
@@ -11,13 +11,16 @@ button{
     background-color:#F8F8F8;
     border:0;
     cursor: pointer;
+    transition: .4s;
 }
-button:hover{
+.squreRang:hover{
     border:2px solid #8EACD1;
+    transform: scale(1.08);
+
 }
-.rang1{
+.squreRang .rang1{
     color:#828282;
 }
-.rang2{
+.squreRang .rang2{
     color:#C6C6C6;
 }
