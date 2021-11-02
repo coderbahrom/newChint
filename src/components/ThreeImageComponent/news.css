@@ -15,6 +15,12 @@
   height: 12.5vw;
   background-color: gray;
   border-radius: 1.3vw;
+  transition: .4s;
+}
+
+#news .news_img:hover{
+  box-shadow:1px 1px 5px grey;
+  transform:scale(1.05);
 }
 
 #news .news_img img {
