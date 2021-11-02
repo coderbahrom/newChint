@@ -107,7 +107,7 @@ const data3 = [
 Чтобы получить подробную информацию о программе, просто оставьте заявку, и мы обязательно с вами свяжемся!</p>
       </div>
      
-      <div className={'btn'}>
+      <div className={'send-btn'}>
           <button onClick={toggleModal}>Оставить заявку</button>
       </div>
       <div className="footer">

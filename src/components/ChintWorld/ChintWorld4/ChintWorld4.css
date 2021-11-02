@@ -49,19 +49,19 @@
 .footer {
   margin-top: 153px;
 }
-.btn {
+.send-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 123px;
 }
-.btn button {
+.send-btn button {
   background: #1e59a4;
   border-radius: 10px;
   width: 246px;
   height: 58px;
 }
-.btn button {
+.send-btn button {
   font-family: Urbanist;
   font-style: normal;
   font-weight: normal;

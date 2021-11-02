@@ -8,15 +8,25 @@ function Contents(props) {
     const [show, setShow]=useState(false)
     const [show1, setShow1]=useState(false)
     const [show2, setShow2]=useState(false)
+    const [bg, setBg]=useState(false)
     const [transform, setTransform] =useState(false)
 
     const stil={
       transform:"rotate(180deg)",
       backgroundColor:'rgba(30, 89, 164, 1)',
+    
       
     }
     const stil1={
       transform:"rotate(0deg)"
+    }
+    const bgcolor={
+        fill: "white",
+    }
+    const bgcolor1={
+        // 
+        fill:"#1E59A4",
+        backgroundColor:'rgba(30, 89, 164, 1)',
     }
     function toggle(){
         setShow(prev=>!prev)
@@ -33,11 +43,9 @@ function Contents(props) {
                <hr className={"hr1"} />
                </div>
                 <div  style={transform===true ? stil:stil1 }  className="arrow1">
-                <svg  id='svg' width="11" height="13" viewBox="0 0 11 13"  xmlns="http://www.w3.org/2000/svg">
-                    <g>
-<path   d="M5.55273 1.3353L5.55273 11.6216" stroke="#1E59A4" stroke-width="1.5677" stroke-linecap="round" stroke-linejoin="round"/>
-<path   d="M9.76074 7.41356L5.55272 11.6216L1.34469 7.41356" stroke="#1E59A4" stroke-width="1.5677" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
+                <svg  id="bgcolor" width="12px" height="13px" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  style={transform===true? bgcolor:bgcolor1 } d="M5.55273 1.3353L5.55273 11.6216" stroke="#1E59A4" stroke-width="10.5677" stroke-linecap="round" stroke-linejoin="round"/>
+<path style={transform===true? bgcolor:bgcolor1 }  d="M9.76074 7.41356L5.55272 11.6216L1.34469 7.41356" stroke="#1E59A4" stroke-width="3.5677" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                 </div> 
         </div>
