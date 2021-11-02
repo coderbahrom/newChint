@@ -292,7 +292,7 @@ color: #3A6EAF;
     left:0;
     bottom:0;
     top:20px;
-    background:#ff3c78 ;
+    background:#1E59A4;
  }
  .under-center::after{
    transform: scale(0,1);
