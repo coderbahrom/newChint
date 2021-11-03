@@ -1,5 +1,3 @@
-
-
 .rectengular4{
     background-image: url('../assets/images/rectengular.png');
     background-repeat: no-repeat;
@@ -9,8 +7,15 @@
     height:14vw;
     border-radius: 1.76vw;
     padding-top:2.92vw;
-
+    transition: 1s;
 }
+
+.rectengular4:hover{
+    background-position:top left;
+    background-size:11.7vw 11.7vw;
+    padding-left: 2.4vw;
+}
+
 .rectengular4 h5{
     font-family: Urbanist;
     font-size: 4.31vw;

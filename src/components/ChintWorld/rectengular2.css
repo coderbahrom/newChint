@@ -10,6 +10,12 @@
     border-radius: 1.76vw;
     padding-top:5.5vw;
     /* border:1px solid; */
+    transition: 1s;
+}
+.rectengular2:hover{
+    background-position:top left;
+    background-size: 14.2vw 14.2vw;
+    padding-left: 4vw;
 }
 .rectengular2 h5{
     font-family: Urbanist;

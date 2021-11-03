@@ -8,8 +8,14 @@
     height:14vw;
     border-radius: 1.76vw;
     padding-top:2.04vw;
-
+    transition: 1s;
 }
+.rectengular3:hover{
+    background-position:top left;
+    background-size:11.7vw 11.7vw;
+    padding-left: 2.7vw;
+}
+
 .rectengular3 h5{
     font-family: Urbanist;
     font-size: 5.78vw;
