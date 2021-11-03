@@ -3,10 +3,18 @@
     flex-direction: row;
     column-gap:4.39vw;
     margin-top:4.4vw;
+    transition: .4s;
 }
+.world5_container_image img:hover{
+    /* transform: scale(1.008); */
+    box-shadow:-2px 2px 5px grey;
+}
+
 .world5_container_image img{
     width: 24.89vw;
     height: 15.95vw;
+    border-radius:1.46vw;
+    transition: .4s;
 
 }
 

@@ -1,4 +1,8 @@
-.skachatContainer{
+.chintWorld7_skachatContainer p{
+    margin:0;
+
+}
+.chintWorld7_skachatContainer{
     height: 5.7vw;
     width: 33.74vw;
     border-radius: 11.949141502380371px;
@@ -8,13 +12,17 @@
     border: 0.8px solid #1E59A48C;
     padding:1.55vw 2.26vw 1.67vw 2.4vw;
     background-color:#F7FAFF;
+    transition: .4s;
 }
-.skachatContainer img:nth-child(1){
+.chintWorld7_skachatContainer:hover{
+    box-shadow:-2px 2px 7px grey;
+}
+.chintWorld7_skachatContainer img:nth-child(1){
     width:2.53vw;
     height:2.65vw;
 }
 
-.skachatContainer p:nth-child(2){
+.chintWorld7_skachatContainer p:nth-child(2){
     font-family: Urbanist;
     font-size: 0.87vw;
     font-style: normal;
@@ -26,7 +34,7 @@
     margin:0 2.34vw 0 2.23vw;    
 }
 
-.skachatContainer p:nth-child(3){
+.chintWorld7_skachatContainer p:nth-child(3){
     margin-left: auto;
     font-family: Urbanist;
     font-size:  0.87vw;
@@ -39,7 +47,7 @@
     margin-right:0.95vw;
 
 }
-.skachatContainer img:nth-child(4){
+.chintWorld7_skachatContainer img:nth-child(4){
     width:2.39vw;
     height:2.36vw;
 }

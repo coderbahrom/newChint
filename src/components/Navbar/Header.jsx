@@ -53,8 +53,8 @@ function Header() {
               </div>
       
               <Hover1 />
-
-            <Hover1/>
+              
+            {/* <Hover1/> */}
             
             </li>
             <li className={"dropdown1"}>
