@@ -4,9 +4,6 @@ import NavbarButtom from "../NavbarButtom";
 import "./ChintWorld5.css";
 import ImageAndData from "./ImageAndData";
 import Footer from "../../Footer/Footer";
-const styleTop = {
-    marginTop:'100px'
-}
 function ChintWorld5() {
   return (
     <>

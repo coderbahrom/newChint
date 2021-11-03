@@ -4,10 +4,9 @@ function LeftTextHover() {
     return (
         <div>
              <div className="left-text">
-             <div  className={"span1"}>
-              <h2>Модульное оборудование</h2>
-            </div>
+          
             <ul className="list">
+              <li>Модульное оборудование</li>
               <li>Силовое оборудование защиты и коммутации</li>
               <li>Контакторы, реле, пускатели</li>
               <li>Компенсации реактивной мощности</li>

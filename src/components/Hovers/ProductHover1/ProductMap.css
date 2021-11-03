@@ -21,6 +21,11 @@
   border-radius: 19.5962px;
   /* border:1px soldi red !important; */
 }
+.switching:hover{
+  box-shadow:1px 1px 5px grey;
+  transform:scale(1.05);
+  transition: all ease-in-out 0.3s;
+}
 .text-area {
   display: flex;
   flex-direction: column;

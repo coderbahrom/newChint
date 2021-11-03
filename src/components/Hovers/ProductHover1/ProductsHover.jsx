@@ -4,7 +4,6 @@ import Head from "./Head";
 import Header from "../../Navbar/Header";
 import ProductMap from "./ProductMap";
 import Footer from "../../Footer/Footer";
-import LeftTextHover from "./LeftTextHover";
 import { useState } from "react";
 import Contents from "./Contents";
 
@@ -41,9 +40,8 @@ const data = [
   },
 ];
 const data1 = [
-  { id: 1, title: "Низковольтное оборудование", img: "/" },
-  { id: 2, title: "Оборудование распределения и передачи", img: "/" },
-  { id: 3, title: "Оборудование распределения и передачи", img: "/" },
+  { id: 2, title: "Низковольтное оборудование", img: "/" },
+  { id: 3, title: "Солнечные батареи", img: "/" },
 ];
 
 function ProductHover1() {

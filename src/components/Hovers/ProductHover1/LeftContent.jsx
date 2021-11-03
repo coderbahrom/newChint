@@ -1,14 +1,13 @@
 import React from 'react'
 
-export default function LeftContent() {
+export default function LeftContent(props) {
     return (
         <div>
-             <div className="left-text">
-             <div  className={"span1"}>
-              <h2>Модульное оборудование</h2>
-            </div>
+             <div style={{...props.styles, opacity:props.setOpacity}} className="left-text">
+           
             <ul className="list">
               <li>Second One</li>
+              <li>Модульное оборудование</li>
               <li>Контакторы, реле, пускатели</li>
               <li>Компенсации реактивной мощности</li>
               <li>Кнопки управления, индикаторы</li>

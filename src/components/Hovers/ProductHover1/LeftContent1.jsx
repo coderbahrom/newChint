@@ -1,13 +1,12 @@
 import React from 'react'
 
 function LeftContent1() {
+
     return (
         <div>
          <div className="left-text">
-             <div  className={"span1"}>
-              <h2>Модульное оборудование</h2>
-            </div>
             <ul className="list">
+              <li>Модульное оборудование</li>
               <li>Last One</li>
               <li>Контакторы, реле, пускатели</li>
               <li>Компенсации реактивной мощности</li>

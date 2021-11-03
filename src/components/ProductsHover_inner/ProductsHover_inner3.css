@@ -35,6 +35,11 @@
   /* border: solid rgb(202, 188, 188); */
   /* box-shadow: 5px 5px rgb(228, 221, 221); */
 }
+.switch img:hover{
+  box-shadow:1px 1px 5px grey;
+  transform:scale(1.05);
+  transition: all ease-in-out 0.3s;
+}
 .container1 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);

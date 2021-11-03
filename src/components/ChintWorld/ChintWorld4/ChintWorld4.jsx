@@ -49,7 +49,6 @@ const data3 = [
   function ChintWorld4() {
     const { register, handleSubmit, watch , reset, formState: { errors } } = useForm();
     const notify = () => toast("Malumot Saqlandi!");
-    const notify1 = () => toast("Malumot Saqlanmadi!");
     const[modalVisible, setModalvisible]=useState(false)
 
     function toggleModal(){
