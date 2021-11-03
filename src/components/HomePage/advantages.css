@@ -61,7 +61,11 @@
   position: absolute;
   top: -2vw;
   left: -1.5vw;
+  transition: width ease-out .4s;
 }
+#advantages .stat_rect:hover{
+  width:10vw;
+} 
 
 #advantages .advantage_cards {
   display: flex;

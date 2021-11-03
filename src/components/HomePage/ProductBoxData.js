@@ -18,7 +18,7 @@ import product10 from '../assets/icons/product10.svg'
 import product10_2 from '../assets/icons/product10_2.svg'
 
 export const ProductBoxData = [
-    {images:{img1:product1,img2:product1_2}, title1:`Модульное оборудование  CHINT`,imghidden:{width:'1.9vw', height:'3.8vw'}},
+    {images:{img1:product1,img2:product1_2}, title1:`Модульное оборудование\nCHINT`,imghidden:{width:'1.9vw', height:'3.8vw'}},
     {images:{img1:product2,img2:product2_2}, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{width:'2.34vw', height:'2.92vw'}},
     {images:{img1:product2,img2:product2_2}, title1:'Контакторы, реле, пускатели CHINT',imghidden:{width:'2.34vw', height:'2.92vw'}},
     {images:{img1:product4,img2:product4_2}, title1:'Компенсация реактивной мощности CHINT',imghidden:{width:'2.04vw', height:'4vw'}},

@@ -19,7 +19,7 @@
 }
 
 #news .news_img:hover{
-  box-shadow:1px 1px 5px grey;
+  box-shadow:-2px 2px 7px grey;
   transform:scale(1.05);
 }
 

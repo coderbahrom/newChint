@@ -40,6 +40,7 @@
     letter-spacing: 0em;
     width:20vw;
     margin:0;
+    white-space: pre-line;
     
 }
 .product_box_icon1,.product_box_icon2{
