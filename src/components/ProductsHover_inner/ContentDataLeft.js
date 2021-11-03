@@ -2,7 +2,7 @@ import React from 'react'
 import Squre from './Squre'
 import filter1 from '../assets/images/filter1.png'
 import './Content_data_left.css'
-function Content_data_left() {
+function ContentDataLeft() {
     return (
         <div className='content_data_left'>
                             <div className='filter_justify'>
@@ -74,4 +74,4 @@ function Content_data_left() {
     )
 }
 
-export default Content_data_left
+export default ContentDataLeft

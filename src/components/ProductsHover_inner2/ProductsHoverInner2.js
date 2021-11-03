@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from '../Navbar/Header'
 import './ProductsHover_inner2.css'
 import Head from '../Hovers/ProductHover1/Head'
-import Content_data_left from '../ProductsHover_inner/Content_data_left'
+import ContentDataLeft from '../ProductsHover_inner/ContentDataLeft'
 import doc from '../assets/images/doc.png'
-import Product_container from './Product_container'
+import ProductContainer from './Product_container'
 import Footer from '../Footer/Footer'
 
 function ProductsHover_inner2(){
@@ -17,7 +17,7 @@ function ProductsHover_inner2(){
             <div className='pro_inner2_container'>
                     <Head title1='Главная /Каталог продукции/Автоматические выключатели/DZ47-60, 1-63А, 4.5кА' title2='Автоматические выключатели DZ47-60'/>
                     <div className='pro_inner2_content_data'>
-                        <Content_data_left/>
+                        <ContentDataLeft/>
                         <div className='pro_inner2_content_data_right'>
                             <div className='pro_inner2_right_inner'>
                                  <div className='right_inner_1'>
@@ -56,7 +56,7 @@ function ProductsHover_inner2(){
                                 {
                                 [1,2,3,4,5,6,7,8,9,10,11,12,13].map((item,index)=>{
                                     return  <div key={index}> 
-                                    <Product_container/>
+                                    <ProductContainer/>
                                     </div>
                                 })
                                 }
