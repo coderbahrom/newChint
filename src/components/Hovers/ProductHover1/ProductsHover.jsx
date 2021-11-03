@@ -3,8 +3,6 @@ import "./ProductsHover.css";
 import Head from "./Head";
 import Header from "../../Navbar/Header";
 import ProductMap from "./ProductMap";
-import Footer from "../../Footer/Footer";
-import { useState } from "react";
 import Contents from "./Contents";
 
 const data = [

@@ -1,26 +1,26 @@
 import React from 'react'
 import { useState } from 'react'
 import LeftContent from './LeftContent';
-import LeftTextHover from './LeftTextHover';
 import LeftContent1 from './LeftContent1';
 import "./ProductsHover.css";
 function Contents(props) {
-    const [show, setShow]=useState(false)
+
     const [show1, setShow1]=useState(false)
     const [show2, setShow2]=useState(false)
     const [opacity, setOpacity]=useState(1)
     const [transform, setTransform] =useState(false)
-
+  console.log(opacity)
     const stil={
       transform:"rotate(180deg)",
       backgroundColor:'rgba(30, 89, 164, 1)',
     }
+    console.log(setOpacity)
     const stil1={
       transform:"rotate(0deg)"
     }
-    const styles={
-      transition:"all 1s ease-out"
-    }
+    // const styles={
+    //   transition:"all 1s ease-out"
+    // }
     const bgcolor={
         fill: "white",
     }
@@ -30,15 +30,12 @@ function Contents(props) {
         backgroundColor:'rgba(30, 89, 164, 1)',
     }
     function toggle(){
-        setShow(prev=>!prev)
         setShow1(prev=>!prev)
         setShow2(prev=>!prev)
         setTransform(prev=>!prev)
         
       }
-      function onHide(){
-        setOpacity(0)
-      }
+    
     return (
         <>
         <div className={'foot'} onClick={toggle}>

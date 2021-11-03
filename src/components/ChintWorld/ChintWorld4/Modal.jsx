@@ -52,9 +52,9 @@ let d = Math.floor(Math.random() * 10);
 const code = [a, b, c, d];
 
 
-function ModalForm({ toggle, isOpen, save }) {
+function ModalForm({ toggle, isOpen, }) {
 
-  const { register, handleSubmit, watch , reset, formState: { errors } } = useForm();
+  const { register, handleSubmit,reset } = useForm();
   const onSubmit = (data) =>{
     if(data.capture===''+a+b+c+d)
    console.log(data);
