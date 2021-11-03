@@ -2,8 +2,8 @@ import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
-import ProductsHover_inner from '../ProductsHover_inner/ProductsHover_inner';
-import {Switch,Link,Route } from 'react-router-dom'
+import ProductsHoverInner from '../ProductsHover_inner/ProductsHover_inner';
+import {Switch,Route } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
 import './products.css'
@@ -21,8 +21,8 @@ import ChintWorld2 from '../ChintWorld/ChintWorld2/ChintWorld2'
 import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
 import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
 import ChintWorld from '../ChintWorld/ChintWorld'
-import ProductsHover_inner2 from '../ProductsHover_inner2/ProductsHover_inner2'
-import ProductsHover_inner3 from '../ProductsHover_inner/ProductsHover_inner3';
+import ProductsHoverInner2 from '../ProductsHover_inner2/ProductsHoverInner2'
+import ProductsHoverInner3 from '../ProductsHover_inner/ProductsHoverInner3';
 import slideimage1 from '../assets/images/slideimage1.png'
 import slideimage2 from '../assets/images/slideimage2.png'
 import slideimage3 from '../assets/images/slideimage3.png'
@@ -47,18 +47,9 @@ SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
   
 
-const styleDot = {
-  width:'0.58vw',
-  height:'0.58vw',
-  borderRadius:'0.29vw',
-  marginRight:'0.73vw',
-  backgroundColor:'#FFFFFF',
-  border:'1px solid #FFFFFF'
-}
 
-const styleCarousel ={
-  width:'70vw',
-}
+
+
 
 function HomePage() {
   
@@ -321,10 +312,10 @@ function HomePage() {
             <ProductsHover1/>
          </Route>
           <Route exact  path="/productHover1/products" >
-             <ProductsHover_inner/>
+             <ProductsHoverInner/>
          </Route>
          <Route exact  path="/productHover1/products/product-info" >
-            <ProductsHover_inner2/>
+            <ProductsHoverInner2/>
          </Route>
     
          <Route exact  path="/chintworld" >
@@ -355,7 +346,7 @@ function HomePage() {
             <ChintWorld/>
          </Route>
          <Route exact  path="/avtomaticheskiy" >
-            <ProductsHover_inner3/>
+            <ProductsHoverInner3/>
          </Route>
      </Switch>       
     </>
