@@ -2,9 +2,6 @@ import React from 'react'
 import Navbar from '../Navbar/Header'
 import './ProductsHover_inner2.css'
 import Head from '../Hovers/ProductHover1/Head'
-import filter1 from '../assets/images/filter1.png'
-import Squre from '../ProductsHover_inner/Squre'
-import rasm1 from '../assets/images/rasm1.png'
 import Content_data_left from '../ProductsHover_inner/Content_data_left'
 import doc from '../assets/images/doc.png'
 import Product_container from './Product_container'
@@ -58,7 +55,9 @@ function ProductsHover_inner2(){
                             <div className='right_inner2'>
                                 {
                                 [1,2,3,4,5,6,7,8,9,10,11,12,13].map((item,index)=>{
-                                    return <Product_container/>
+                                    return  <div key={index}> 
+                                    <Product_container/>
+                                    </div>
                                 })
                                 }
                             </div>

@@ -5,17 +5,12 @@ import { Link } from "react-router-dom";
 const linking = {
   color: "white",
 };
-const downloading = {
-  listStyleType: "none",
-  margin: " 0 4vw",
-  cursor: "pointer",
-  color: "#393939",
-};
+
 function Header() {
   return (
     <>
       <nav id="nav">
-        <div class="nav_logo">
+        <div className="nav_logo">
           <svg
             width="140"
             height="33"
@@ -45,8 +40,8 @@ function Header() {
             />
           </svg>
         </div>
-        <div class="navigation">
-          <ul class="nav_ul">
+        <div className="navigation">
+          <ul className="nav_ul">
             <li className={"dropdown"}>
               <div className="position">
                 <span className={"under under-center"}>Продукция</span>
@@ -180,14 +175,14 @@ function Header() {
             </li>
             <li className="lang">
               <select name="" id="">
-                <option value="">Ru</option>
-                <option value="">Uz</option>
-                <option value="">Eng</option>
+                <option >Ru</option>
+                <option>Uz</option>
+                <option>Eng</option>
               </select>
             </li>
           </ul>
           <div className="call">
-            <div class="call_center">
+            <div className="call_center">
               <svg
                 width="19"
                 height="21"

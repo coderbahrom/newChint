@@ -69,7 +69,7 @@ function ProductHover1() {
             <div className="rightside">
               {data.map((value, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <ProductMap data={value} />
                   </div>
                 );

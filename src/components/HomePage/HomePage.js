@@ -150,8 +150,8 @@ function HomePage() {
             </div>
             <div className='homepage_pro_contaier_box'>
                 {
-                 ProductBoxData.map((item)=>{
-                    return <ProductBox images={item.images} pro_box_title={item.title1} imghidden={item.imghidden}/>
+                 ProductBoxData.map((item,index)=>{
+                    return <ProductBox key={index} images={item.images} pro_box_title={item.title1} imghidden={item.imghidden}/>
                   })
                 }    
             </div>

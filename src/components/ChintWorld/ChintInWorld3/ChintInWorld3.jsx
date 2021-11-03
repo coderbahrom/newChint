@@ -41,9 +41,7 @@ const data = [
     title: "Контролю качества продукции на всех этапах ее изготовления",
   },
 ];
-const hide={
-  display:'none',
-}
+
 function ChintInWorld3() {
   return (
     <>
