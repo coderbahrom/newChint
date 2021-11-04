@@ -121,7 +121,7 @@ ul {
   flex-direction: column;
   gap: 23px;
   height: 0;
-  transform: scale(0);
+  transform: scale(1);
   overflow: hidden;
  
 }
