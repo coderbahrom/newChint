@@ -40,6 +40,7 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
 
+
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';

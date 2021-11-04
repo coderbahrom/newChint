@@ -63,7 +63,7 @@
   left: -1.5vw;
   transition: width ease-out .4s;
 }
-#advantages .stat_rect:hover{
+#advantages .stat_wrap:hover .stat_rect{
   width:10vw;
 } 
 
@@ -138,6 +138,7 @@
 
 #advantages .advantage_cards__card:hover .advantage_cards__icon2 {
   display: block;
+  transform: rotate(-720deg);
 }
 
 #advantages .advantage_cards__card:hover .advantage_cards__icon1 {
