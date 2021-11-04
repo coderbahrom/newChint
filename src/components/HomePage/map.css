@@ -11,6 +11,7 @@
   justify-content: center;
   /* border:1px solid red; */
   position: relative;
+  margin-top:5vw;
 }
 
 
@@ -44,9 +45,9 @@
 }
 
 svg path{
-  fill:rgba(30, 89, 164, 1)!important;
-  stroke:white!important;
-  stroke-width:0.45px!important;
+  fill:rgba(30, 89, 164, 1);
+  stroke:white;
+  stroke-width:0.45px;
 }
 
 svg path:hover{
@@ -67,4 +68,5 @@ svg path:hover{
   margin:0;
   border-radius:2vw;
   background-color:white;
+  overflow:visible;
 }
