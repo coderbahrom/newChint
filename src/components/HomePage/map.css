@@ -9,9 +9,9 @@
 #map .map_wrapper{
   display: flex;
   justify-content: center;
-  /* border:1px solid red; */
   position: relative;
-  margin-top:5vw;
+  margin-top:8vw;
+  
 }
 
 
