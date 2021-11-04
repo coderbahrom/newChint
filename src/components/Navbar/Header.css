@@ -5,7 +5,7 @@
 }
 
 #nav {
-  height: 11vw;
+  height: 10vw;
   display: flex;
   background-color: var(--secondary);
   justify-content: space-between;
