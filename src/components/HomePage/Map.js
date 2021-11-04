@@ -9,10 +9,9 @@ function Map() {
   const [cursorData, setCursorData] = useState({ value: "" });
 
   function showtitle(e) {
-    console.log(((e.screenX - 102)*100)/1366 + 'vw',((e.screenY-200)*100)/1366 + 'vw', 'salom ',e.screenX,e.screenY)
     // var d = e.screenX
     console.log()
-    setCursorPosition({ left:((e.screenX - 102)*100)/1366 + 'vw', top:((e.screenY-200)*100)/1366 + 'vw'});
+    setCursorPosition({ left:(e.screenX - window.innerWidth/10), top:(e.screenY - window.innerHeight/8)});
     setCursorData({ value: e.target.className.animVal });
   }
   function closetitle() {
