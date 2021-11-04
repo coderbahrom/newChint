@@ -32,6 +32,7 @@
 .switch img {
   width: 183px;
   height: 348px;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 .switch img:hover{
