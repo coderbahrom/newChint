@@ -6,14 +6,13 @@
   margin: 5vw 0;
 }
 
-#map .map_wrapper {
+#map .map_wrapper{
   display: flex;
   justify-content: center;
+  /* border:1px solid red; */
+  position: relative;
 }
 
-#map .map_wrapper object {
-  width: 60vw;
-}
 
 #map .chint_around_world_title {
   font-size: 1.8vw;
@@ -43,15 +42,29 @@
   display: flex;
   justify-content: space-between;
 }
+
 svg path{
-  fill:rgba(30, 89, 164, 1);
-  stroke:white;
-  stroke-width:0.45px;
+  fill:rgba(30, 89, 164, 1)!important;
+  stroke:white!important;
+  stroke-width:0.45px!important;
 }
+
 svg path:hover{
   fill:white;
   stroke:rgba(30, 89, 164, 1);
   stroke-width:2px;
   transition:.4s;
   cursor:pointer;
+}
+
+.showMapTitle{
+  position:absolute;
+  color:black;
+  font-weight: 700;
+  z-index:3;
+  padding:0 1vw;
+
+  margin:0;
+  border-radius:2vw;
+  background-color:white;
 }
