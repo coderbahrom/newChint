@@ -266,9 +266,12 @@
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.26vw;
+  line-height: 1.5vw;
   color: #3a6eaf;
+}
+.lang select option{
+  font-size: 1vw;
 }
 
 .under {

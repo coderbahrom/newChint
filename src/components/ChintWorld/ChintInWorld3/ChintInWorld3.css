@@ -65,7 +65,6 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   transition: all 0.5s;
 }
 .rec1 h2 {
-   
   width: 30%;
   font-family: Urbanist;
   font-style: normal;
