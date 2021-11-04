@@ -11,7 +11,7 @@ function Map() {
   function showtitle(e) {
     // var d = e.screenX
     console.log()
-    setCursorPosition({ left:(e.screenX - window.innerWidth/10), top:(e.screenY - window.innerHeight/5)});
+    setCursorPosition({ left:(e.screenX - window.innerWidth/10), top:(e.screenY - window.innerHeight/8)});
     setCursorData({ value: e.target.className.animVal });
   }
   function closetitle() {
