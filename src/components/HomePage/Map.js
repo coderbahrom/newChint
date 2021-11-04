@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./map.css";
 
 function Map() {
-  const [content, setContent] = useState("");
   const [cursorPosition, setCursorPosition] = useState({
     left: "1px",
     top: "2px",
