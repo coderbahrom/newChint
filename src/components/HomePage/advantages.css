@@ -40,6 +40,7 @@
 
 #advantages .stat_wrap {
   position: relative;
+  cursor: pointer;
 }
 
 #advantages .stat_number {

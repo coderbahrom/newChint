@@ -44,7 +44,7 @@
 }
 
 
-.homepage_pro_contaier_men1{
+.homepage_pro_contaier_men1,.homepage_pro_contaier_men2,.homepage_pro_contaier_men3{
     display:flex;
     align-items:center;
     justify-content: center;
@@ -55,19 +55,19 @@
     border: 1px solid #63A2F2;
     border-radius:0.73vw;
     cursor: pointer;
+    transition: .4s;
 }
 
-.homepage_pro_contaier_men1 h6{
+.homepage_pro_contaier_men1 h6,.homepage_pro_contaier_men2 h6,.homepage_pro_contaier_men3 h6{
   text-align: center;
- 
-  font-family: SF Pro Display;
+  font-family: 'SF Pro Display';
   font-size: 1.02vw;
   font-style: normal;
   font-weight: 700;
   margin:0;
-
 }
-.homepage_pro_contaier_men1:hover{
+
+.homepage_pro_contaier_men1:hover,.homepage_pro_contaier_men2:hover,.homepage_pro_contaier_men3:hover{
   color:white;
   border: 1.5px solid #FFFFFF;
   transition: 0.4s;
@@ -96,7 +96,7 @@
   align-items:center;
   width:16.7vw;
   height: 4.31vw;;
-  column-gap:1.46vw;
+  column-gap:1.6vw;
   border: 1px solid #FFFFFF;
   border-radius:0.65vw;
   cursor: pointer;
@@ -136,8 +136,8 @@
 .homepage_pro_location{
   display:flex;
   align-items:center;
-  padding-left:2.04vw;
-  column-gap:1.46vw;
+  padding-left:2.2vw;
+  column-gap:2.5vw;
   width:16.77vw;
   height:4.33vw;
   border: 1px solid #FFFFFF;
