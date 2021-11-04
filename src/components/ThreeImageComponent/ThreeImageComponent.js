@@ -6,7 +6,7 @@ function ThreeImageComponent() {
     //  NEWS 
       <div id="news">
         <div class="section_title_wrap">
-          <Link class="section_title">Новости</Link>
+          <Link to='/news' class="section_title">Новости</Link>
           <div class="section_title_underline"></div>
         </div>
 

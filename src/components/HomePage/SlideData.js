@@ -9,7 +9,7 @@ function SlideData({left_title, right_imge, right_image_width_height,slideImageN
                 <p>
                     {left_title}
                 </p>
-                <Link className='slidedata_left_btn'>
+                <Link to='/download' className='slidedata_left_btn'>
                     <p>
                             Cкачать каталог
                     </p>

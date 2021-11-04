@@ -1,5 +1,5 @@
 import './Footer.css'
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
@@ -59,12 +59,14 @@ function Footer() {
                 Подписаться на рассылку
               </button>
               <br />
+              <Link  to='/download'>
               <button class="footer_oultined_btn">Скачать каталог</button>
+              </Link>
             </div>
             <div className="low_volt_links">
               <a className="low_volt_link" href>О компании </a>
               <br />
-              <a className="low_volt_link" href>Скачать</a>
+              <Link  to='/download'>   <a className="low_volt_link" href>Скачать</a> </Link>
               <br />
               <a className="low_volt_link" href>Где купить </a>
               <br />
