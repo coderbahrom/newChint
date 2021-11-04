@@ -62,9 +62,9 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   line-height: 112px;
   letter-spacing: 0.05em;
   color: #1e59a4;
+  transition: all 0.5s;
 }
-.rec1 h1 {
-   
+.rec1 h2 {
   width: 30%;
   font-family: Urbanist;
   font-style: normal;
@@ -93,6 +93,18 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.5s;
+}
+/* .rec1:hover{
+    background-position:top left;
+    background-size: 14.2vw 14.2vw;
+    padding-left: 4vw;
+   
+} */
+.number1:hover h1{
+  background-position:top left;
+  background-size: 14.2vw 14.2vw;
+  padding-left: 4vw;
 }
 .campus {
   width: 53%;
@@ -160,7 +172,13 @@ color: #1E59A4;
  
     background-position: top right;
    
+  transition: all 0.5s;
     
+  }
+  .fifty:hover{
+    background-position:top left;
+    background-size: 14.2vw 14.2vw;
+    padding-left: 1.2vw;
   }
   .Products{
     margin-top: 130px;

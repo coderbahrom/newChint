@@ -16,12 +16,11 @@
   flex-direction: column;
   align-items:center;
 }
+
 .swiper-pagination{
   top:42vw;
 }
-.swiper-wrapper{
-  
-}
+
 .swiper-slide {
   text-align: center;
   font-size: 1.31vw;

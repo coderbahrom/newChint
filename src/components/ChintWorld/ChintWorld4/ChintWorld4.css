@@ -60,6 +60,7 @@
   border-radius: 10px;
   width: 246px;
   height: 58px;
+  transition: transform 0.5s;
 }
 .send-btn button {
   font-family: Urbanist;
@@ -68,4 +69,8 @@
   font-size: 14.7195px;
   line-height: 22px;
   color: #ffffff;
+}
+.send-btn button:hover{
+  box-shadow:1px 1px 5px grey;
+  transform:scale(1.05);
 }

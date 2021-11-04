@@ -1,11 +1,20 @@
 import React from 'react'
 
 export default function LeftContent(props) {
+  const scalling={
+    height: "65vh",
+    // transform: "scale(1)",
+    transition:"height 0.7s"
+  }
+  const scalling1={
+    height: "0",
+    transform: "scale(0)"
+  }
     return (
         <div>
-             <div style={{...props.styles, opacity:props.setOpacity}} className="left-text">
+             <div className="left-text">
            
-            <ul className="list">
+            <ul style={props.show1===true &&props.id===2? scalling:scalling1} className="list">
               <li>Second One</li>
               <li>Модульное оборудование</li>
               <li>Контакторы, реле, пускатели</li>

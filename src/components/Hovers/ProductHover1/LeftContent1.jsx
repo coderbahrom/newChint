@@ -1,11 +1,19 @@
 import React from 'react'
 
-function LeftContent1() {
-
+function LeftContent1(props) {
+  const scalling={
+    height: "65vh",
+    // transform: "scale(1)",
+    transition:"height 0.7s"
+  }
+  const scalling1={
+    height: "0",
+    transform: "scale(0)"
+  }
     return (
         <div>
          <div className="left-text">
-            <ul className="list">
+            <ul style={props.show2===true &&props.id===3? scalling:scalling1} className="list">
               <li>Модульное оборудование</li>
               <li>Last One</li>
               <li>Контакторы, реле, пускатели</li>

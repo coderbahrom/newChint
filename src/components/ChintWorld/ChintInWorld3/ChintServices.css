@@ -1,8 +1,12 @@
 .img    {
 width: 62px;
 height: 62px; 
-
+transition: transform 0.5s;
     
+}
+.img:hover{
+    /* box-shadow:1px 1px 5px grey; */
+  transform:scale(1.4);
 }
 .services p{
     font-family: Urbanist;

@@ -45,17 +45,10 @@ import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
 SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
-
-  
-
-
-
-
-
 function HomePage() {
-  
   return (
   <>
+  
   <Switch>
   <Route exact path="/">
   <div className="homepage_main_container">
