@@ -3,7 +3,7 @@ import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import ProductsHoverInner from '../ProductsHover_inner/ProductsHover_inner';
-import {Switch,Route } from 'react-router-dom'
+import {Switch,Route, Link } from 'react-router-dom'
 import "./search.css"
 import './showcase.css'
 import './products.css'
@@ -39,7 +39,6 @@ import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
-
 
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
@@ -153,7 +152,9 @@ function HomePage() {
                         data={skachat1_2}
                         type="image/svg+xml"
                         > </object> 
+                       
                         <p>Cкачать каталог</p>
+                        
                 </div>
                 <div className='homepage_pro_location'>
                         <object
@@ -342,6 +343,7 @@ function HomePage() {
          <Route exact  path="/avtomaticheskiy" >
             <ProductsHoverInner3/>
          </Route>
+        
      </Switch>       
     </>
   )
