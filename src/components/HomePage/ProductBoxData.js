@@ -31,19 +31,3 @@ export const ProductBoxData = [
     {images:{img1:product10,img2:product10_2}, title1:'Цифровые измерительные приборы',imghidden:{width:'2.19vw', height:'3.58vw'}},
     {images:{img1:'',img2:''}, title1:``},
 ]
-
-// export const ProductBoxData = [
-//
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:`Модульное оборудование  CHINT`,imghidden:{display:'block',width:'1.9vw', height:'3.8vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Силовое оборудование защиты и коммутации CHINT',imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Контакторы, реле, пускатели CHINT', imghidden:{display:'block',width:'2.34vw', height:'2.92vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Компенсация реактивной мощности CHINT', imghidden:{display:'block',width:'2.04vw', height:'4vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Кнопки управления, индикаторы CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.51vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Оборудование электропитания CHINT',imghidden:{display:'block',width:'3.14vw', height:'2.34vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Выключатель-разъединители/рубильники CHINT',imghidden:{display:'block',width:'3.29vw', height:'3.51vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Приводная техника CHINT',imghidden:{display:'block',width:'2.04vw', height:'3.73vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Щиты и шкафы CHINT',imghidden:{display:'block',width:'2.61vw', height:'3.12vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Аксессуары для шкафов и щитов CHINT',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'Цифровые измерительные приборы',imghidden:{display:'block',width:'2.19vw', height:'3.58vw'}},
-    // {img:{img1:'../assets/icons/product_1.svg',img2:'../assets/icons/product_1.svg'}, title1:'',imghidden:{display:'none'}},
-//   ]

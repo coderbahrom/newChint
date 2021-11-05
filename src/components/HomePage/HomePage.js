@@ -1,7 +1,6 @@
 import Header from '../Navbar/Header'
 import ThreeImageComponent from '../ThreeImageComponent/ThreeImageComponent';
 import Footer from '../Footer/Footer';
-import ProductsHover2 from '../Hovers/ProductHover1/ProductsHover2'
 import ProductsHover1 from '../Hovers/ProductHover1/ProductsHover'
 import ProductsHoverInner from '../ProductsHover_inner/ProductsHover_inner';
 import {Switch,Route,} from 'react-router-dom'
@@ -304,11 +303,8 @@ function HomePage() {
       <div class="footer_very_bottom"></div>
        </Route>
 
-         <Route exact path="/product-detail">
+         <Route exact path="/productHover1">
             <ProductsHover1/>
-         </Route>
-         <Route exact path="/catalog">
-            <ProductsHover2/>
          </Route>
           <Route exact  path="/productHover1/products" >
              <ProductsHoverInner/>

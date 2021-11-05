@@ -1,7 +1,23 @@
 import {Link} from 'react-router-dom'
 import './news.css'
-
+import NewsImage from './NewsImage'
+import {useState} from 'react'
 function ThreeImageComponent() {
+  const [newsData,setNewsData] = useState([
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    
+  ])
+  
+  function addNewsData(){
+    const getnewsData = [
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},]
+    
+    setNewsData([...newsData,...getnewsData])
+  }
   return (
     //  NEWS 
       <div id="news">
@@ -11,41 +27,12 @@ function ThreeImageComponent() {
         </div>
 
         <div class="news_list">
-          <div class="news_card">
-            <div class="news_img">
-              <img src="./assets/images/news1.jpg" alt="" />
-            </div>
-            <div class="news_date">15.09.2021 | 20:21</div>
-            <p class="news_desc">
-              С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,
-              Москва
-            </p>
-          </div>
-
-          <div class="news_card">
-            <div class="news_img">
-              <img src="./assets/images/news2.jpg" alt="" />
-            </div>
-            <div class="news_date">15.09.2021 | 20:21</div>
-            <p class="news_desc">
-              С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,
-              Москва
-            </p>
-          </div>
-
-          <div class="news_card">
-            <div class="news_img">
-              <img src="./assets/images/news.jpg" alt="" />
-            </div>
-            <div class="news_date">15.09.2021 | 20:21</div>
-            <p class="news_desc">
-              С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,
-              Москва
-            </p>
-          </div>
+            {newsData.map((item, index)=>{
+              return <NewsImage img={item.img} newsDate={item.newsDate} newsDesc={item.newsDesc} key={index}/>
+            })}
         </div>
         <div className={'news_btn_wrapper'}>
-              <div className={'news_btn'}>
+              <div onClick={addNewsData} className={'news_btn'}>
                   <p>Показать ещё</p>
               </div>
         </div>

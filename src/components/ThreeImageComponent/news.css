@@ -8,6 +8,10 @@
 
 #news .news_card {
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  
+
 }
 
 #news .news_img {
@@ -16,6 +20,7 @@
   background-color: gray;
   border-radius: 1.3vw;
   transition:.4s;
+  cursor: pointer;
 }
 
 #news .news_img:hover{
@@ -31,22 +36,26 @@
 }
 
 #news .news_date {
-  margin: 1vw 0;
-  margin-top: 2vw;
+  margin: 1.9vw 0 0.88vw 0;
   color: var(--primary);
   font-size: 0.7vw;
 }
 
 #news .news_desc {
-  font-weight: 700;
-  font-size: 1vw;
   width:fit-content;
+  font-family: 'SF Pro Display';
+  font-size: 0.87vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.02vw;
   color:#393939;
 }
 
 #news .news_list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap:1.5vw;
 }
 #news .news_btn_wrapper{
   display: flex;
@@ -63,9 +72,12 @@
   margin-top:5.5vw;
   transition: 0.4s;
 } 
+
 #news .news_btn_wrapper .news_btn:hover{
   box-shadow: 0px 1px 2px #75A1D2;
+  transform: perspective;
 }
+
 #news .news_btn_wrapper .news_btn p{
   font-family: SF Pro Display;
   font-size: 0.87vw;
@@ -76,6 +88,7 @@
   margin:0;
   color:#3C79BF;
 }
+
 .section_title_wrap {
   display: flex;
   justify-content: center;
@@ -86,9 +99,14 @@
 
 .section_title_wrap .section_title {
   color: var(--primary);
-  font-size: 1.6vw;
   cursor: pointer;
   text-decoration:none;
+  font-family: 'Urbanist';
+  font-size: 1.75vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.12vw;
+
 }
 
 .section_title_wrap .section_title_underline {
