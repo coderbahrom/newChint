@@ -10,8 +10,8 @@ function Map() {
 
   function showtitle(e) {
     // var d = e.screenX
-    console.log()
-    setCursorPosition({ left:(e.screenX - window.innerWidth/10), top:(e.screenY - window.innerHeight/8)});
+    console.log(e.screenX,e.screenY)
+    setCursorPosition({ left:(e.screenX-(window.innerWidth*27.5)/200), top:(e.screenY)});
     setCursorData({ value: e.target.className.animVal });
   }
   function closetitle() {
@@ -49,7 +49,7 @@ function Map() {
           stroke-linejoin="round"
           stroke-width=".2"
           version="1.2"
-          viewBox="0 0 1950 860"
+          viewBox="230 0 1366 880"
           width="80vw"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1339,7 +1339,7 @@ function Map() {
             id="SR"
             onMouseOver={showtitle}
             onMouseLeave={closetitle}
-            class="Suriname"
+            class="Surion" MouseOver={showtitle} onMouseLeave={closetitle}
           ></path>
           <path
             d="M1098.1 187.7l-1.2 1.7-0.7 2.5-1 0.6-5.5-1.9-1.6 0.4-1 1.5-2.3 0.8-0.6-0.4-2.3 0.9-1.9 0.2-0.3 1.3-4.1 0.7-1.9-0.6-2.7-1.7-0.7-2.1 0.3-0.8 0.6-1.4 2.2 0.1 1.6-0.6 0.1-0.6 0.9-0.3 0.2-1.4 1.1-0.3 0.7-1.1 1.5 0 0.3 0.4 1.9-0.9 2.7 2.2 2.8-1.3 2.4 0.6 3.5-0.9 5 2.4z"
@@ -3045,9 +3045,9 @@ function Map() {
             class="Fiji"
             d="M 1994.4 606 1994 606.4 1993.2 607.5 1992.9 607.6 1992.2 608 1992 608.6 1991.6 608.8 1991.4 609.1 1991.3 609.3 1991.6 609.4 1992.2 609.1 1992.3 609 1992.6 608.7 1992.8 608.4 1993.4 608.1 1993.7 607.8 1994.3 607.5 1994.3 607.8 1993.8 608.5 1993.6 608.6 1993.7 609.2 1993.4 609.5 1993.1 609.2 1992.7 609.2 1992.2 609.3 1991.8 609.6 1991.1 609.7 1990.1 609.7 1990.6 609.2 1990.2 609 1989.6 609.2 1989.2 609.4 1989.2 609.6 1988.9 609.7 1988.7 609.8 1988.6 610.2 1988.4 610.5 1988.1 610.4 1988.1 610.2 1987.7 610.1 1987.3 610.3 1987.1 610.8 1986.8 611 1986.5 611 1986.5 610.7 1986.5 610.3 1986.3 609.9 1986.4 609.7 1986.3 609.6 1985.7 609.8 1985.7 609.4 1986.1 609.1 1986.2 609.1 1986.1 608.6 1986.4 608.5 1986.9 608.8 1987.5 608.4 1987.7 608.4 1988 608.1 1988.2 608.1 1988.5 607.8 1988.5 607.6 1989.3 607.5 1990.2 607.2 1990.5 607.1 1990.9 607.2 1991.4 607 1991.6 606.6 1991.8 606.6 1992 606.2 1992.4 606.3 1992.5 606.1 1992.7 606.2 1993.7 605.7 1993.8 606 1994 605.9 1994.2 606 1994.5 605.7 1995 605.5 1995.1 605.6 1994.6 606 1994.4 606 Z"
           ></path>
-          <circle cx="997.9" cy="189.1" id="0"></circle>
-          <circle cx="673.5" cy="724.1" id="1"></circle>
-          <circle cx="1798.2" cy="719.3" id="2"></circle>
+          <circle cx="997.9" cy="189.1" r='17' id="0"></circle>
+          <circle cx="673.5" cy="724.1" r='17' id="1"></circle>
+          <circle cx="1798.2" cy="719.3" r='17' id="2"></circle>
         </svg>
         <div style={cursorPosition} className="showMapTitle">
           {cursorData.value}
