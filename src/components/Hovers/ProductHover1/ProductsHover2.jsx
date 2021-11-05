@@ -59,11 +59,14 @@ function ProductsHover2() {
   }
 const styling={
   color: "#1E59A4",
-  border: "1px solid #1E59A4"
+  border: "1px solid #1E59A4",
+  boxSizing:"border-box"
 }
 const styling1={
-  color: "#808183",
-  border: "1px solid #808183"
+  color: "#A8A8A8",
+  border: "1px solid #E1E1E1",
+  boxSizing:"border-box"
+ 
 }
     return (
         <>
