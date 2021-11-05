@@ -22,10 +22,12 @@
 
 #nav ul li,
 #nav .nav_logo,
-#nav .call {
+#nav .call{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
 }
 #nav .nav_logo svg {
   width: 7vw;

@@ -4,7 +4,7 @@ import ThreeImageComponent from "../ThreeImageComponent/ThreeImageComponent";
 import Footer from "../Footer/Footer";
 import ProductsHover1 from "../Hovers/ProductHover1/ProductsHover";
 import ProductsHoverInner from "../ProductsHover_inner/ProductsHover_inner";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import "./search.css";
 import "./showcase.css";
 import "./products.css";
