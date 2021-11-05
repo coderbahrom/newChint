@@ -24,10 +24,11 @@
 .body2 {
   display: flex;
   flex-direction: row;
-  column-gap: 48px;
+  justify-content: center;
+  column-gap: 7.514vw;
   margin-top: 40px;
   background-color: white;
-  width: 100%;
+  /* width: 100%; */
 }
 .switch img {
   width: 183px;
@@ -180,8 +181,10 @@
 }
 .advantages {
   margin-top: 75px;
-  /* display: flex;
-  flex-direction: column; */
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
 }
 .advantages h1 {
   font-family: Lato;
@@ -224,7 +227,7 @@
   font-weight: 300;
   line-height: 14px;
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
 }
 .content3:hover {
   border: 0.743056px solid blue;
@@ -234,6 +237,8 @@
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .vedios h1 {
   font-family: Lato;
@@ -251,8 +256,8 @@
   column-gap: 45px;
 }
 .youtube iframe {
-  width: 252.64px;
-  height: 230.35px;
+  width: 27vw;
+  height: 20vw;
   border-radius: 18.5764px;
 }
 .textarea {
@@ -263,12 +268,13 @@
 }
 .textarea h1 {
   font-family: Lato;
-  font-size: 18px;
+  font-size: 1.4vw;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  margin-left: 7vw;
 }
 .rec {
   display: flex;
@@ -284,6 +290,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #393939;
+  
 }
 .rec img{
   width: 14px;

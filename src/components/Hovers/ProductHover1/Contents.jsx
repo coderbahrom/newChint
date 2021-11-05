@@ -3,8 +3,9 @@ import { useState } from "react";
 import LeftContent from "./LeftContent";
 import LeftContent1 from "./LeftContent1";
 import "./ProductsHover.css";
-import arrowBlue from "../../assets/images/arrow-blue.png";
-import arrowWhite from "../../assets/images/arrow-white.png";
+import vector from '../../assets/icons/Vector.svg'
+// import arrowBlue from "../../assets/images/arrow-blue.png";
+// import arrowWhite from "../../assets/images/arrow-white.png";
 function Contents(props) {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
@@ -12,15 +13,37 @@ function Contents(props) {
   const [transform, setTransform] = useState(false);
   console.log(opacity);
   const stil = {
-    transform: "rotate(360deg)",
-    backgroundColor: "rgba(30, 89, 164, 1)",
+    transform: "rotate(180deg)",
+    fill: "#ffffff",
     transition: "transform 0.7s",
+  
+    display:"flex",
+    justifyContent:"center",
+    alignItems:'center'
+    
+    
   };
   console.log(setOpacity);
   const stil1 = {
     transform: "rotate(0deg)",
-    transition: "transform 0.7s",
+    transition: "transform backgroundColor 0.7s",
+    
   };
+  const bgcolor={
+    backgroundColor:"rgb(34, 137, 255)",
+   color:"#ffffff",
+   marginBottom:"1vw",
+   marginTop:"10px"
+    
+  }
+  const bgcolor1={
+   
+    // color:"black"
+
+  }
+  const arrowTop={
+    fill:"#ffffff",
+  }
 
   function toggle() {
     setShow1((prev) => !prev);
@@ -30,21 +53,16 @@ function Contents(props) {
 
   return (
     <>
-      <div className={"foot"} onClick={toggle}>
-        <div>
-          <h1>{props.data.title}</h1>
-          <hr className={"hr1"} />
+      <div  style={transform === true ? bgcolor : bgcolor1} className={"foot"} onClick={toggle}>
+        <div className={'title'}>
+          <h1 style={transform === true ? bgcolor : bgcolor1}>{props.data.title}</h1>
+         
         </div>
         <div style={transform === true ? stil : stil1} className="arrow1">
-          {/* <svg  id="bgcolor" width="12px" height="13px" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path  style={transform===true? bgcolor1:bgcolor } d="M5.55273 1.3353L5.55273 11.6216" stroke="red" />
-<path style={transform===true? bgcolor:bgcolor1 }  d="M9.76074 7.41356L5.55272 11.6216L1.34469 7.41356" stroke="blue" />
-</svg> */}
-          {transform === true ? (
-            <img src={arrowWhite} alt="" />
-          ) : (
-            <img src={arrowBlue} alt="" />
-          )}
+        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path  style={ transform === true ? arrowTop:stil1}d="M9.76758 1.49412L5.55955 5.70215L1.35153 1.49412" stroke="#1E59A4" stroke-width="1.5677" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
         </div>
       </div>
       <LeftContent show1={show1} id={props.data.id} />

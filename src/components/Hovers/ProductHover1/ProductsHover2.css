@@ -1,0 +1,39 @@
+
+.wrapper {
+    display: flex;
+    width: 72.5%;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 25px;
+    justify-content: center;
+    height: 100%;
+   
+  }
+  .body1 {
+    width: 100%;
+  
+    background: white;
+  }
+  .wrapall {
+    width: 72.5%;
+    margin: 0 auto;
+  }
+  .tab {
+      display: flex;
+      flex-direction:row ;
+      gap:1.977vw;
+      width: 72.5%;
+      margin: 0 auto;
+  }
+  .tab button{
+    border: 1px solid #1E59A4;
+    box-sizing: border-box;
+    width: 20.937vw;
+    height: 5vw;
+    font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 1.1vw;
+line-height :17px;
+color: #1E59A4;
+  }

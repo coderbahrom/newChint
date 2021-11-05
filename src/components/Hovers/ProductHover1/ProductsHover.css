@@ -90,20 +90,16 @@
   box-sizing: border-box;
   border-radius: 50%;
 }
-.arrow1 {
-  width: 26px;
-  height: 26px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 1.6px solid #1e59a4;
-}
-.arrow1 img {
-  width: 8px;
-  height: 10px;
+
+.arrow1 svg {
+  width: 1.3vw;
+  height: 1.3vw;
+ 
   cursor: pointer;
+}
+.arrow1{
+  padding-top: 10px;
+  margin-right: 10px;
 }
 
 .list {
@@ -134,19 +130,34 @@
 .foot {
   display: flex;
   flex-direction: row;
+  /* column-gap: 0.5vw; */
+  /* justify-content: space-around; */
+  width: 100%;
+  height: 50px;
+  /* background-color: rgb(255, 250, 250); */
+  border-bottom: 1px solid rgb(246, 238, 238);
 }
 .foot h1 {
-  font-family: Urbanist;
+  font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #393939;
   width: 16.764vw;
+  padding-left: 10px;
+  
+
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 .foot hr {
-  width: 280px;
+  width: 100%;
   margin-top: 12px;
-  border: 0.783848px solid #dbdbdb;
+  border: 0.783848px solid #353131;
 }
 

@@ -42,7 +42,7 @@ function ProductsHover_inner3(props) {
           <h1>Номинальный ток:</h1>
           <div className="container1">
             {data.map((value, index) => {
-              return <Numbers data={value} />;
+              return <Numbers key={index} data={value} />;
             })}
           </div>
           <h1>Количество полюсов:</h1>
