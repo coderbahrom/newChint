@@ -5,7 +5,7 @@
 }
 
 #nav {
-  height: 7vw;
+  height: 5vw;
   display: flex;
   background-color: var(--secondary);
   justify-content: space-between;
@@ -79,7 +79,7 @@
 
 #Hover {
   overflow: hidden;
-  top: 7vw;
+  top: 5vw;
   position: absolute;
 
   /*  */
@@ -95,7 +95,7 @@
   transition: height 0.5s;
 }
 #Hover1 {
-  top: 7vw;
+  top: 5vw;
   position: absolute;
   display: flex;
   flex-direction: row;

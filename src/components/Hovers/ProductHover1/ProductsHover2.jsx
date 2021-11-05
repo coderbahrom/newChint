@@ -3,6 +3,7 @@ import Header from '../../Navbar/Header'
 import Head from './Head'
 import "./ProductsHover2.css";
 import { useState } from 'react';
+import Footer from '../../Footer/Footer'
 import image2 from '../ProductHover1/Catalog/catalog-images/image2.svg'
 import image3 from '../ProductHover1/Catalog/catalog-images/image3.svg'
 import image4 from '../ProductHover1/Catalog/catalog-images/image4.svg'
@@ -101,6 +102,7 @@ const styling1={
           </div>}
           
           </div>
+        <Footer/>
           </div>
           </>
     )
