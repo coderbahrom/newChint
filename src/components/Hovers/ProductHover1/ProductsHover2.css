@@ -11,7 +11,6 @@
   }
   .body1 {
     width: 100%;
-  
     background: white;
   }
   .wrapall {
@@ -23,10 +22,10 @@
       flex-direction:row ;
       gap:1.977vw;
       width: 72.5%;
-      margin: 0 auto;
+     
   }
   .tab button{
-    border: 1px solid #1E59A4;
+    border: 1px solid #808183;
     box-sizing: border-box;
     width: 20.937vw;
     height: 5vw;
@@ -35,5 +34,43 @@ font-style: normal;
 font-weight: 500;
 font-size: 1.1vw;
 line-height :17px;
-color: #1E59A4;
+
+  }
+
+
+  
+  .product-catalog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1.3vw;
+    margin-top:4vw
+  }
+  .catalog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+border: 0.783848px solid rgba(30, 89, 164, 0.3);
+box-sizing: border-box;
+border-radius: 20px;
+transition: transform .5s;
+    
+  }
+  .catalog:hover{
+    box-shadow:1px 1px 5px grey;
+    transform:scale(1.05);
+  }
+  .catalog-img{
+    object-fit: cover;
+  }
+  .tit h1{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 19px;
+    text-align: center;
+    color: #1E59A4;
+    width: 15vw;
   }

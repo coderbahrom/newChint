@@ -3,9 +3,6 @@ import { useState } from "react";
 import LeftContent from "./LeftContent";
 import LeftContent1 from "./LeftContent1";
 import "./ProductsHover.css";
-import vector from '../../assets/icons/Vector.svg'
-// import arrowBlue from "../../assets/images/arrow-blue.png";
-// import arrowWhite from "../../assets/images/arrow-white.png";
 function Contents(props) {
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
@@ -60,7 +57,7 @@ function Contents(props) {
         </div>
         <div style={transform === true ? stil : stil1} className="arrow1">
         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path  style={ transform === true ? arrowTop:stil1}d="M9.76758 1.49412L5.55955 5.70215L1.35153 1.49412" stroke="#1E59A4" stroke-width="1.5677" stroke-linecap="round" stroke-linejoin="round"/>
+<path style={ transform === true ? arrowTop:stil1 } d="M9.76758 1.49412L5.55955 5.70215L1.35153 1.49412" stroke="#1E59A4" stroke-width="1.5677" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
         </div>
