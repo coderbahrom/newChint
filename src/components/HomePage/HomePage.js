@@ -151,17 +151,17 @@ function HomePage(){
                   <span></span>
             </div>
             <div className='homepage_pro_contaier_menyu'>
-                <div style={proActive.stateActive1 ? styleProActive : {}} onClick={proActiveFun1}className='homepage_pro_contaier_men1'>
+                <div style={proActive.stateActive1 ? styleProActive : {}} onClick={proActiveFun1} className='homepage_pro_contaier_men1'>
                     <h6>
                         Низковольтное оборудование
                     </h6>
                 </div>
-                <div style={proActive.stateActive2 ? styleProActive : {}} onClick={proActiveFun2}className='homepage_pro_contaier_men2'>
+                <div style={proActive.stateActive2 ? styleProActive : {}} onClick={proActiveFun2} className='homepage_pro_contaier_men2'>
                     <h6>
                         Оборудование <br/>распределения и передачи
                     </h6>
                 </div>
-                <div style={proActive.stateActive3 ? styleProActive : {}} onClick={proActiveFun2}className='homepage_pro_contaier_men3'>
+                <div style={proActive.stateActive3 ? styleProActive : {}} onClick={proActiveFun3} className='homepage_pro_contaier_men3'>
                     <h6>
                         Электроустановочные <br/>изделия
                     </h6>
