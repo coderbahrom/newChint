@@ -1,0 +1,77 @@
+
+.wrapper {
+    display: flex;
+    width: 72.5%;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 25px;
+    justify-content: center;
+    height: 100%;
+   
+  }
+  .body {
+    width: 100%;
+    background: white;
+  }
+  .wrapall {
+    width: 72.5%;
+    margin: 0 auto;
+  }
+  .tab {
+      display: flex;
+      flex-direction:row ;
+      gap:1.977vw;
+      width: 72.5%;
+     
+  }
+  .tab button{
+    /* border: 1px solid #E1E1E1; */
+    box-sizing: border-box;
+    width: 20.937vw;
+    height: 5vw;
+    font-family: "SF Pro Display";
+font-style: normal;
+font-weight: 500;
+font-size: 1.1vw;
+line-height :17px;
+
+  }
+
+
+  
+  .product-catalog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1.3vw;
+    margin-top:4vw;
+    margin-bottom: 10vw;
+  }
+  .catalog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+border: 0.783848px solid rgba(30, 89, 164, 0.3);
+box-sizing: border-box;
+border-radius: 20px;
+transition: transform .5s;
+    
+  }
+  .catalog:hover{
+    box-shadow:1px 1px 5px grey;
+    transform:scale(1.05);
+  }
+  .catalog-img{
+    object-fit: cover;
+  }
+  .tit h1{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 19px;
+    text-align: center;
+    color: #1E59A4;
+    width: 14vw;
+  }
