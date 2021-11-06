@@ -40,8 +40,13 @@ import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
+import {useState} from 'react'
+import SwiperCore, {
+  Pagination,Navigation,Mousewheel,Keyboard
+} from 'swiper';
+SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
-<<<<<<< HEAD
+
 function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
@@ -72,12 +77,9 @@ function HomePage(){
       setProActive({stateActive1:false,stateActive2:false,stateActive3:true})
       filterFun("f3")
   }
-=======
-import SwiperCore, {
-  Pagination,Navigation,Mousewheel,Keyboard
-} from 'swiper';
-SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
-function HomePage() {
+
+
+
   return (
   <>
   
@@ -149,28 +151,33 @@ function HomePage() {
                   <span></span>
             </div>
             <div className='homepage_pro_contaier_menyu'>
-                <div className='homepage_pro_contaier_men1'>
+                <div style={proActive.stateActive1 ? styleProActive : {}} onClick={proActiveFun1}className='homepage_pro_contaier_men1'>
                     <h6>
                         Низковольтное оборудование
                     </h6>
                 </div>
-                <div className='homepage_pro_contaier_men1'>
+                <div style={proActive.stateActive2 ? styleProActive : {}} onClick={proActiveFun2}className='homepage_pro_contaier_men2'>
                     <h6>
                         Оборудование <br/>распределения и передачи
                     </h6>
                 </div>
-                <div className='homepage_pro_contaier_men1'>
+                <div style={proActive.stateActive3 ? styleProActive : {}} onClick={proActiveFun2}className='homepage_pro_contaier_men3'>
                     <h6>
                         Электроустановочные <br/>изделия
                     </h6>
                 </div>
             </div>
-            <div className='homepage_pro_contaier_box'>
-                {
-                 ProductBoxData.map((item,index)=>{
-                    return <ProductBox key={index} images={item.images} pro_box_title={item.title1} imghidden={item.imghidden}/>
-                  })
-                }    
+            <div className="homepage_pro_contaier_box">
+                {productMainData.map((item, index) => {
+                  return (
+                    <ProductBox
+                      key={index}
+                      images={item.images}
+                      pro_box_title={item.title1}
+                      imghidden={item.imghidden}
+                    />
+                  );
+                })}   
             </div>
 
             <div className='homepage_pro_down_loc'> 
@@ -203,8 +210,6 @@ function HomePage() {
                         <p>Где купить</p>
                 </div>        
             </div>
->>>>>>> f06bc8bea5a4a1ad3cac65f95e69c6e3a60bd65d
-
 
         </div>
     </div>
@@ -229,19 +234,6 @@ function HomePage() {
                 <h1 class="stat_number">33</h1>
                 <span class="stat_title">Года на рынке </span>
               </div>
-<<<<<<< HEAD
-              <div className="homepage_pro_contaier_box">
-                {productMainData.map((item, index) => {
-                  return (
-                    <ProductBox
-                      key={index}
-                      images={item.images}
-                      pro_box_title={item.title1}
-                      imghidden={item.imghidden}
-                    />
-                  );
-                })}
-=======
               <div class="stat_wrap">
                 <div class="stat_rect"></div>
                 <h1 class="stat_number">47 000</h1>
@@ -249,7 +241,6 @@ function HomePage() {
                   >Изделий различного <br />
                   назначения</span
                 >
->>>>>>> f06bc8bea5a4a1ad3cac65f95e69c6e3a60bd65d
               </div>
               <div class="stat_wrap">
                 <div class="stat_rect"></div>
