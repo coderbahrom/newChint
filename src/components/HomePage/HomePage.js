@@ -51,7 +51,7 @@ function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
-
+console.log(setProductMainData2)
   function filterFun(filterVal){
       const FilteredData = productMainData2.filter((item,index)=>{
           return filterVal===item.filter

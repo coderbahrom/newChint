@@ -1,7 +1,6 @@
 import React from 'react'
 import Squre from './Squre'
 import filter1 from '../assets/images/filter1.png'
-import {useState} from 'react'
 import './Content_data_left.css'
 function ContentDataLeft() {
     return (
