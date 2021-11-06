@@ -43,7 +43,7 @@ function ProductsHover_inner() {
                                  </Link>
                                  <Link className='right_inner_one'>
                                      <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
+                                     <p>DZ47-60, 1-63А, 4.5кА</p>   
                                  </Link>
                             </div>
                         </div>

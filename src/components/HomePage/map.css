@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top:8vw;
+  padding:2vw 0 0 0;
   /* border: 1px solid red; */
 
 }
@@ -31,6 +31,9 @@
 #map .country_representation_title {
   font-size: 7.5vw;
   color: var(--primary);
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 700;
 }
 
 #map .country_representation_desc {

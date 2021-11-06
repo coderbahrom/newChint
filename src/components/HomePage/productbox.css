@@ -25,6 +25,8 @@
     width:4.3vw;
     display:flex;
     justify-content: center;
+    height:3.5vw;      
+    width:3vw;
 }
 
 
@@ -44,7 +46,10 @@
     
 }
 .product_box_icon1,.product_box_icon2{
-    height:3vw;      
+    /* height:3vw;      
+    width:2.98vw; */
+    object-fit: cover;
+    cursor: pointer;
 }
 .product_box_icon2{
     display: none;

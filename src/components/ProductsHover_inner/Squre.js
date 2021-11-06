@@ -3,7 +3,7 @@ import './Squre.css'
 function Squre() {
     return (
        <>
-            <button className='squreRang'><font className='rang1'>1P</font><font className='rang2'>(195)</font></button>
+            <div className='squreRang'><p className='rang1'>1P</p><p className='rang2'>(195)</p></div>
        </>
     )
 }

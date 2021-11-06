@@ -10,6 +10,7 @@
     column-gap:1.24vw;
     flex-direction: row;
     align-items: center!important;
+    
 }
 .filter_justify img{
     width:1.9vw;
@@ -24,14 +25,15 @@
     letter-spacing: 0em;
     text-align: left;
     color:#828282;
+    margin:0;
     
 
 }
 .line_title hr{
-    margin:1.39vw 0 1.68vw 0;
-    height: 0px;
+    margin:1.4vw 0 1.68vw 0;
+    height: 1px;
     width: 16.3vw;
-    color:#D0D0D0;
+    color:#828282;
 
 }
 .line_title p{
@@ -51,4 +53,5 @@
     column-gap:0.87vw;
     row-gap:1.17vw;
     flex-wrap: wrap;
+    margin-bottom:1vw;
 }

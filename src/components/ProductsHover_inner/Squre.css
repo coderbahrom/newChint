@@ -2,6 +2,9 @@
     height:2.34vw;
     width: 6.29vw;
     font-family: Lato;
+    display:flex;
+    justify-content: center;
+    align-items:center;
     font-size: 0.87vw;
     font-style: normal;
     font-weight: 400;
@@ -12,15 +15,18 @@
     border:0;
     cursor: pointer;
     transition: .4s;
+    border:2px solid #F8F8F8;
 }
 .squreRang:hover{
-    border:2px solid #8EACD1;
-    transform: scale(1.08);
-
+    border:2px solid #65a4f2;
 }
 .squreRang .rang1{
-    color:#828282;
+    color:#4f4f4f;
+    width:fit-content;
+    margin:0;
 }
 .squreRang .rang2{
-    color:#C6C6C6;
+    color:#a2a2a2;
+    width:fit-content;
+    margin:0;
 }

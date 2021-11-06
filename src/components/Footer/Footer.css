@@ -10,6 +10,7 @@
     font-size: var(--text14px);
     color: #fff;
     margin-bottom: 2vw;
+    cursor:pointer;
   }
   
   #footer .low_volt_link {
@@ -18,6 +19,7 @@
     color: #fff;
     margin-bottom: 1vw;
     font-size: 0.7vw;
+    cursor: pointer;
   }
   
   #footer .low_volt_link:hover {
@@ -71,6 +73,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 1.5vw;
+    cursor:pointer;
   }
   
   #footer .footer_socials {
@@ -87,3 +90,6 @@
     background-color: #3372c1;
   }
   
+  #footer object:hover{
+    cursor:pointer;
+  }

@@ -16,6 +16,7 @@
 }
 .chintWorld7_skachatContainer:hover{
     box-shadow:-2px 2px 7px grey;
+    cursor: pointer;
 }
 .chintWorld7_skachatContainer img:nth-child(1){
     width:2.53vw;

@@ -45,23 +45,33 @@ SwiperCore.use([Pagination, Navigation, Mousewheel, Keyboard, Autoplay]);
 
 function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
-  
-  console.log(proActive.stateActive1)
+  const [productMainData, setProductMainData] = useState(ProductBoxData)
+  const [productMainData2, setProductMainData2] = useState(ProductBoxData)
 
-  const styleProActive = {
+  function filterFun(filterVal){
+      const FilteredData = productMainData2.filter((item,index)=>{
+          return filterVal===item.filter
+      })
+      setProductMainData([...FilteredData])
+  }
+
+ //product active
+ const styleProActive = {
     color:'white',
     border:'1.5px solid #FFFFFF',
   } 
   
   function proActiveFun1(){
       setProActive({stateActive1:true,stateActive2:false,stateActive3:false})
+      filterFun("f1")
   }
   function proActiveFun2(){
       setProActive({stateActive1:false,stateActive2:true,stateActive3:false})
-
+      filterFun("f2")
   }
   function proActiveFun3(){
       setProActive({stateActive1:false,stateActive2:false,stateActive3:true})
+      filterFun("f3")
   }
 
   return (
@@ -175,7 +185,7 @@ function HomePage(){
                 </div>
               </div>
               <div className="homepage_pro_contaier_box">
-                {ProductBoxData.map((item, index) => {
+                {productMainData.map((item, index) => {
                   return (
                     <ProductBox
                       key={index}

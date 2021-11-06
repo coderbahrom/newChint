@@ -38,9 +38,10 @@
 
 .homepage_pro_contaier_menyu{
   display: flex;
-  column-gap:1.53vw;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin:7.17vw 0 4.68vw 0;
+
 }
 
 
@@ -92,11 +93,11 @@
 .homepage_pro_download{
   border:1px solid red;
   display:flex;
-  padding-left:2.04vw;
   align-items:center;
+  justify-content: center;
   width:16.7vw;
   height: 4.31vw;;
-  column-gap:1.6vw;
+  column-gap:1.46vw;
   border: 1px solid #FFFFFF;
   border-radius:0.65vw;
   cursor: pointer;
@@ -136,8 +137,8 @@
 .homepage_pro_location{
   display:flex;
   align-items:center;
-  padding-left:2.2vw;
-  column-gap:2.5vw;
+  justify-content: center;
+  column-gap:1.46vw;
   width:16.77vw;
   height:4.33vw;
   border: 1px solid #FFFFFF;
