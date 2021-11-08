@@ -2,7 +2,7 @@ import React from 'react'
 import Squre from './Squre'
 import filter1 from '../assets/images/filter1.png'
 import './Content_data_left.css'
-
+import {useState,useEffect} from 'react'
 const SqurePoleData = [
     {pole:'1P',parenthesis:'14'},
     {pole:'2P',parenthesis:'14'},
@@ -43,10 +43,35 @@ const seryaData =[
 ]
 
 function ContentDataLeft(){
+
     const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
+
     function checkedPole(index){
-        
-    } 
+         console.log('collectData');
+
+        setCollectData({...collectData, pole:SqurePoleData[index].pole })
+    }
+
+    function checkedAmper(index){
+        setCollectData({...collectData,Amper:SqureAmperData[index].Amper})
+    }
+    function checkedCapacity(index){
+        setCollectData({...collectData,capacity:ultimateCapacity[index].capacity})
+    }
+     function checkedVolt(index){
+        setCollectData({...collectData,volt:VoltData[index].volt})
+    }
+      function checkedCharacter(index){
+        setCollectData({...collectData,char:characteristicData[index].char})
+    }
+      function checkedserya(index){
+        setCollectData({...collectData,serya:seryaData[index].serya})
+    }
+    useEffect(() => {
+    
+    console.log(collectData);
+}, [collectData])
+    
     return (
         <div className='content_data_left'>
                             <div className='filter_justify'>
@@ -72,7 +97,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    SqureAmperData.map((item,index)=>{
-                                         return  <Squre filterTitle1={item.Amper} filterTitle2={item.parenthesis}/>
+                                         return  <Squre onClick={()=>checkedAmper(index)} filterTitle1={item.Amper} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -83,7 +108,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    ultimateCapacity.map((item,index)=>{
-                                         return  <Squre filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  onClick={()=>checkedCapacity(index)} filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                  
@@ -95,7 +120,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                   {
                                    seryaData.map((item,index)=>{
-                                         return  <Squre filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  onClick={()=>checkedserya(index)} filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -106,7 +131,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    VoltData.map((item,index)=>{
-                                         return  <Squre filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  onClick={()=>checkedVolt(index)} filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 
@@ -118,7 +143,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    characteristicData.map((item,index)=>{
-                                         return  <Squre filterTitle1={item.char} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  onClick={()=>checkedCharacter(index)} filterTitle1={item.char} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 
