@@ -63,28 +63,28 @@
   cursor:pointer;
 }
 
-.showMapTitle{
+#map svg .showMapTitle{
   position:absolute;
   color:black;
   font-weight: 700;
   z-index:3;
-  padding:0 1vw;
   font-size:1.02vw;
   margin:0;
+  padding:0;
   border-radius:2vw;
   background-color:white;
   display:flex;
   justify-content: center;
+  align-items:center;
   align-items: center;
+  padding:0 2vw;
 }
 
 
 
 
 @keyframes mymove {
-  0% {r:4px;opacity:1;}
-  50% {r:6px;opacity:0.75;}
-  50% {r:7px;opacity:0.5;}
-  100% {r:4px;opacity:0.1;}
+  0% {r:6px;opacity:1;}
+  100% {r:6px;opacity:1;}
 
 }

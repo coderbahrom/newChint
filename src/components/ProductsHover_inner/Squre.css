@@ -7,7 +7,7 @@
     align-items:center;
     font-size: 0.87vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.02vw;
     letter-spacing: 0em;
     text-align: center;
@@ -16,6 +16,8 @@
     cursor: pointer;
     transition: .4s;
     border:2px solid #F8F8F8;
+    /* pointer-events:none; */
+    padding:0 0.7vw;
 }
 .squreRang:hover{
     border:2px solid #65a4f2;
@@ -24,9 +26,17 @@
     color:#4f4f4f;
     width:fit-content;
     margin:0;
+    margin-right:0.2vw;
+    font-weight:700;
+
 }
 .squreRang .rang2{
     color:#a2a2a2;
     width:fit-content;
     margin:0;
+}
+.squreRang .cancel{
+    width:1vw;
+    margin-left:1vw;
+    display:none;
 }

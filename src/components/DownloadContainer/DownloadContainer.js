@@ -2,11 +2,11 @@ import React from 'react'
 import './DownloadContainer.css'
 import strelka from '../assets/images/strelka.png'
 import pdf from '../assets/images/pdf.png'
-function DownloadContainer(){
+function DownloadContainer({docTitle}){
     return (
         <div className='chintWorld7_skachatContainer'>
             <img src={pdf} alt='rasm'/>
-            <p>NH40 - Паспорт устройства</p>
+            <p>{docTitle}</p>
             <p>Cкачать</p>
             <img src={strelka} alt='rasm'/>
         </div>
