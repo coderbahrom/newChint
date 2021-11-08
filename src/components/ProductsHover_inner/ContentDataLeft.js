@@ -43,7 +43,7 @@ const seryaData =[
 ]
 
 function ContentDataLeft(){
-    const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
+    // const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
     function checkedPole(index){
         
     } 

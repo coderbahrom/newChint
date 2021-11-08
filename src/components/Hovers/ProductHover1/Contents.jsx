@@ -39,7 +39,8 @@ function Contents(props) {
 
   }
   const arrowTop={
-    fill:"#ffffff",
+    // fill:"#ffffff",
+    marginTop:'10px'
   }
 
   function toggle() {
