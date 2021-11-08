@@ -1,13 +1,14 @@
 import './Squre.css'
-import cancel from '../assets/icons/cancel.svg'
+// import cancel from '../assets/icons/cancel.svg'
 // import salom from '../'
-function Squre({filterTitle1,filterTitle2}) {
+function Squre({filterTitle1,filterTitle2,checking,index}) {
+    
     return (
        <>
-            <div className='squreRang'>
+            <div onClick={()=>checking(index)} className='squreRang'>
                 <p className='rang1'>{filterTitle1}</p>
                 <p className='rang2'>({filterTitle2})</p>
-                <img className='cancel' src={cancel}/>
+                {/* <img className='cancel' src={cancel}/> */}
             </div>
        </>
     )
