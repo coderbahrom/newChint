@@ -18,7 +18,7 @@ p{
 
 }
 .case1 p:nth-child(1){
-    font-family: SF Pro Display;
+    font-family:' SF Pro Display'!important;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 400;

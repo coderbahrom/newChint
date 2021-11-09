@@ -23,7 +23,7 @@
 }
 .contents p {
   width: 78%;
-  font-family: Lato;
+  font-family: 'Lato'!important;
   font-size: 1.757vw;
   font-style: normal;
   font-weight: 700;
@@ -34,7 +34,7 @@
 }
 .contents span p {
   width: 89%;
-  font-family: Lato;
+  font-family: 'Lato'!important;
   font-size: 1.171vw;
   font-style: normal;
   font-weight: 400;
@@ -55,7 +55,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   column-gap: 60px;
 }
 .number1 h1 {
-  font-family: Lato;
+  font-family: 'Lato'!important;
   font-style: normal;
   font-weight: bold;
   font-size: 111.881px;
@@ -66,7 +66,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
 }
 .rec1 h2 {
   width: 30%;
-  font-family: Urbanist;
+  font-family: 'Urbanist';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -76,7 +76,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
 .rec1 p {
    
   width: 52%;
-  font-family: Urbanist;
+  font-family: 'Urbanist';
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
@@ -138,7 +138,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
     transition: all ease-in-out .3s;
   }
   .fifty h4{
-font-family: Lato;
+font-family: 'Lato'!important;
 font-style: normal;
 font-weight: 500;
 font-size: 24.8625px;
@@ -147,7 +147,7 @@ color: #1E59A4;
   }
   .fifty h2{
   
-    font-family: Lato;
+    font-family: 'Lato'!important;
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
@@ -157,7 +157,7 @@ color: #1E59A4;
   }
   .fifty p{
       width:70% !important;
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-style: normal;
     font-weight: 100;
     font-size: 18px;
@@ -206,7 +206,7 @@ color: #1E59A4;
     margin-top: 87px;
   }
   .text p{
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-style: normal;
     font-weight: normal;
     font-size: 1.025vw;

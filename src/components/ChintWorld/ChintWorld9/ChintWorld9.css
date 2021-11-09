@@ -15,7 +15,7 @@
 }
 
 .world9_container > p{
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 400;
@@ -38,7 +38,7 @@
 }
 
 .world9_container li{
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 400;

@@ -39,7 +39,7 @@
   row-gap: 30px;
 }
 .text p {
-  font-family: Urbanist;
+  font-family: 'Urbanist';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -63,7 +63,7 @@
   transition: transform 0.5s;
 }
 .send-btn button {
-  font-family: Urbanist;
+  font-family: 'Urbanist';
   font-style: normal;
   font-weight: normal;
   font-size: 14.7195px;

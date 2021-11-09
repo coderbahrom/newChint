@@ -12,7 +12,7 @@
   /* border:1px solid red; */
 }
 #nav ul li {
-  font-family: Lato;
+font-family: "Lato"!important;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -132,7 +132,7 @@
   width: 23.666vw;
 }
 .middle p {
-  font-family: Lato;
+  font-family: "Lato"!important;
   font-style: normal;
   font-weight: normal;
   font-size: 0.878vw;
@@ -176,7 +176,7 @@
 }
 
 .linking {
-  font-family: Lato;
+  font-family:"Lato"!important;
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
@@ -208,7 +208,7 @@
 }
 
 .about p {
-  font-family: Lato;
+  font-family: "Lato"!important;
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
@@ -216,7 +216,7 @@
   color: #d4e7ff;
 }
 .about h1 {
-  font-family: Lato;
+  font-family: "Lato"!important;
   font-style: normal;
   font-weight: bold;
   font-size: 0.98vw;
@@ -236,7 +236,7 @@
 .about1 p,
 .about2 p,
 .about3 p {
-  font-family: Lato;
+  font-family: "Lato"!important;
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
@@ -251,7 +251,7 @@
 }
 
 .down h1 {
-  font-family: Lato;
+  font-family: "Lato"!important;
   font-style: normal;
   font-weight: bold;
   font-size: 0.98vw;

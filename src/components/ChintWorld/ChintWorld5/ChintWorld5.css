@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .world5_title_top p{
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display'!important;
     font-size: 2.63vw;
     font-style: normal;
     font-weight: 700;

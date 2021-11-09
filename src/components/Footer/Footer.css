@@ -32,7 +32,7 @@
   }
 
   #footer .footer_column h2{
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display'!important;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 700;
@@ -42,7 +42,7 @@
     color:#FFFFFF;
   }
   #footer .footer_column h2{
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display'!important;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 700;
@@ -81,7 +81,7 @@
     display: flex;
   }
   
-  #footer .footer_social_circle object {
+  #footer .footer_social_circle img {
     width: 45%;
   }
   
@@ -90,6 +90,7 @@
     background-color: #3372c1;
   }
   
-  #footer object:hover{
+  #footer object.man_svg{
     cursor:pointer;
+    /* width: 500px; */
   }

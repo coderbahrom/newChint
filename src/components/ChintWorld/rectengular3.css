@@ -17,7 +17,7 @@
 }
 
 .rectengular3 h5{
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-size: 5.78vw;
     font-style: normal;
     font-weight: 800;
@@ -28,7 +28,7 @@
     margin-bottom: 1vw;
 }
 .rectengular3 p:nth-child(2){
-    font-family: Urbanist;
+    font-family: 'Urbanist';
     font-size: 1.31vw;
     font-style: normal;
     font-weight: 300;

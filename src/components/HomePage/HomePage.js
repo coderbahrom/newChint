@@ -23,7 +23,7 @@ import ChintWorld8 from '../ChintWorld/ChintWorld8/ChintWorld8'
 import ChintWorld9 from '../ChintWorld/ChintWorld9/ChintWorld9';
 import ChintWorld from '../ChintWorld/ChintWorld'
 import ProductsHoverInner2 from '../ProductsHover_inner2/ProductsHoverInner2'
-import ProductsHoverInner3 from '../ProductsHover_inner/ProductsHoverInner3';
+import ProductsHoverInner3 from '../ProductsHoverInner3/ProductsHoverInner3'
 import slideimage1 from '../assets/images/slideimage1.png'
 import slideimage2 from '../assets/images/slideimage2.png'
 import slideimage3 from '../assets/images/slideimage3.png'
@@ -339,6 +339,10 @@ console.log(setProductMainData2)
           <Map/>
       </div>
       <Footer/>
+<<<<<<< HEAD
+=======
+     
+>>>>>>> 0a5c8a546828708c6c6eaacd79111d3743805e20
        </Route>
 
          <Route exact path="/product-detail">

@@ -57,6 +57,7 @@ function ChintWorld7(){
     const [downloadDocDataMain,setDownloadDocDataMain] = useState(arrData)
     const [extraDownloadDocData,setExtraDownloadDocData] = useState([])
     const [showData,setShowData] = useState({display:'none'})
+    console.log(setDownloadDocDataMain)
     const [world7Active, setWorld7Active] = useState({world7ActiveState1:true,world7ActiveState2:false,world7ActiveState3:false,world7ActiveState4:false})
     function displayNone1(){
         setShowData({display:'none'})
