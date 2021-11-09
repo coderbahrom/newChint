@@ -60,11 +60,16 @@ border-radius: 20px;
 transition: transform .5s;
 padding: 17px 25px;
 
+
+  }
+  object:hover{
+    cursor: pointer;
   }
 
   .catalog:hover{
     box-shadow:1px 1px 5px grey;
     transform:scale(1.05);
+    cursor: pointer;
   }
  
 
