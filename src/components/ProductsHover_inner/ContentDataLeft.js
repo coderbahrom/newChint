@@ -46,7 +46,7 @@ const seryaData =[
 function ContentDataLeft(){
     const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
     const [show, setShow] = useState(false)
-
+    console.log(setShow)
 
     function checkedPole(index){
         SqurePoleData.forEach((item,ind )=> {
