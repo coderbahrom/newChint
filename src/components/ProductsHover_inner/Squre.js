@@ -1,18 +1,15 @@
 import './Squre.css'
 // import cancel from '../assets/icons/cancel.svg'
 // import salom from '../'
-function Squre({filterTitle1,filterTitle2,checking,index,show,id,getIndex,still}) {
-   const styleSqureChecked1 = {
-        backgroundColor:'#005DA9',
-        color:'white',
-    }
+function Squre({filterTitle1,filterTitle2,checking,index,CommongetActive}) {
+ 
     
     return (
        <>
-            <div style={still ? styleSqureChecked1 : {}} onClick={()=>checking(index)} className='squreRang'>
-                <p style={still ? styleSqureChecked1 : {}}  className='rang1'>{filterTitle1}</p>
-                <p style={still ? styleSqureChecked1 : {}}  className='rang2'>({filterTitle2})</p>
-                {/* <img className='cancel' src={cancel}/> */}
+            <div onClick={()=>checking(index)} className={index === CommongetActive ? 'squreRang squreRangActive' : 'squreRang'} >
+                <p className={index === CommongetActive ? 'rang1 rang12Active' : 'rang1'} >{filterTitle1}</p>
+                <p className={index === CommongetActive ? 'rang2 rang12Active' : 'rang2'} >({filterTitle2})</p>
+               
             </div>
        </>
     )

@@ -50,7 +50,7 @@ function Map() {
           <p class="country_representation_desc">
             Стран <br />
             представительств <br />
-            npm install react-tooltip CHINT <br />
+            CHINT <br />
           </p>
         </div>
         <div class="chint_around_world">
@@ -3068,7 +3068,7 @@ function Map() {
             class="Fiji"
             d="M1994.4 606 1994 606.4 1993.2 607.5 1992.9 607.6 1992.2 608 1992 608.6 1991.6 608.8 1991.4 609.1 1991.3 609.3 1991.6 609.4 1992.2 609.1 1992.3 609 1992.6 608.7 1992.8 608.4 1993.4 608.1 1993.7 607.8 1994.3 607.5 1994.3 607.8 1993.8 608.5 1993.6 608.6 1993.7 609.2 1993.4 609.5 1993.1 609.2 1992.7 609.2 1992.2 609.3 1991.8 609.6 1991.1 609.7 1990.1 609.7 1990.6 609.2 1990.2 609 1989.6 609.2 1989.2 609.4 1989.2 609.6 1988.9 609.7 1988.7 609.8 1988.6 610.2 1988.4 610.5 1988.1 610.4 1988.1 610.2 1987.7 610.1 1987.3 610.3 1987.1 610.8 1986.8 611 1986.5 611 1986.5 610.7 1986.5 610.3 1986.3 609.9 1986.4 609.7 1986.3 609.6 1985.7 609.8 1985.7 609.4 1986.1 609.1 1986.2 609.1 1986.1 608.6 1986.4 608.5 1986.9 608.8 1987.5 608.4 1987.7 608.4 1988 608.1 1988.2 608.1 1988.5 607.8 1988.5 607.6 1989.3 607.5 1990.2 607.2 1990.5 607.1 1990.9 607.2 1991.4 607 1991.6 606.6 1991.8 606.6 1992 606.2 1992.4 606.3 1992.5 606.1 1992.7 606.2 1993.7 605.7 1993.8 606 1994 605.9 1994.2 606 1994.5 605.7 1995 605.5 1995.1 605.6 1994.6 606 1994.4 606 Z"
           ></path>
-          <circle clasName='styleCommon' fill="red" stroke="red" style={{cx:"1502.2", cy:"281.9", animation:"mymove 1s infinite"}} id="0"></circle>
+          {/* <circle clasName='styleCommon' fill="red" stroke="red" style={{cx:"1502.2", cy:"281.9", animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' fill="red" stroke="red" style={{cx:"1320.7", cy:"240", animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' fill="red" stroke="red" style={{cx:"665", cy:"589", animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' cx= '574.4' cy= '496' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
@@ -3095,7 +3095,7 @@ function Map() {
           <circle clasName='styleCommon' cx= '1427.6' cy= '348' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' cx= '1725.1' cy= '253' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' cx= '1496.2' cy= '161' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
-          
+           */}
           <text className="showMapTitle" filter="url(#solid)"  style={{font:'normal 1.9vw sans-serif',borderRadious:'0.4vw'}} fill="white" x={cursorPosition.x} y={cursorPosition.y} id="0">{cursorData.value}</text>
           <defs>
             <filter  x="0" y="0" width="1" height="1" id="solid">

@@ -4,7 +4,7 @@ import './ProductsHover_inner.css'
 import Head from '../Hovers/ProductHover1/Head'
 import rasm1 from '../assets/images/rasm1.png'
 import ContentDataLeft from './ContentDataLeft'
-import {Link} from 'react-router-dom'
+
 import Footer from '../Footer/Footer'
 import ProshowData from './ProshowData'
 import {useState} from 'react'
@@ -19,6 +19,7 @@ function ProductsHover_inner() {
     {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
     {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'}
 ])
+console.log(setProshowMainData)
 
     return (
         <>

@@ -45,92 +45,78 @@ const seryaData =[
 
 function ContentDataLeft(){
     const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
-    const [show, setShow] = useState(false)
+    const [getActive1, setGetActive1] = useState('')
+    const [getActive2, setGetActive2] = useState('')
+    const [getActive3, setGetActive3] = useState('')
+    const [getActive4, setGetActive4] = useState('')
+    const [getActive5, setGetActive5] = useState('')
+    const [getActive6, setGetActive6] = useState('')
+ 
 
 
     function checkedPole(index){
-        SqurePoleData.forEach((item,ind )=> {
-            if(index===ind){
-                SqurePoleData[index].still = !SqurePoleData[index].still
-            }
-            else{
-                item.still=false;
-            }
-            
-        });
+        if(getActive1===index){
+            setGetActive1('')
+        }
+        else{
+            setGetActive1(index)
+        }
         
         setCollectData({...collectData, pole:SqurePoleData[index].pole})
     }
 
     function checkedAmper(index){
-         SqureAmperData.forEach((item,ind ) => {
-            if(index===ind){
-                SqureAmperData[index].still=!SqureAmperData[index].still
-            }
-            else{
-                item.still=false;
-            }
-           
-        });
+        if(getActive2===index){
+            setGetActive2('')
+        }
+        else{
+            setGetActive2(index)
+        }
         
         setCollectData({...collectData,Amper:SqureAmperData[index].Amper})
     }
     function checkedCapacity(index){
-        ultimateCapacity.forEach((item,ind )=> {
-             if(index===ind){
-                ultimateCapacity[index].still=!ultimateCapacity[index].still
-            }
-            else{
-                item.still=false;
-            }
-            
-            
-        });
-        
+        if(getActive3===index){
+            setGetActive3('')
+        }
+        else{
+            setGetActive3(index)
+        }
         setCollectData({...collectData,capacity:ultimateCapacity[index].capacity})
        
     }
+    function checkedserya(index){
+        if(getActive4===index){
+            setGetActive4('')
+        }
+        else{
+            setGetActive4(index)
+        }
+       
+        setCollectData({...collectData,serya:seryaData[index].serya})
+  }
      function checkedVolt(index){
-         
-        VoltData.forEach((item,ind ) => {
-            if(index===ind){
-                VoltData[index].still=!VoltData[index].still
-            }
-            else{
-                item.still=false;
-            }
-            
-        });
+        if(getActive5===index){
+            setGetActive5('')
+        }
+        else{
+            setGetActive5(index)
+        }
         
         setCollectData({...collectData,volt:VoltData[index].volt})
     }
+    
+
       function checkedCharacter(index){
-           characteristicData.forEach((item,ind ) => {
-            if(index===ind){
-                characteristicData[index].still=!characteristicData[index].still
-            }
-            else{
-                item.still=false;
-            }
-           
-        });
-          
+        if(getActive6===index){
+            setGetActive6('')
+        }
+        else{
+            setGetActive6(index)
+        }
           setCollectData({...collectData,char:characteristicData[index].char})
     }
-      function checkedserya(index){
-           seryaData.forEach((item,ind ) => {
-            if(index===ind){
-                seryaData[index].still = !seryaData[index].still
-            }
-            else{
-                item.still=false;
-            }
-           
-        });
-         
-          setCollectData({...collectData,serya:seryaData[index].serya})
-    }
-
+    
     useEffect(() => {  
     console.log(collectData);
 }, [collectData])
@@ -149,7 +135,7 @@ function ContentDataLeft(){
 
                                  {
                                      SqurePoleData.map((item,index)=>{
-                                        return <Squre still={item.still}   show={show} checking ={checkedPole} index={index} filterTitle1={item.pole} filterTitle2={item.parenthesis}/>
+                                        return <Squre CommongetActive={getActive1} checking={checkedPole} index={index} filterTitle1={item.pole} filterTitle2={item.parenthesis}/>
                                      })
                                  }
 
@@ -161,7 +147,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    SqureAmperData.map((item,index)=>{
-                                         return  <Squre  still={item.still}  show={show} checking={checkedAmper} index={index} filterTitle1={item.Amper} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  CommongetActive={getActive2} checking={checkedAmper} index={index} filterTitle1={item.Amper} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -172,7 +158,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    ultimateCapacity.map((item,index)=>{
-                                         return  <Squre still={item.still} show={show} checking= {checkedCapacity} index={index} filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommongetActive={getActive3} checking= {checkedCapacity} index={index} filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                  
@@ -184,7 +170,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                   {
                                    seryaData.map((item,index)=>{
-                                         return  <Squre still={item.still}  show={show} checking= {checkedserya} index={index} filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommongetActive={getActive4} checking= {checkedserya} index={index} filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -195,7 +181,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    VoltData.map((item,index)=>{
-                                         return  <Squre still={item.still}  show={show}  checking= {checkedVolt} index={index}filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommongetActive={getActive5}  checking= {checkedVolt} index={index} filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 
@@ -207,7 +193,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    characteristicData.map((item,index)=>{
-                                         return  <Squre still={item.still}  show={show} checking= {checkedCharacter} index={index} filterTitle1={item.char} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommongetActive={getActive6} checking= {checkedCharacter} index={index} filterTitle1={item.char} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 

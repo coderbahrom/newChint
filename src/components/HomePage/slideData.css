@@ -11,14 +11,14 @@
     row-gap:5.8vw;
 }
 .slidedata_left > p{
-    font-family: "Lato"!important;
-    font-size: 2.63vw;
+    font-family: "Lato";
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: 3.17vw;
     letter-spacing: 0em;
-    text-align: left;
     color:#FFFFFF;
+    text-align: left;
 }
 .slidedata_left_btn p{
     width:fit-content;
@@ -38,6 +38,7 @@
     cursor:pointer;
     transition: 0.4s;
     text-decoration: none;
+    
 }
 .slidedata_left .slidedata_left_btn img{
     width:2.19vw;

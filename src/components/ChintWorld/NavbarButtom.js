@@ -3,7 +3,7 @@ import './NavbarButtom.css'
 import {Link} from 'react-router-dom'
 const stylelink = {
     textDecoration: 'none',
-    fontFamily: 'Urbanist',
+    fontFamily: 'Inter',
     fontSize: '0.87vw',
     fontStyle: 'normal',
     fontWeight: '300',

@@ -69,7 +69,7 @@ console.log(setProductMainData2)
       setProActive({stateActive1:true,stateActive2:false,stateActive3:false})
       setProductMainData([...productMainData2])
   }
-  
+
   function proActiveFun2(){
       setProActive({stateActive1:false,stateActive2:true,stateActive3:false})
       filterFun("f2")
@@ -100,11 +100,11 @@ console.log(setProductMainData2)
       spaceBetween={30}
       pagination={{"clickable": true}}
       className="mySwiper"
-      autoplay={{ delay: 5000 }}
+      // autoplay={{ delay: 5000 }}
       >
           <SwiperSlide>
               <SlideData 
-              left_title='Официальный дистрибьютор  в Узбекистане' 
+              left_title='Официальный дистрибьютор в Узбекистане' 
               slideImageNone={{display:'none'}}
               />
           </SwiperSlide>

@@ -29,6 +29,8 @@ function ProductsHover_inner2(){
             capacity:'4.5 кА'
         }
     )
+    console.log(setBoxData)
+    console.log(setProContainerData)
     return (
         <>
         <div className='pro_inner2_main_container'> 

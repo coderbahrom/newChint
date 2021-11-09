@@ -50,7 +50,7 @@
 }
 .right_inner_one:hover{
     box-shadow:-2px 2px 6px grey;
-    transform: scale(1.04)perspective(1000px);  
+    transform: scale(1.04);  
 }
 
 .right_inner_one img{

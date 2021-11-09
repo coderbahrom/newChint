@@ -1,7 +1,7 @@
 
 .pro_hover_inner2_box{
     height: 6.09vw;
-    width: 42.4vw;
+    width: 42.35vw;
     border-radius: 1.08vw;
     display:flex;
     justify-content:center;
@@ -10,6 +10,7 @@
     text-decoration: none;
     border:1px solid #1E59A433;
     transition:.4s;
+   
 }
 
 .pro_hover_inner2_box p{
@@ -20,13 +21,14 @@
 .pro_hover_inner2_box:hover{
     border:1px solid #1E59A4;
     box-shadow:1px 1px 5px grey;
-    transform: scale(1.008);
+    /* transform: scale(1.008); */
+    
 }
 .pro_hover_inner2_box_title{
     display: flex;
     flex-direction: column;
     row-gap:0.36vw;
-    margin:0 2.34vw 0 1.61vw;
+    margin:0 1.7vw 0 1vw;
 }
 .pro_hover_inner2_box_title p:nth-child(1){
     font-family: Lato;
@@ -39,7 +41,7 @@
 }
 .pro_hover_inner2_box_title p:nth-child(2){
     font-family: "Inter";
-    font-size: 1.02vw;
+    font-size: 0.97vw;
     font-style: normal;
     font-weight: 500;
     line-height: 1.17vw;

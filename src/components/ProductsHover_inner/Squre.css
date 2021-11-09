@@ -1,16 +1,9 @@
 .squreRang{
     height:2.34vw;
     width: 6.29vw;
-    font-family: 'Lato';
     display:flex;
     justify-content: center;
     align-items:center;
-    font-size: 0.87vw;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.02vw;
-    letter-spacing: 0em;
-    text-align: center;
     background-color:#F8F8F8;
     border:0;
     cursor: pointer;
@@ -18,28 +11,41 @@
     border:2px solid #F8F8F8;
     padding:0 0.7vw;
 }
+
 .squreRang:hover{
-    border:2px solid #65a4f2;
+    border:1px solid #65a4f2;
 }
-.squreRang .rang1{
+ .rang1{
     color:#4f4f4f;
     width:fit-content;
     margin:0;
     margin-right:0.2vw;
     font-weight:700;
+    font-size: 0.87vw;
+    font-family: 'Lato';
+    font-style: normal;
 
 }
-.squreRang .rang2{
+
+
+.rang2{
     color:#a2a2a2;
     width:fit-content;
     margin:0;
+    font-size: 0.87vw;
+    font-family: 'Lato';
+    font-style: normal;
 }
-.squreRang .cancel{
+.cancel{
     width:1vw;
     margin-left:1vw;
     display:none;
+    font-weight:500;
 }
-/* .styleSqureChecked1{
-    background-color:blue;
+.squreRangActive{
+    background-color:rgb(34, 34, 255);
     color:#cafdff,
-} */
+}
+.rang12Active{
+    color:white;
+}
