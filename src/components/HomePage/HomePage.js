@@ -339,10 +339,7 @@ console.log(setProductMainData2)
           <Map/>
       </div>
       <Footer/>
-<<<<<<< HEAD
-=======
      
->>>>>>> 0a5c8a546828708c6c6eaacd79111d3743805e20
        </Route>
 
          <Route exact path="/product-detail">

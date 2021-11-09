@@ -49,47 +49,85 @@ function ContentDataLeft(){
 
 
     function checkedPole(index){
-        SqurePoleData.forEach(item => {
-            item.still=false;
+        SqurePoleData.forEach((item,ind )=> {
+            if(index===ind){
+                SqurePoleData[index].still = !SqurePoleData[index].still
+            }
+            else{
+                item.still=false;
+            }
+            
         });
-        SqurePoleData[index].still = !SqurePoleData[index].still
+        
         setCollectData({...collectData, pole:SqurePoleData[index].pole})
     }
 
     function checkedAmper(index){
-         SqureAmperData.forEach(item => {
-            item.still=false;
+         SqureAmperData.forEach((item,ind ) => {
+            if(index===ind){
+                SqureAmperData[index].still=!SqureAmperData[index].still
+            }
+            else{
+                item.still=false;
+            }
+           
         });
-        SqureAmperData[index].still=!SqureAmperData[index].still
+        
         setCollectData({...collectData,Amper:SqureAmperData[index].Amper})
     }
     function checkedCapacity(index){
-        ultimateCapacity.forEach(item => {
-            item.still=false;
+        ultimateCapacity.forEach((item,ind )=> {
+             if(index===ind){
+                ultimateCapacity[index].still=!ultimateCapacity[index].still
+            }
+            else{
+                item.still=false;
+            }
+            
+            
         });
-        ultimateCapacity[index].still=!ultimateCapacity[index].still
+        
         setCollectData({...collectData,capacity:ultimateCapacity[index].capacity})
        
     }
      function checkedVolt(index){
-        VoltData.forEach(item => {
-            item.still=false;
+         
+        VoltData.forEach((item,ind ) => {
+            if(index===ind){
+                VoltData[index].still=!VoltData[index].still
+            }
+            else{
+                item.still=false;
+            }
+            
         });
-        VoltData[index].still=!VoltData[index].still
+        
         setCollectData({...collectData,volt:VoltData[index].volt})
     }
       function checkedCharacter(index){
-           characteristicData.forEach(item => {
-            item.still=false;
+           characteristicData.forEach((item,ind ) => {
+            if(index===ind){
+                characteristicData[index].still=!characteristicData[index].still
+            }
+            else{
+                item.still=false;
+            }
+           
         });
-          characteristicData[index].still=!characteristicData[index].still
+          
           setCollectData({...collectData,char:characteristicData[index].char})
     }
       function checkedserya(index){
-           seryaData.forEach(item => {
-            item.still=false;
+           seryaData.forEach((item,ind ) => {
+            if(index===ind){
+                seryaData[index].still = !seryaData[index].still
+            }
+            else{
+                item.still=false;
+            }
+           
         });
-          seryaData[index].still = !seryaData[index].still
+         
           setCollectData({...collectData,serya:seryaData[index].serya})
     }
 
