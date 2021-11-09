@@ -339,7 +339,6 @@ console.log(setProductMainData2)
           <Map/>
       </div>
       <Footer/>
-      <div class="footer_very_bottom"></div>
        </Route>
 
          <Route exact path="/product-detail">

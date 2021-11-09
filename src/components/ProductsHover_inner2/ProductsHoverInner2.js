@@ -6,8 +6,29 @@ import ContentDataLeft from '../ProductsHover_inner/ContentDataLeft'
 import doc from '../assets/images/doc.png'
 import ProductContainer from './Product_container'
 import Footer from '../Footer/Footer'
-
+import {useState} from 'react'
 function ProductsHover_inner2(){
+    const [proContainerData, setProContainerData] = useState([
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+        {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
+    ])
+
+    const [boxData, setBoxData] = useState(
+        {
+            boxTitle:'Автоматические выключатели CHINT DZ47-60\nзащищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.',
+            docTitle:'Посмотреть брошюру DZ47-60',
+            amper:'1–63 А',
+            pole:'1P, 2P, 3P, 4P',
+            character:'B, C, D',
+            capacity:'4.5 кА'
+        }
+    )
     return (
         <>
         <div className='pro_inner2_main_container'> 
@@ -22,31 +43,29 @@ function ProductsHover_inner2(){
                             <div className='pro_inner2_right_inner'>
                                  <div className='right_inner_1'>
                                     <p>
-                                        Автоматические выключатели CHINT DZ47-60
-                                        защищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.
-        
+                                       {boxData.boxTitle}
                                     </p>
                                     <div className='right_inner_doc'>
                                         <img src={doc} alt='rasm'/>
-                                        <p >Посмотреть брошюру DZ47-60</p>
+                                        <p>{boxData.docTitle}</p>
                                     </div>
                                  </div> 
                                  <div className='right_inner_2'>
                                      <div className='right_inner_2_1'>
                                         <p>Номинальный ток (In)</p>
-                                        <p>1–63 А</p>
+                                        <p>{boxData.amper}</p>
                                      </div>
                                      <div className='right_inner_2_1'>
                                         <p>Количество полюсов</p>
-                                        <p>1P, 2P, 3P, 4P</p>
+                                        <p>{boxData.pole}</p>
                                      </div>
                                      <div className='right_inner_2_1'>
                                         <p>Характеристика кривой</p>
-                                        <p>B, C, D</p>
+                                        <p>{boxData.character}</p>
                                      </div>
                                      <div className='right_inner_2_1'>
                                         <p>Предельная отключающая способность</p>
-                                        <p>4.5 кА</p>
+                                        <p>{boxData.capacity}</p>
                                      </div>
                                      
                                  </div>
@@ -54,9 +73,9 @@ function ProductsHover_inner2(){
 
                             <div className='right_inner2'>
                                 {
-                                [1,2,3,4,5,6,7,8,9,10,11,12,13].map((item,index)=>{
+                                proContainerData.map((item,index)=>{
                                     return  <div key={index}> 
-                                    <ProductContainer/>
+                                    <ProductContainer proConainet_title1={item.title1} proConainet_title2={item.title2}/>
                                     </div>
                                 })
                                 }

@@ -4,14 +4,14 @@ import rasm2 from '../assets/images/rasm2.png'
 import strelka1 from '../assets/icons/strelka1.svg'
 import strelka1_2 from '../assets/icons/strelka1_2.svg'
 import { Link } from 'react-router-dom'
-function Product_container() {
+function Product_container({proConainet_title1,proConainet_title2}) {
     return (
         <>
         <Link to='/avtomaticheskiy' className={'pro_hover_inner2_box'}>
                 <img src={rasm2} alt='rasm'/>
                 <div className='pro_hover_inner2_box_title'>
-                    <p>284003</p>
-                    <p>Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)</p>
+                    <p>{proConainet_title1}</p>
+                    <p>{proConainet_title2}</p>
                 </div>
                 <object
                 className='pro_hover_inner2_box_svg1'
