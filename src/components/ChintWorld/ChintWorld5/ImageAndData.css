@@ -46,7 +46,7 @@
 
 }
 .world5_container_image_title p:nth-child(3){
-    font-family: Lato;
+    font-family:' Lato'!important;
     font-size: 0.73vw;
     font-style: normal;
     font-weight: 400;

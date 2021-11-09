@@ -17,7 +17,7 @@
     height:1.9vw;
 }
 .filter_justify h3{
-    font-family: Lato;
+    font-family:" Lato"!important;
     font-size: 1.31vw;
     font-style: normal;
     font-weight: 300;
@@ -37,7 +37,7 @@
 
 }
 .line_title p{
-    font-family: Lato;
+    font-family: "Lato"!important;
     font-size: 0.87vw;
     font-style: normal;
     font-weight: 300;

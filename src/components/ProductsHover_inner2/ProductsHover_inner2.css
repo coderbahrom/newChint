@@ -56,7 +56,7 @@
     height:1.53vw;
 }
 .right_inner_1 p:nth-child(1){
-    font-family: SF Pro Display;
+    font-family: "SF Pro Display" !important;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
@@ -69,7 +69,7 @@
     font-weight: 700;
 }
 .right_inner_1 p:nth-child(4){
-    font-family: SF Pro Display;
+    font-family: "SF Pro Display"!important;
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
@@ -90,7 +90,7 @@
     height:1.53vw;
 }
 .right_inner_doc p{
-    font-family: Urbanist;
+    font-family:" Urbanist";
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
