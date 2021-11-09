@@ -64,6 +64,7 @@
     letter-spacing: 0em;
     text-align: left;
     color:#393939;
+    white-space:pre-line;
 }
 .right_inner_1 p::first-line{
     font-weight: 700;

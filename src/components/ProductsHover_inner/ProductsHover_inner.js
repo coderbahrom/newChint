@@ -6,9 +6,20 @@ import rasm1 from '../assets/images/rasm1.png'
 import ContentDataLeft from './ContentDataLeft'
 import {Link} from 'react-router-dom'
 import Footer from '../Footer/Footer'
+import ProshowData from './ProshowData'
+import {useState} from 'react'
 
 
 function ProductsHover_inner() {
+    const [proshowMainData, setProshowMainData] = useState( [
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
+    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'}
+])
+
     return (
         <>
         <div className='pro_inner_main_container'> 
@@ -21,30 +32,12 @@ function ProductsHover_inner() {
                         <ContentDataLeft/>
                         <div className='pro_inner_content_data_right'>
                             <div className='rightInner'>
-                                 <Link to='/productHover1/products/product-info' className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
-                                 </Link>
-                                 <Link className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
-                                 </Link>
-                                 <Link className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
-                                 </Link>
-                                 <Link className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
-                                 </Link>
-                                 <Link className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>
-                                 </Link>
-                                 <Link className='right_inner_one'>
-                                     <img src={rasm1} alt="rasmbor"></img>
-                                     <p>DZ47-60, 1-63А, 4.5кА</p>   
-                                 </Link>
+                                {
+                                    proshowMainData.map((item,index)=>{
+                                        return <ProshowData picture={item.picture} picture_title={item.picture_title}/>
+                                    }) 
+                                }
+                                 
                             </div>
                         </div>
                     </div>

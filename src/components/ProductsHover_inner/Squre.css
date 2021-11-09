@@ -16,7 +16,6 @@
     cursor: pointer;
     transition: .4s;
     border:2px solid #F8F8F8;
-    /* pointer-events:none; */
     padding:0 0.7vw;
 }
 .squreRang:hover{
@@ -40,3 +39,7 @@
     margin-left:1vw;
     display:none;
 }
+/* .styleSqureChecked1{
+    background-color:blue;
+    color:#cafdff,
+} */
