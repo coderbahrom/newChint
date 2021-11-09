@@ -79,7 +79,7 @@
 }
 
 #news .news_btn_wrapper .news_btn p{
-  font-family: SF Pro Display;
+  font-family:' SF Pro Display';
   font-size: 0.87vw;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +101,7 @@
   color: var(--primary);
   cursor: pointer;
   text-decoration:none;
-  font-family: 'Urbanist';
+  font-family: 'Inter';
   font-size: 1.75vw;
   font-style: normal;
   font-weight: 700;

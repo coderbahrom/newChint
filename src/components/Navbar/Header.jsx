@@ -2,9 +2,7 @@ import React from "react";
 import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
-const linking = {
-  color: "white",
-};
+
 
 function Header() {
   return (
@@ -112,24 +110,24 @@ function Header() {
                 <div className="hoverContainer1">
                   <div className={"about2"}>
                     <p>
-                      {" "}
-                      <Link style={linking} to="/download">
-                        {" "}
-                        Рекламные материалы{" "}
+                
+                      <Link className={'linking'} to="/download">
+                     
+                        Рекламные материалы
                       </Link>
                     </p>
                     <p>
-                      {" "}
-                      <Link style={linking} to="/download">
-                        Сертификаты{" "}
+                      
+                      <Link className={'linking'} to="/download">
+                        Сертификаты
                       </Link>
                     </p>
                     <p>
-                      {" "}
-                      <Link style={linking} to="/download">
-                        {" "}
-                        Паспорта устройств, РЭ{" "}
-                      </Link>{" "}
+                    
+                      <Link className={'linking'} to="/download">
+                      
+                        Паспорта устройств, РЭ
+                      </Link>
                     </p>
                   </div>
                 </div>

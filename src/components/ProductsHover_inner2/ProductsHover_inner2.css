@@ -90,7 +90,7 @@
     height:1.53vw;
 }
 .right_inner_doc p{
-    font-family:" Urbanist";
+    font-family:"Inter";
     font-size: 1.02vw;
     font-style: normal;
     font-weight: 500;
@@ -120,7 +120,7 @@
 
 }
 .right_inner_2_1 p:nth-child(2){
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display';
     font-size: 1.75vw;
     font-style: normal;
     font-weight: 500;

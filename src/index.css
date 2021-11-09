@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Urbanist:wght@100&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @font-face {
   font-family: 'SF Pro Display';
   font-style: normal;
@@ -47,12 +45,51 @@
     font-weight: 900;
     src:url('./components/font-family/SFProDisplayBlack.ttf') format('ttf');
     }
-
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 300;
+  src: url('./components/font-family/Lato-Light.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: normal;
+  src: url('./components/font-family/Lato-Regular.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 900;
+  src: url('./components/font-family/SFProDisplayBlack.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 500;
+  src: url('./components/font-family/Lato-Medium.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 600;
+  src: url('./components/font-family/Lato-Semibold.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 700;
+  src: url('./components/font-family/Lato-Bold.ttf');
+}
+@font-face{
+  font-family: 'Lato';
+  font-style:normal;
+  font-weight: 800;
+  src: url('./components/font-family/Lato-Heavy.ttf');
+}
 *{
   padding:0;
   margin:0;
-  /* font-family: 'Source Code Pro', monospace;  box-sizing: border-box;   */
-  /* font-family: 'Urbanist'; */
 }
 
 

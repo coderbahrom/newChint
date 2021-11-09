@@ -12,9 +12,9 @@
   /* border:1px solid red; */
 }
 #nav ul li {
-font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   color: #393939;
@@ -22,12 +22,11 @@ font-family: "Lato"!important;
 
 #nav ul li,
 #nav .nav_logo,
-#nav .call{
+#nav .call {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 #nav .nav_logo svg {
   width: 7vw;
@@ -109,35 +108,38 @@ font-family: "Lato"!important;
   /* align-items: center; */
 }
 
+  
+
+
 .hoverContainer {
   width: 72.5%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 2.123vw;
-  column-gap: 1vw;
+  /* column-gap: 1vw; */
+  /* border: 1px solid red; */
 }
+
 .hoverContainer1 {
   width: 72.5%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   margin-top: 2vw;
-  column-gap: 1vw;
+  /* column-gap: 1vw; */
+
 }
 
-.middle {
-  margin-left: 5.564vw;
-  margin-right: 2.709vw;
-  width: 23.666vw;
-}
 .middle p {
-  font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 0.878vw;
-  line-height: 1.97vw;
+  line-height: 1.3vw;
   color: #d4e7ff;
+  width: fit-content;
 }
 .dropdown:hover #Hover {
   display: block;
@@ -163,12 +165,7 @@ font-family: "Lato"!important;
   /* text-decoration: underline; */
   font-size: var(--text14px);
 }
-.about {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0px;
-  width: 19.693vw;
-}
+
 .dropdown1_link_underline {
   text-decoration: none;
   font-size: var(--text14px);
@@ -176,13 +173,14 @@ font-family: "Lato"!important;
 }
 
 .linking {
-  font-family:"Lato"!important;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
   line-height: 1.97vw;
   color: #d4e7ff;
   text-decoration: none;
+ 
 }
 .linking:hover {
   color: rgba(255, 249, 249, 0.97);
@@ -190,39 +188,48 @@ font-family: "Lato"!important;
 .about1 {
   overflow-y: hidden;
   display: flex;
-
   flex-direction: row;
-  column-gap: 3.294vw;
+  justify-content: space-between;
+  width: 100%;
 }
 .about2 {
   display: flex;
   overflow-y: hidden;
   flex-direction: row;
-  column-gap: 19.253vw;
+  justify-content: space-between;
+  width: 100%;
 }
 .about3 {
   display: flex;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   flex-direction: row;
-  column-gap: 8.346vw;
+  justify-content: space-between;
+
+  width: 100%;
 }
 
 .about p {
-  font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
-  line-height: 1.97vw;
+  line-height: 1.2vw;
   color: #d4e7ff;
+  width: fit-content;
+  text-decoration: none;
 }
+
 .about h1 {
-  font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 0.98vw;
   line-height: 1.17vw;
   color: #ffffff;
+  margin-bottom: 2vw;
+  
 }
+
 #Hover p:hover {
   text-decoration: underline;
 }
@@ -236,12 +243,14 @@ font-family: "Lato"!important;
 .about1 p,
 .about2 p,
 .about3 p {
-  font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
   font-weight: normal;
   font-size: 0.87vw;
   line-height: 1.97vw;
   color: #d4e7ff;
+  width: fit-content;
+ 
 }
 
 .down {
@@ -251,12 +260,13 @@ font-family: "Lato"!important;
 }
 
 .down h1 {
-  font-family: "Lato"!important;
+  font-family: "Lato";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 0.98vw;
   line-height: 1.17vw;
   color: #ffffff;
+  width:53%;
 }
 .dropdown1 > div {
   overflow-y: hidden;
@@ -265,14 +275,14 @@ font-family: "Lato"!important;
   outline: none;
   border: none;
   background: none;
-  font-family: Lato;
+  font-family: "Lato";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1vw;
   line-height: 1.5vw;
   color: #3a6eaf;
 }
-.lang select option{
+.lang select option {
   font-size: 1vw;
 }
 

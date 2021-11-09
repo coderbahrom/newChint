@@ -24,7 +24,7 @@
 }
 
 .chintWorld7_skachatContainer p:nth-child(2){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 0.87vw;
     font-style: normal;
     font-weight: 500;
@@ -37,7 +37,7 @@
 
 .chintWorld7_skachatContainer p:nth-child(3){
     margin-left: auto;
-    font-family:' Urbanist';
+    font-family:' Inter';
     font-size:  0.87vw;
     font-style: normal;
     font-weight: 800;

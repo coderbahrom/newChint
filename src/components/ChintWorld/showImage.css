@@ -16,7 +16,7 @@
 }
 
 .common_container  p:nth-child(1){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 2.63vw;
     font-style: normal;
     font-weight: 800;
@@ -27,7 +27,7 @@
 }
 
 .common_container  p:nth-child(2){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 1.46vw;
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@
 }
 
 .common_container  p:nth-child(3){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 1.17vw;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +63,7 @@
     width: 1.2vw;
 }
 .showimage_inner h6{
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 0.95vw;
     font-style: normal;
     font-weight: 500;

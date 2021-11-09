@@ -46,32 +46,37 @@ line-height :17px;
     margin-top:4vw;
     margin-bottom: 10vw;
   }
-  .catalog{
+.catalog{
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap:1vw;
     background: #FFFFFF;
 border: 0.783848px solid rgba(30, 89, 164, 0.3);
 box-sizing: border-box;
 border-radius: 20px;
 transition: transform .5s;
+padding: 17px 25px;
+
   }
+
   .catalog:hover{
     box-shadow:1px 1px 5px grey;
     transform:scale(1.05);
   }
-  .catalog-img{
-    object-fit: cover;
-  }
+ 
+
   .tit h1{
     font-family: "SF Pro Display"!important;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 1.171vw;
     line-height: 19px;
     text-align: center;
     color: #1E59A4;
     width: fit-content;
-   padding: 0px 7px;
+  
+  
   }

@@ -66,7 +66,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
 }
 .rec1 h2 {
   width: 30%;
-  font-family: 'Urbanist';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -76,7 +76,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
 .rec1 p {
    
   width: 52%;
-  font-family: 'Urbanist';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
@@ -157,7 +157,7 @@ color: #1E59A4;
   }
   .fifty p{
       width:70% !important;
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 100;
     font-size: 18px;
@@ -206,7 +206,7 @@ color: #1E59A4;
     margin-top: 87px;
   }
   .text p{
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: normal;
     font-size: 1.025vw;

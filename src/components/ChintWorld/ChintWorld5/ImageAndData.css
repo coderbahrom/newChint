@@ -24,7 +24,7 @@
 }
 
 .world5_container_image_title p:nth-child(1){
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display';
     font-size: var(--text18px);
     font-style: normal;
     font-weight: 500;
@@ -35,7 +35,7 @@
     color:#393939;
 }
 .world5_container_image_title p:nth-child(2){
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display';
     font-size: var(--text14px);
     font-style: normal;
     font-weight: 500;
@@ -46,7 +46,7 @@
 
 }
 .world5_container_image_title p:nth-child(3){
-    font-family:' Lato'!important;
+    font-family:' Lato';
     font-size: 0.73vw;
     font-style: normal;
     font-weight: 400;

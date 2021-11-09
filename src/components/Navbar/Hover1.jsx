@@ -7,8 +7,9 @@ function Hover1() {
       <div className="hoverContainer">
         <div className={"about"}>
           <h1>Низковольтное оборудование</h1>
+
           <Link to="/catalog">
-            {" "}
+          
             <p> Модульное оборудование</p>
           </Link>
           <Link to="/product-detail">

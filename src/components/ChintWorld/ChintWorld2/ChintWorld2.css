@@ -43,7 +43,7 @@
     flex:1;
 }
 .main_container_row2_left p:nth-child(1){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 8.27vw;
     font-style: normal;
     font-weight: 700;
@@ -54,7 +54,7 @@
 
 }
 .main_container_row2_left p:nth-child(2){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;

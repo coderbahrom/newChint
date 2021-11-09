@@ -18,7 +18,7 @@
     padding-left: 4vw;
 }
 .rectengular2 h5{
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 4.1vw;
     font-style: normal;
     font-weight: 800;
@@ -29,7 +29,7 @@
     margin:1.2vw 0 1.5vw 0;
 }
 .rectengular2 p:nth-child(1){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 1.7vw;
     font-style: normal;
     font-weight: 400;
@@ -40,7 +40,7 @@
 }
 
 .rectengular2 p:nth-child(3){
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 1.7vw;
     font-style: normal;
     font-weight: 300;
