@@ -2,9 +2,18 @@ import React from "react";
 import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
-
+import Select from 'react-select'
+import russia from '../assets/images/russia.png'
+import uk from '../assets/images/united-kingdom.png'
+import uz from '../assets/images/uzbekistan.png'
 
 function Header() {
+  
+const options = [
+  { value: 'Ru', label: <div className={'langs'}><img src={russia} height="15px" width="15px" alt="ru"/>Ru </div> },
+  { value: 'Uz', label: <div  className={'langs'}><img src={uz} height="15px" width="15px" alt="uz"/>Uz </div> },
+  { value: 'Eng', label:  <div  className={'langs'}><img src={uk} height="15px" width="15px" alt="ru"/>Eng </div> }
+]
   return (
     <>
       <nav id="nav">
@@ -172,11 +181,12 @@ function Header() {
               </Link>
             </li>
             <li className="lang">
-              <select name="" id="">
-                <option >Ru</option>
-                <option>Uz</option>
-                <option>Eng</option>
-              </select>
+            
+              <Select
+               options={options} 
+               defaultValue={{value: 'Ru', label: <div className={'langs'}><img src={russia} height="15px" width="15px" alt="ru"/>Ru </div>}}
+               />
+           
             </li>
           </ul>
           <div className="call">

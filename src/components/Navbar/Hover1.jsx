@@ -8,11 +8,11 @@ function Hover1() {
         <div className={"about"}>
           <h1>Низковольтное оборудование</h1>
 
-          <Link to="/catalog">
+          <Link className={"linking"} to="/catalog">
           
             <p> Модульное оборудование</p>
           </Link>
-          <Link to="/product-detail">
+          <Link className={"linking"} to="/product-detail">
             <p>Силовое оборудование защиты и коммутации</p>
           </Link>
           <p> Контакторы, реле, пускатели</p>
