@@ -67,8 +67,9 @@ console.log(setProductMainData2)
   
   function proActiveFun1(){
       setProActive({stateActive1:true,stateActive2:false,stateActive3:false})
-      filterFun("f1")
+      setProductMainData([...productMainData2])
   }
+  
   function proActiveFun2(){
       setProActive({stateActive1:false,stateActive2:true,stateActive3:false})
       filterFun("f2")

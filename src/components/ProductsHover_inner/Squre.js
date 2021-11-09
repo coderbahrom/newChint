@@ -3,7 +3,7 @@ import './Squre.css'
 // import salom from '../'
 function Squre({filterTitle1,filterTitle2,checking,index,show,id,getIndex,still}) {
    const styleSqureChecked1 = {
-        backgroundColor:'blue',
+        backgroundColor:'#005DA9',
         color:'white',
     }
     
