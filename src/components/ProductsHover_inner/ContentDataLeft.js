@@ -54,6 +54,7 @@ function ContentDataLeft(){
  
 
 
+
     function checkedPole(index){
         if(getActive1===index){
             setGetActive1('')
