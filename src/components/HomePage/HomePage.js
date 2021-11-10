@@ -79,6 +79,9 @@ console.log(setProductMainData2)
       filterFun("f3")
   }
 
+  function scrollGoDown(){
+    
+  }
 
 
   return (
@@ -100,7 +103,7 @@ console.log(setProductMainData2)
       spaceBetween={30}
       pagination={{"clickable": true}}
       className="mySwiper"
-      // autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 5000 }}
       >
           <SwiperSlide>
               <SlideData 
@@ -137,7 +140,7 @@ console.log(setProductMainData2)
               />
           </SwiperSlide>
       </Swiper>
-      <img className='vectorbuttom' src={Vertorbottom} alt='rasm'/>
+      <img onClick={scrollGoDown} className='vectorbuttom' src={Vertorbottom} alt='rasm'/>
     </div>
     <div className='hompage_content'>
         <div className='hompage_content_inner'>
