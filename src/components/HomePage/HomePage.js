@@ -35,6 +35,7 @@ import location1 from '../assets/icons/location1.svg'
 import location1_2 from '../assets/icons/location1_2.svg'
 import SlideData from './SlideData';
 import ProductBox from './ProductBox';
+ 
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
@@ -48,6 +49,7 @@ SwiperCore.use([Pagination,Navigation,Mousewheel,Keyboard,Autoplay]);
 
 
 function HomePage(){
+ 
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
@@ -78,8 +80,11 @@ console.log(setProductMainData2)
       setProActive({stateActive1:false,stateActive2:false,stateActive3:true})
       filterFun("f3")
   }
-
+  
   function scrollGoDown(){
+    const d = window.innerWidth
+    const c = d/2.5
+    window.scrollTo(0, d-c)
     
   }
 

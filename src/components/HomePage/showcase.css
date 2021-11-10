@@ -67,10 +67,12 @@
 }
 .vectorbuttom{
   position:absolute;
+  z-index:100;
   top:45vw;
   width:2.49vw;
   height:1.09vw;
 }
+
 .swiper-pagination-bullet{
   background-color:white!important;
   width:0.585vw!important;
