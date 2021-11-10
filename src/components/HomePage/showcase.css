@@ -71,6 +71,7 @@
   top:45vw;
   width:2.49vw;
   height:1.09vw;
+  cursor:pointer;
 }
 
 .swiper-pagination-bullet{
