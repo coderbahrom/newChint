@@ -5,11 +5,11 @@
 .chintWorld7_skachatContainer{
     height: 5.7vw;
     width: 33.74vw;
-    border-radius: 11.949141502380371px;
+    border-radius: 0.87vw;
     display: flex;
     flex-direction: row;
     align-items:center;
-    border: 0.8px solid #1E59A48C;
+    border: 1px solid #1E59A48C;
     padding:1.55vw 2.26vw 1.67vw 2.4vw;
     background-color:#F7FAFF;
     transition: .4s;

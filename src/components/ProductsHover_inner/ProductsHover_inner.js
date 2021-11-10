@@ -32,7 +32,7 @@ console.log(setProshowMainData)
                     <div className='pro_inner_content_data'>
                         <ContentDataLeft/>
                         <div className='pro_inner_content_data_right'>
-                            <div className='rightInner'>
+                            <div className='pro_inner1_rightInner'>
                                 {
                                     proshowMainData.map((item,index)=>{
                                         return <ProshowData picture={item.picture} picture_title={item.picture_title}/>

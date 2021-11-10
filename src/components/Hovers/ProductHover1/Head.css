@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 1.02vw;
-    line-height: 1.02vw;
+    line-height: 2.22vw;
     color: #cacaca;
     width:100%;
   }
@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 2.04vw;
-    line-height: 2.04vw;
+    line-height: 5.04vw;
     color: #1e59a4;
     margin-top: 2.78vw;
   }
@@ -27,3 +27,18 @@
       margin-top: 2.04vw;   
       border: 1px solid #DBDBDB;
   }
+  @media only screen and (max-width: 500px) {
+    .wrapper1 p {
+        font-size: 2.2vw;
+        color:#CACACA;
+    }
+    .wrapper1 h1 {
+        font-size: 4.8vw;
+        color:#000000;
+    }
+    .wrapper1 hr {
+        display:none;
+    }
+    
+   
+}

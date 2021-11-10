@@ -21,7 +21,8 @@ function ProductsHover_inner2(){
 
     const [boxData, setBoxData] = useState(
         {
-            boxTitle:'Автоматические выключатели CHINT DZ47-60\nзащищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.',
+            boxTitle1:'Автоматические выключатели CHINT DZ47-60',
+            boxTitle2:'защищают распределительные и групповые цепи от перегрузок и токов короткого замыкания. Применяются во вводно-распределительных щитах жилых и административных зданий.',
             docTitle:'Посмотреть брошюру DZ47-60',
             amper:'1–63 А',
             pole:'1P, 2P, 3P, 4P',
@@ -44,8 +45,9 @@ function ProductsHover_inner2(){
                         <div className='pro_inner2_content_data_right'>
                             <div className='pro_inner2_right_inner'>
                                  <div className='right_inner_1'>
+                                    <p> {boxData.boxTitle1}</p>
                                     <p>
-                                       {boxData.boxTitle}
+                                       {boxData.boxTitle2}
                                     </p>
                                     <div className='right_inner_doc'>
                                         <img src={doc} alt='rasm'/>

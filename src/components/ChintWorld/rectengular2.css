@@ -15,11 +15,11 @@
 .rectengular2:hover{
     background-position:top left;
     background-size: 14.2vw 14.2vw;
-    padding-left: 4vw;
+    padding-left: 2.6vw;
 }
 .rectengular2 h5{
     font-family: 'Inter';
-    font-size: 4.1vw;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 800;
     line-height: 3.29vw;

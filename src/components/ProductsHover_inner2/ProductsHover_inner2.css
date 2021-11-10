@@ -29,10 +29,11 @@
     /* background-color:whitesmoke; */
     
 }
-
+.pro_inner2_content_data_right p{
+    margin:0;
+}
 .pro_inner2_right_inner{
-    padding:2.9vw 3.44vw 3.6vw 3.14vw;
-    height: 26.5vw;
+    padding:2.9vw 3.44vw 3vw 3.14vw;
     width: 42.4vw;
     border-radius: 1.36vw;
     border:1px solid rgba(30, 89, 164, 0.2);
@@ -47,7 +48,7 @@
 }
 
 .right_inner_1{
-    margin:0px 0 1.68vw 0;
+    margin:0px 0 2.6vw 0;
     width:95%;
    
 }
@@ -55,7 +56,16 @@
     width:1.12vw;
     height:1.53vw;
 }
+
 .right_inner_1 p:nth-child(1){
+    font-family: "SF Pro Display" !important;
+    font-size: 1.02vw;
+    line-height: 1.46vw;
+    font-weight: 700;
+    color:#393939;
+}
+
+.right_inner_1 p:nth-child(2){
     font-family: "SF Pro Display" !important;
     font-size: 1.02vw;
     font-style: normal;
@@ -66,10 +76,9 @@
     color:#393939;
     white-space:pre-line;
 }
-.right_inner_1 p::first-line{
-    font-weight: 700;
-}
-.right_inner_1 p:nth-child(4){
+
+
+.right_inner_1 p:nth-child(5){
     font-family: "SF Pro Display"!important;
     font-size: 1.02vw;
     font-style: normal;
@@ -81,14 +90,16 @@
 }
 .right_inner_doc{
     display: flex;
-    margin-top:2vw;
-    
+    margin-top:3vw;
+    align-items: center;
     column-gap:0.43vw;
-   
+}
+.right_inner_doc p{
+    margin:0;
 }
 .right_inner_doc img{
-    width:1.12vw;
-    height:1.53vw;
+    width:2vw;
+    height:2vw;
 }
 .right_inner_doc p{
     font-family:"Inter";
@@ -108,6 +119,9 @@
 .right_inner_2_1{
     width:50%;
     margin-bottom:1.39vw;
+}
+.right_inner_2_1 p{
+    margin:0;
 }
 .right_inner_2_1 p:nth-child(1){
     font-family: SF Pro Display;
@@ -129,4 +143,46 @@
     letter-spacing: 0em;
     color:#1E59A4;
 
+}
+@media only screen and (max-width: 500px) {
+    .pro_inner2_main_container,.pro_inner2_container{
+        width: 84%;
+        margin: 0 auto;
+    }
+    .pro_inner2_content_data_right{
+        width:100%;
+    }
+    .pro_inner2_right_inner{
+        width:100%;
+        padding:0;
+        border:0;
+        margin:0;
+    }
+    .pro_inner2_right_inner:hover{
+        border:0px solid #8EACD1;
+        box-shadow:0px 0px 0px grey;
+    }
+    .right_inner_1 p:nth-child(1){
+        display:none;
+    }
+    .right_inner_1 p:nth-child(2){
+        font-size: 3.3vw;
+        line-height: 5.3vw;
+        width:100%;
+    }
+    .right_inner_doc{
+        width:100%;
+    }
+    .right_inner_doc img{
+        width:5vw;
+        height:5.4vw;
+    }
+    .right_inner_doc p{
+        font-size: 3.4vw;
+        width:100%;
+        font-weight:400;
+        font-family:"SF Pro Display";
+    }
+    
+    
 }

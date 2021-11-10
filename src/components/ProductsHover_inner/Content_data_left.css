@@ -55,3 +55,9 @@
     flex-wrap: wrap;
     margin-bottom:1vw;
 }
+@media only screen and (max-width: 500px) {
+    .content_data_left{
+        display: none;
+    }
+    
+}
