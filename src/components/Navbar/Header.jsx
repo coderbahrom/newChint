@@ -2,18 +2,18 @@ import React from "react";
 import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
-import Select from 'react-select'
-import russia from '../assets/images/russia.png'
-import uk from '../assets/images/united-kingdom.png'
-import uz from '../assets/images/uzbekistan.png'
+// import Select from 'react-select'
+// import russia from '../assets/images/russia.png'
+// import uk from '../assets/images/united-kingdom.png'
+// import uz from '../assets/images/uzbekistan.png'
 
 function Header() {
   
-const options = [
-  { value: 'Ru', label: <div className={'langs'}><img src={russia} height="15px" width="15px" alt="ru"/>Ru </div> },
-  { value: 'Uz', label: <div  className={'langs'}><img src={uz} height="15px" width="15px" alt="uz"/>Uz </div> },
-  { value: 'Eng', label:  <div  className={'langs'}><img src={uk} height="15px" width="15px" alt="ru"/>Eng </div> }
-]
+// const options = [
+//   { value: 'Ru', label:'Ru'},
+//   { value: 'Uz', label:'Uz' },
+//   { value: 'Eng', label: 'Eng' }
+// ]
   return (
     <>
       <nav id="nav">
@@ -181,11 +181,15 @@ const options = [
               </Link>
             </li>
             <li className="lang">
-            
-              <Select
+            <select name="" id="">
+              <option value="">Ru</option>
+              <option value="">Uz</option>
+              <option value="">Eng</option>
+            </select>
+              {/* <Select
                options={options} 
-               defaultValue={{value: 'Ru', label: <div className={'langs'}><img src={russia} height="15px" width="15px" alt="ru"/>Ru </div>}}
-               />
+               defaultValue={{value: 'Ru', label:'Ru'}}
+               /> */}
            
             </li>
           </ul>
