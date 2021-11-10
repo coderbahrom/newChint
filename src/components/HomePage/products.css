@@ -55,7 +55,7 @@
     color:#63A2F2; 
     border: 1px solid #63A2F2;
     border-radius:0.73vw;
-    cursor: po'inter';
+    cursor: pointer;
     transition: .4s;
 }
 
@@ -100,7 +100,7 @@
   column-gap:1.46vw;
   border: 1px solid #FFFFFF;
   border-radius:0.65vw;
-  cursor: po'inter';
+  cursor: pointer;
 }
 
 .homepage_pro_download .home_skachat1_2{
@@ -143,7 +143,7 @@
   height:4.33vw;
   border: 1px solid #FFFFFF;
   border-radius:0.65vw;
-  cursor: po'inter';
+  cursor: pointer;
 }
 
 .homepage_pro_download p,.homepage_pro_location p{

@@ -183,6 +183,18 @@
         font-weight:400;
         font-family:"SF Pro Display";
     }
+    .right_inner_2_1 p:nth-child(1){
+        font-size: 2.13vw;
+        font-weight: 400;
+        line-height: 5.2vw;
+        margin-bottom:0.65vw;
     
+    }
+    .right_inner_2_1 p:nth-child(2){
+        font-size: 3.7vw;
+        font-weight: 500;
+        line-height: 5vw;
+    
+    }
     
 }
