@@ -100,6 +100,7 @@
 }
 #map svg text{
   padding:0 2vw;
+
 }
 
 
@@ -107,5 +108,8 @@
 @keyframes mymove {
   0% {r:4px;opacity:1;}
   100% {r:4px;opacity:1;}
+  
 
 }
+
+
