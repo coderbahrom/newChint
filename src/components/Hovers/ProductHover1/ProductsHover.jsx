@@ -4,6 +4,7 @@ import Head from "./Head";
 import Header from "../../Navbar/Header";
 import ProductMap from "./ProductMap";
 import Contents from "./Contents";
+import Footer from '../../Footer/Footer'
 
 const data = [
   {
@@ -77,9 +78,12 @@ function ProductHover1() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* <Footer/> */}
+      <div className="footer">
+
+<Footer/>
+</div>
+      </div>
     </>
   );
 }

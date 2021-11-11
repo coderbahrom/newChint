@@ -22,8 +22,8 @@
   row-gap: 61px;
 }
 .contents p {
-  width: 78%;
-  font-family: 'Lato'!important;
+  width:60vw;
+  font-family: "Lato" !important;
   font-size: 1.757vw;
   font-style: normal;
   font-weight: 700;
@@ -33,8 +33,8 @@
   color: #5c5c5c;
 }
 .contents span p {
-  width: 89%;
-  font-family: 'Lato'!important;
+  width: 100%;
+  font-family: "Lato" !important;
   font-size: 1.171vw;
   font-style: normal;
   font-weight: 400;
@@ -43,8 +43,8 @@
   text-align: left;
 }
 .number {
-display: grid;
-grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   margin-top: 105px;
 }
 .number1 {
@@ -55,7 +55,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   column-gap: 60px;
 }
 .number1 h1 {
-  font-family: 'Lato'!important;
+  font-family: "Lato" !important;
   font-style: normal;
   font-weight: bold;
   font-size: 111.881px;
@@ -66,7 +66,7 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
 }
 .rec1 h2 {
   width: 30%;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -74,11 +74,10 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
   color: #1e59a4;
 }
 .rec1 p {
-   
   width: 52%;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 16px;
   line-height: 21px;
   color: #1e59a4;
@@ -101,124 +100,112 @@ grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
     padding-left: 4vw;
    
 } */
-.number1:hover h1{
+/* .number1:hover h1{
   background-position:top left;
   background-size: 14.2vw 14.2vw;
   padding-left: 4vw;
-}
-.campus {
-  width: 53%;
-  height: 31%;
+} */
+.campus img{
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
+  transition: transform 0.3s;
 }
-.campus img:hover{
-  box-shadow:1px 1px 5px grey;
+.campus img:hover {
+  box-shadow: 1px 1px 5px grey;
   border-radius: 20px;
-  transform:scale(1.05);
-  transition: all ease-in-out .3s;
- 
+  transform: scale(1.05);
 }
-.number3{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   align-items: center;
-   column-gap: 105px;
+.number3 {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  column-gap: 7.906vw;
 }
 .campus1 img {
-    width: 90%;
-    height: 297.57px;
-    border-radius: 20px;
-  }
-  .campus1 img:hover {
-    box-shadow:1px 1px 5px grey;
-    border-radius: 20px;
-    transform:scale(1.05);
-    transition: all ease-in-out .3s;
-  }
-  .fifty h4{
-font-family: 'Lato'!important;
-font-style: normal;
-font-weight: 500;
-font-size: 24.8625px;
-line-height: 30px;
-color: #1E59A4;
-  }
-  .fifty h2{
-  
-    font-family: 'Lato'!important;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 112px;
-    letter-spacing: 0.05em;
-    color: #1E59A4;
-  }
-  .fifty p{
-      width:70% !important;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 24px;
-    color: #1E59A4; 
-   
-  }
-  .fifty{
-    
-    background-image: url("../../assets/images/Rectangle1.png");
-    background-repeat: no-repeat;
- 
-    background-position: top right;
-   
-  transition: all 0.5s;
-    
-  }
-  .fifty:hover{
-    background-position:top left;
-    background-size: 14.2vw 14.2vw;
-    padding-left: 1.2vw;
-  }
-  .Products{
-    margin-top: 130px;
-      width: 100%;
-      background: rgba(242, 247, 254, 0.7);
-  }
-  .production{
-      
-    width: 72.5%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
-    gap:10px;
-  
-  }
-  .text {
-   
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.196vw;
-    /* width: 100%; */
-    margin: 0 auto;
-  }
-  .text{
-    margin-top: 87px;
-  }
-  .text p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.025vw;
-    line-height: 1.537vw;
-    color: #393939;
-    width: 100%;
-  }
-  .footer{
-      margin-top: 267px;
-  }
-  .showimg{
-    width: 100%;
-    background: white;
-  }
+  width: 90%;
+  height: 297.57px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.campus1 img:hover {
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 20px;
+  transform: scale(1.05);
 
+}
+.fifty h4 {
+  font-family: "Lato" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.8625px;
+  line-height: 30px;
+  color: #1e59a4;
+}
+.fifty h2 {
+  /* font-family: 'Lato'!important; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: 0.05em;
+  color: #1e59a4;
+}
+.fifty p {
+  width: 70% !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1e59a4;
+}
+.fifty {
+  background-image: url("../../assets/images/Rectangle1.png");
+  background-repeat: no-repeat;
+
+  background-position: top right;
+
+  transition: all 0.5s;
+}
+
+.Products {
+  margin-top: 130px;
+  width: 100%;
+  background: rgba(242, 247, 254, 0.7);
+}
+.production {
+  width: 72.5%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.196vw;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+.text {
+  margin-top: 87px;
+}
+.text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.025vw;
+  line-height: 1.537vw;
+  color: #393939;
+  width: 100%;
+}
+.footer {
+  margin-top: 267px;
+}
+.showimg {
+  width: 100%;
+  background: white;
+}

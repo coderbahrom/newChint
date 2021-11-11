@@ -15,7 +15,7 @@ function LeftContent1(props) {
          <div className="left-text">
             <ul style={props.show2===true &&props.id===3? scalling:scalling1} className="list">
               <li>Модульное оборудование</li>
-              <li>Last One</li>
+              {/* <li>Last One</li> */}
               <li>Контакторы, реле, пускатели</li>
               <li>Компенсации реактивной мощности</li>
               <li>Кнопки управления, индикаторы</li>

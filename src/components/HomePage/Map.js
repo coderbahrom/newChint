@@ -3096,7 +3096,7 @@ function Map() {
           <circle clasName='styleCommon' cx= '1725.1' cy= '253' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
           <circle clasName='styleCommon' cx= '1496.2' cy= '161' fill="red" stroke="red" style={{ animation:"mymove 1s infinite"}} id="0"></circle>
            */}
-          <text className="showMapTitle" filter="url(#solid)"  style={{font:'normal 1.9vw sans-serif',borderRadious:'0.4vw'}} fill="white" x={cursorPosition.x} y={cursorPosition.y} id="0">{cursorData.value}</text>
+          <text  className="showMapTitle" filter="url(#solid)"  style={{font:'normal 1.9vw sans-serif',borderRadious:'0.4vw'}} fill="white" x={cursorPosition.x} y={cursorPosition.y} id="0">{cursorData.value}</text>
           <defs>
             <filter  x="0" y="0" width="1" height="1" id="solid">
               <feFlood flood-color="black" result="bg" />

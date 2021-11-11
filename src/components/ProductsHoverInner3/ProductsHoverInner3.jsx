@@ -207,9 +207,9 @@ function ProductsHover_inner3(props) {
       </div>
       <div className="footer">
 
-      </div>
-      </div>
       <Footer/>
+      </div>
+      </div>
       </div>
     </>
   );

@@ -15,7 +15,7 @@ export default function LeftContent(props) {
              <div className="left-text">
            
             <ul style={props.show1===true &&props.id===2? scalling:scalling1} className="list">
-              <li>Second One</li>
+              {/* <li>Second One</li> */}
               <li>Модульное оборудование</li>
               <li>Контакторы, реле, пускатели</li>
               <li>Компенсации реактивной мощности</li>
