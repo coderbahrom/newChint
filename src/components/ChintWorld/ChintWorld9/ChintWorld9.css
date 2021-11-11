@@ -30,7 +30,7 @@
 }
 
 .world9_container ul:nth-child(4){
-    margin:2vw 0 2vw 1.3vw;
+    margin:2vw 0 2vw -1vw;
     display:flex;
     flex-direction:column;
     row-gap:1vw;

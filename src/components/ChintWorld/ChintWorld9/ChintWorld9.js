@@ -11,7 +11,7 @@ const hidden = {
 }
 const styleTop={
     marginTop: '6vw',
-    fontFamily: 'Urbanist',
+    fontFamily: 'Inter',
     fontSize: '3.51vw',
     fontStyle: 'normal',
     fontWeight: '800',
