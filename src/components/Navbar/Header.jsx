@@ -2,10 +2,7 @@ import React from "react";
 import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
-// import Select from 'react-select'
-// import russia from '../assets/images/russia.png'
-// import uk from '../assets/images/united-kingdom.png'
-// import uz from '../assets/images/uzbekistan.png'
+import lines from '.././assets/icons/threeline.svg'
 
 function Header() {
   
@@ -209,6 +206,9 @@ function Header() {
               </svg>
               <span> (95) 476 76 76 </span>
             </div>
+          </div>
+          <div className="line">
+            <object data={lines} type="image/svg+xml">line</object>
           </div>
         </div>
       </nav>
