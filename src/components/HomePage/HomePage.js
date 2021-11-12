@@ -42,6 +42,7 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
 import {useState} from 'react'
+import Bounce from 'react-reveal/Bounce';
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
@@ -168,21 +169,27 @@ const animating={
                   <span></span>
             </div>
             <div className='homepage_pro_contaier_menyu'>
+            <Bounce left>
                 <div style={proActive.stateActive1 ? styleProActive : {}} onClick={proActiveFun1} className='homepage_pro_contaier_men1'>
                     <h6>
                         Низковольтное оборудование
                     </h6>
                 </div>
+                </Bounce>
+                <Bounce >
                 <div style={proActive.stateActive2 ? styleProActive : {}} onClick={proActiveFun2} className='homepage_pro_contaier_men2'>
                     <h6>
                         Оборудование <br/>распределения и передачи
                     </h6>
                 </div>
+                </Bounce >
+                <Bounce right>
                 <div style={proActive.stateActive3 ? styleProActive : {}} onClick={proActiveFun3} className='homepage_pro_contaier_men3'>
                     <h6>
                         Электроустановочные <br/>изделия
                     </h6>
                 </div>
+            </Bounce>
             </div>
             <div className="homepage_pro_contaier_box">
                 {productMainData.map((item, index) => {
