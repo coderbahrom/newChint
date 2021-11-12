@@ -4,3 +4,11 @@
     
 }
 /* *{border:1px solid} */
+@media only screen and (max-width: 500px) {
+    .homepage_main_container{
+        width: 26.354vw;
+        margin: 0 auto;
+        
+    }
+   
+}
