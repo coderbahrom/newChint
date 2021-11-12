@@ -316,12 +316,12 @@
 }
 @media only screen and (max-width: 500px) {
   #nav{
-    margin-top: 5vw;
+    height: 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 27.452vw;
-    margin-bottom: 10vw;
+    width:100%;
+  
   }
 #nav ul li{
     display: none;
@@ -335,24 +335,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5vw;
-    height: 5vw;
-    width: 17.785vw;
+    font-size: 2.667vw;
+    height: 8.533vw;
+    width: 32vw;
     font-weight: 900;
-  margin-left: 3.367vw;
+ 
   }
   #nav .call_center svg {
     margin-right: 1vw;
-    width: 2vw;
-    height: 2vw;
+    width: 3.672vw;
+    height: 4.176vw;
+    
+  }
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .line{
     display: block;
-    height: 0.5vw;
-    margin-left:1.830vw;
+    height: 6.133vw;
+    width: 8.533vw;
+    margin-left:6.667vw;
   }
   #nav .nav_logo svg {
-    width: 17vw;
-    height: 10.69vw;
+    width: 24.800vw;
+    height: 5.600vw;
+   
   }
 }
