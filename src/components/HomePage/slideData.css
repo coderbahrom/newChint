@@ -19,10 +19,12 @@
     letter-spacing: 0em;
     color:#FFFFFF;
     text-align: left;
+    /* animation: showcases 1s ease-out forwards; */
 }
 .slidedata_left_btn p{
     width:fit-content;
     margin:0;
+  
 }
 .slidedata_left .slidedata_left_btn{
     display: flex;
@@ -38,6 +40,7 @@
     cursor:pointer;
     transition: 0.4s;
     text-decoration: none;
+    animation: show-prev1 1s ease-out forwards;
     
 }
 .slidedata_left .slidedata_left_btn img{

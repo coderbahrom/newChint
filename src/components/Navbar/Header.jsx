@@ -3,9 +3,17 @@ import "./Header.css";
 import Hover1 from "./Hover1";
 import { Link } from "react-router-dom";
 import lines from '.././assets/icons/threeline.svg'
+import x from '.././assets/icons/x.svg'
+import { useState } from "react";
 
 function Header() {
-  
+  const [click, setClick]=useState(true)
+  function handleClick(){
+    setClick(!click)
+  }
+  // const bgcoloring={
+  //   fill:'blue'
+  // }
 // const options = [
 //   { value: 'Ru', label:'Ru'},
 //   { value: 'Uz', label:'Uz' },
@@ -207,8 +215,13 @@ function Header() {
               <span> (95) 476 76 76 </span>
             </div>
           </div>
-          <div className="line">
-            <object data={lines} type="image/svg+xml">line</object>
+          <div className="line" onClick={handleClick}>
+           { click?<img src={lines} alt="line" />
+           : 
+          
+           <img class="change-my-color" src={x} alt="x" />
+         
+              }
           </div>
         </div>
       </nav>

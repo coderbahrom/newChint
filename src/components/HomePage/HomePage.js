@@ -53,6 +53,7 @@ function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
+  const [scroll, setScroll]=useState(false)
 console.log(setProductMainData2)
   function filterFun(filterVal){
       const FilteredData = productMainData2.filter((item,index)=>{
@@ -88,7 +89,14 @@ console.log(setProductMainData2)
     
   }
 
+function handleScroll(){
+ setScroll(true)
+ console.log('hellllo')
+}
 
+const animating={
+  animation: 'showcases 1s ease-out forwards'
+}
   return (
   <>
   
@@ -148,7 +156,7 @@ console.log(setProductMainData2)
       <img onClick={scrollGoDown} className='vectorbuttom' src={Vertorbottom} alt='rasm'/>
     </div>
     <div className='hompage_content'>
-        <div className='hompage_content_inner'>
+        <div onScroll={handleScroll} style={scroll?animating:{}} className='hompage_content_inner'>
             <ThreeImageComponent/>
         </div>
     </div>
