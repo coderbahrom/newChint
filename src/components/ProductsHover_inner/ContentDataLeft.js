@@ -54,7 +54,8 @@ function ContentDataLeft(){
     const [VoltData, setVoltData] = useState(VoltData1)
     const [characteristicData, setCharacteristicData] = useState(characteristicData1)
     const [seryaData, setSeryaData] = useState(seryaData1)
-  
+    
+    
     function checkedPole(index='false'){
         
         const temporary = SqurePoleData
@@ -269,17 +270,20 @@ function ContentDataLeft(){
     }
     
 
-    useEffect(() => {  
-    console.log(collectData);
-    checkedPole();
-    checkedAmper();
-    checkedCapacity();
-    checkedserya();
-    checkedVolt();
-    checkedCharacter();
-}, [collectData])
+    
+    useEffect(() => {      
+        console.log(collectData);
+        checkedPole();
+        checkedAmper();
+        checkedCapacity();
+        checkedserya();
+        checkedVolt();
+        checkedCharacter();        
+    })
 
-
+    useEffect(() => {      
+        console.log(collectData);
+    },[collectData])
     
     return (
         <div className='content_data_left'>

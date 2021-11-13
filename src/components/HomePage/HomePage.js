@@ -68,6 +68,8 @@ function HomePage(){
           return filterVal===item.filter
       })
       setProductMainData([...FilteredData])
+      // shunchki xatolikni yo'q qilish uchun ishlatildi
+      setProductMainData2(productMainData2)
   }
 function getLoad(){
   setTimeout(()=>{
