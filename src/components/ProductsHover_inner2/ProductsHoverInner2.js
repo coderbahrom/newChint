@@ -7,6 +7,7 @@ import doc from '../assets/images/doc.png'
 import ProductContainer from './Product_container'
 import Footer from '../Footer/Footer'
 import {useState} from 'react'
+
 function ProductsHover_inner2(){
     const [proContainerData, setProContainerData] = useState([
         {title1:'284003',title2:'Автоматический выключатель NB1-63 1Р 6А 6кА х-ка C (CHINT)'},
@@ -26,10 +27,11 @@ function ProductsHover_inner2(){
             docTitle:'Посмотреть брошюру DZ47-60',
             amper:'1–63 А',
             pole:'1P, 2P, 3P, 4P',
-            character:'B, C, D',
+            char:'B, C, D',
             capacity:'4.5 кА'
         }
     )
+
     console.log(setBoxData)
     console.log(setProContainerData)
     return (
@@ -51,7 +53,7 @@ function ProductsHover_inner2(){
                                     </p>
                                     <div className='right_inner_doc'>
                                         <img src={doc} alt='rasm'/>
-                                        <p>{boxData.docTitle}</p>
+                                        <p className='P_Inside_doc'>{boxData.docTitle}</p>
                                     </div>
                                  </div> 
                                  <div className='right_inner_2'>
@@ -65,7 +67,7 @@ function ProductsHover_inner2(){
                                      </div>
                                      <div className='right_inner_2_1'>
                                         <p>Характеристика кривой</p>
-                                        <p>{boxData.character}</p>
+                                        <p>{boxData.char}</p>
                                      </div>
                                      <div className='right_inner_2_1'>
                                         <p>Предельная отключающая способность</p>

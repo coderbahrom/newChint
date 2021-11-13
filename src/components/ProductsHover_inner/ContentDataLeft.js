@@ -4,123 +4,280 @@ import Squre from './Squre'
 import filter1 from '../assets/images/filter1.png'
 import './Content_data_left.css'
 import {useState,useEffect} from 'react'
-const SqurePoleData = [
-    {id:1, pole:'1P',parenthesis:'14',still:false,disabled:false},
-    {id:2, pole:'2P',parenthesis:'14',still:false,disabled:false},
-    {id:3,pole:'3P',parenthesis:'14',still:false,disabled:false},
-    {id:4,pole:'4P',parenthesis:'14',still:false,disabled:true}
-]
-const SqureAmperData =[
-    {id:5,Amper:'1A',parenthesis:'1',still:false},
-    {id:6,Amper:'2A',parenthesis:'1',still:false},
-    {id:7,Amper:'3A',parenthesis:'1',still:false},
-    {id:8,Amper:'4A',parenthesis:'1',still:false},
-    {id:9,Amper:'6A',parenthesis:'1',still:false},
-    {id:10,Amper:'10A',parenthesis:'1',still:false},
-    {id:11,Amper:'13A',parenthesis:'1',still:false},
-    {id:12,Amper:'16A',parenthesis:'1',still:false},
-    {id:13,Amper:'20A',parenthesis:'1',still:false},
-    {id:14,Amper:'25A',parenthesis:'1',still:false},
-    {id:15,Amper:'32A',parenthesis:'1',still:false},
-    {id:16,Amper:'40A',parenthesis:'1',still:false},
-    {id:17,Amper:'50A',parenthesis:'1',still:false},
-    {id:18,Amper:'63A',parenthesis:'1',still:false},
-]
-const ultimateCapacity =[
-    {id:19,capacity:'6kA',parenthesis:'42',still:false}
+
+
+const SqurePoleData1 = [
+    {id:1, pole:'1P',parenthesis:'14',checked:false,disabled:false},
+    {id:2, pole:'2P',parenthesis:'14',checked:false,disabled:false},
+    {id:3,pole:'3P',parenthesis:'14',checked:false,disabled:false},
+    {id:4,pole:'4P',parenthesis:'14',checked:false,disabled:false}
 ]
 
-const VoltData = [
-    {id:20,volt:'250B',parenthesis:'15',still:false},
-    {id:21,volt:'500B',parenthesis:'15',still:false},
-    {id:22,volt:'1000B',parenthesis:'12',still:false},
+const SqureAmperData1 =[
+    {id:1,amper:'1A',parenthesis:'1',checked:false,disabled:false},
+    {id:2,amper:'2A',parenthesis:'1',checked:false,disabled:false},
+    {id:3,amper:'3A',parenthesis:'1',checked:false,disabled:false},
+    {id:4,amper:'4A',parenthesis:'1',checked:false,disabled:false},
+    {id:5,amper:'6A',parenthesis:'1',checked:false,disabled:false},
+    {id:6,amper:'10A',parenthesis:'1',checked:false,disabled:false},
+    {id:7,amper:'13A',parenthesis:'1',checked:false,disabled:false},
+    {id:8,amper:'16A',parenthesis:'1',checked:false,disabled:false},
+    {id:9,amper:'20A',parenthesis:'1',checked:false,disabled:false},
+    {id:10,amper:'25A',parenthesis:'1',checked:false,disabled:false},
+    {id:11,amper:'32A',parenthesis:'1',checked:false,disabled:false},
+    {id:12,amper:'40A',parenthesis:'1',checked:false,disabled:false},
+    {id:13,amper:'50A',parenthesis:'1',checked:false,disabled:false},
+    {id:14,amper:'63A',parenthesis:'1',checked:false,disabled:false},
 ]
-const characteristicData = [
-    {id:23,char:'C', parenthesis:'42',still:false}
+const ultimateCapacity1 =[
+    {id:1,capacity:'6kA',parenthesis:'42',checked:false,disabled:false}
 ]
 
-const seryaData =[
-    {id:24,serya:'NM8',parenthesis:'S',still:false}
+const VoltData1 = [
+    {id:1,volt:'250B',parenthesis:'15',checked:false,disabled:false},
+    {id:2,volt:'500B',parenthesis:'15',checked:false,disabled:false},
+    {id:3,volt:'1000B',parenthesis:'12',checked:false,disabled:false},
+]
+const characteristicData1 = [
+    {id:3,char:'C', parenthesis:'42',checked:false,disabled:false}
+]
+
+const seryaData1 =[
+    {id:4,serya:'NM8',parenthesis:'S',checked:false,disabled:false}
 ]
 
 function ContentDataLeft(){
-    const [collectData,setCollectData] = useState({pole:'', Amper:'', capacity:'', volt:'', char:''})
-    const [getActive1, setGetActive1] = useState('')
-    const [getActive2, setGetActive2] = useState('')
-    const [getActive3, setGetActive3] = useState('')
-    const [getActive4, setGetActive4] = useState('')
-    const [getActive5, setGetActive5] = useState('')
-    const [getActive6, setGetActive6] = useState('')
- 
-
-
-
-    function checkedPole(index){
-        if(getActive1===index){
-            setGetActive1('')
-        }
-        else{
-            setGetActive1(index)
-        }
+    const [collectData,setCollectData] = useState({pole:[], amper:[], capacity:[], serya:[], volt:[], char:[]})
+    const [SqurePoleData, setSqurePoleData] = useState(SqurePoleData1)
+    const [SqureAmperData, setSqureAmperData] = useState(SqureAmperData1)
+    const [ultimateCapacity, setUltimateCapacity] = useState(ultimateCapacity1)
+    const [VoltData, setVoltData] = useState(VoltData1)
+    const [characteristicData, setCharacteristicData] = useState(characteristicData1)
+    const [seryaData, setSeryaData] = useState(seryaData1)
+  
+    function checkedPole(index='false'){
         
-        setCollectData({...collectData, pole:SqurePoleData[index].pole})
+        const temporary = SqurePoleData
+        if(index !== 'false'){temporary[index].checked = !temporary[index].checked }
+        
+        if (collectData.amper.length > 0 || collectData.capacity.length > 0 || collectData.serya.length > 0  || collectData.volt.length > 0  || collectData.char.length > 0 ) {
+                temporary.forEach((item,ind)=>{
+                    item.checked===true ? item.disabled=false : item.disabled=true
+                    console.log(item.disabled);
+                })
+                var result = temporary.every((item)=>{
+                    return item.disabled===true
+                })
+                result && temporary.forEach(item=>item.disabled=false)
+        } 
+        if (collectData.amper.length === 0 && collectData.capacity.length === 0 && collectData.serya.length === 0  && collectData.volt.length  ===0  && collectData.char.length === 0 ) {
+                temporary.forEach((item,ind)=>{
+                    item.disabled=false 
+                    
+                })
+        } 
+
+        if(index !== 'false'){ var d = new Set(collectData.pole)
+                if(temporary[index].checked===true){
+                    d.add(SqurePoleData[index].pole)
+                }
+                else{
+                    d.delete(SqurePoleData[index].pole)
+                }
+                setCollectData({...collectData, pole:[...d]})
+        }
+
+        setSqurePoleData([...temporary])
+        
+        
+    } 
+
+    function checkedAmper(index='false'){
+        
+        const temporary = SqureAmperData
+        if(index !== 'false'){temporary[index].checked = !temporary[index].checked}
+
+        if (collectData.pole.length > 0 || collectData.capacity.length > 0 || collectData.serya.length > 0  || collectData.volt.length > 0  || collectData.char.length > 0 ) {
+            temporary.forEach((item,ind)=>{
+                 item.checked===true ? item.disabled = false  : item.disabled=true
+            })
+            var result = temporary.every((item)=>{
+                return item.disabled===true
+            })
+            result && temporary.forEach(item=>item.disabled=false)
+        }  
+       
+        if (collectData.pole.length === 0 && collectData.capacity.length === 0 && collectData.serya.length === 0  && collectData.volt.length  ===0  && collectData.char.length === 0 ) {
+            temporary.forEach((item,ind)=>{
+                item.disabled=false 
+                
+            })
+        } 
+        
+        if(index !== 'false'){ var d = new Set(collectData.amper);
+            if(temporary[index].checked===true){
+                d.add(SqureAmperData[index].amper)
+            }
+            else{
+                d.delete(SqureAmperData[index].amper)
+            }
+            setCollectData({...collectData,amper:[...d]})
+        }
+        setSqureAmperData([...temporary])
+        
+        
+      
+        
     }
 
-    function checkedAmper(index){
-        if(getActive2===index){
-            setGetActive2('')
+    function checkedCapacity(index='false'){
+        const temporary = ultimateCapacity
+        if(index !== 'false'){ temporary[index].checked = !temporary[index].checked}
+
+        if (collectData.pole.length > 0 || collectData.amper.length > 0 || collectData.serya.length > 0  || collectData.volt.length > 0  || collectData.char.length > 0 ) {
+                temporary.forEach((item,ind)=>{
+                    item.checked===true ? item.disabled=false   : item.disabled=true
+                })
+                var result = temporary.every((item)=>{
+                    return item.disabled===true
+                })
+                result && temporary.forEach(item=>item.disabled=false)
+            
+        }  
+
+        if (collectData.amper.length === 0 && collectData.pole.length === 0 && collectData.serya.length === 0  && collectData.volt.length  ===0  && collectData.char.length === 0 ) {
+                temporary.forEach((item,ind)=>{
+                    item.disabled=false 
+                    
+                })
+        } 
+        if(index !== 'false'){
+                var d = new Set(collectData.capacity);
+                if(temporary[index].checked===true){
+                    d.add(ultimateCapacity[index].capacity)
+                }
+                else{
+                    d.delete(ultimateCapacity[index].capacity)
+                }
+                setCollectData({...collectData,capacity:[...d]})
         }
-        else{
-            setGetActive2(index)
-        }
-        
-        setCollectData({...collectData,Amper:SqureAmperData[index].Amper})
-    }
-    function checkedCapacity(index){
-        if(getActive3===index){
-            setGetActive3('')
-        }
-        else{
-            setGetActive3(index)
-        }
-        setCollectData({...collectData,capacity:ultimateCapacity[index].capacity})
+        setUltimateCapacity([...temporary])
        
+
     }
-    function checkedserya(index){
-        if(getActive4===index){
-            setGetActive4('')
+
+    function checkedserya(index='false'){
+        const temporary = seryaData
+        if(index !== 'false'){ temporary[index].checked = !temporary[index].checked }
+
+        if (collectData.pole.length > 0 || collectData.amper.length > 0 || collectData.capacity.length > 0  || collectData.volt.length > 0  || collectData.char.length > 0 ) {
+            temporary.forEach((item,ind)=>{
+                 item.checked===true ? item.disabled=false   : item.disabled=true
+            })
+            var result = temporary.every((item)=>{
+                return item.disabled===true
+            })
+            result && temporary.forEach(item=>item.disabled=false)
+           
+        } 
+
+        if (collectData.amper.length === 0 && collectData.capacity.length === 0 && collectData.pole.length === 0  && collectData.volt.length  === 0  && collectData.char.length === 0 ) {
+            temporary.forEach((item,ind)=>{
+                item.disabled=false 
+                
+            })
+        } 
+        if(index !== 'false'){
+                var d = new Set(collectData.serya);
+                if(temporary[index].checked===true){
+                    d.add(seryaData[index].serya)
+                }
+                else{
+                    d.delete(seryaData[index].serya)
+                }
+                setCollectData({...collectData,serya:[...d]})
         }
-        else{
-            setGetActive4(index)
-        }
-       
-        setCollectData({...collectData,serya:seryaData[index].serya})
+        setSeryaData([...temporary])   
   }
-     function checkedVolt(index){
-        if(getActive5===index){
-            setGetActive5('')
+
+     function checkedVolt(index='false'){
+        const temporary = VoltData
+        if(index !== 'false'){ temporary[index].checked = !temporary[index].checked}
+        if (collectData.pole.length > 0 || collectData.amper.length > 0 || collectData.serya.length > 0  || collectData.capacity.length > 0  || collectData.char.length > 0 ) {
+            temporary.forEach((item,ind)=>{
+                 item.checked===true ? item.disabled=false   : item.disabled=true
+            })
+            var result = temporary.every((item)=>{
+                return item.disabled===true
+            })
+            result && temporary.forEach(item=>item.disabled=false)
+           
+        } 
+        if (collectData.amper.length === 0 && collectData.capacity.length === 0 && collectData.serya.length === 0  && collectData.pole.length  ===0  && collectData.char.length === 0 ) {
+            temporary.forEach((item,ind)=>{
+                item.disabled=false 
+                
+            })
+        } 
+        if(index !== 'false'){
+                var d = new Set(collectData.volt);
+                if(temporary[index].checked===true){
+                    d.add(VoltData[index].volt)
+                }
+                else{
+                    d.delete(VoltData[index].volt)
+                }
+                setCollectData({...collectData,volt:[...d]})
         }
-        else{
-            setGetActive5(index)
-        }
+
+        setVoltData([...temporary])
         
-        setCollectData({...collectData,volt:VoltData[index].volt})
     }
     
 
-      function checkedCharacter(index){
-        if(getActive6===index){
-            setGetActive6('')
+      function checkedCharacter(index='false'){
+        const temporary = characteristicData
+        if(index !=='false'){ temporary[index].checked = !temporary[index].checked}
+        if (collectData.pole.length > 0 || collectData.amper.length > 0 || collectData.serya.length > 0  || collectData.capacity.length > 0  || collectData.amper.length > 0 ) {
+            temporary.forEach((item,ind)=>{
+                 item.checked===true ? item.disabled=false   : item.disabled=true
+            })
+            var result = temporary.every((item)=>{
+                return item.disabled===true
+            })
+            result && temporary.forEach(item=>item.disabled=false)
+           
+        } 
+        if (collectData.amper.length === 0 && collectData.capacity.length === 0 && collectData.serya.length === 0  && collectData.pole.length  ===0  && collectData.volt.length === 0 ) {
+            temporary.forEach((item,ind)=>{
+                item.disabled=false 
+                
+            })
+        } 
+        if(index !== 'false'){
+                var d = new Set(collectData.char);
+                if(temporary[index].checked===true){
+                    d.add(characteristicData[index].char)
+                }
+                else{
+                    d.delete(characteristicData[index].char)
+                }
+                setCollectData({...collectData,char:[...d]})
         }
-        else{
-            setGetActive6(index)
-        }
-          setCollectData({...collectData,char:characteristicData[index].char})
+
+        setCharacteristicData([...temporary])
     }
     
+
     useEffect(() => {  
     console.log(collectData);
-}, [collectData])
+    checkedPole()
+    checkedAmper()
+    checkedCapacity()
+    checkedserya()
+    checkedVolt()
+    checkedCharacter()
+}, [SqureAmperData,SqurePoleData,ultimateCapacity,seryaData,characteristicData,VoltData])
     
     return (
         <div className='content_data_left'>
@@ -136,7 +293,7 @@ function ContentDataLeft(){
 
                                  {
                                      SqurePoleData.map((item,index)=>{
-                                        return <Squre CommongetActive={getActive1} checking={checkedPole} index={index} filterTitle1={item.pole} filterTitle2={item.parenthesis}/>
+                                        return <Squre CommonItem={item} checking={checkedPole} index={index} filterTitle1={item.pole} filterTitle2={item.parenthesis}/>
                                      })
                                  }
 
@@ -148,7 +305,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    SqureAmperData.map((item,index)=>{
-                                         return  <Squre  CommongetActive={getActive2} checking={checkedAmper} index={index} filterTitle1={item.Amper} filterTitle2={item.parenthesis}/>
+                                         return  <Squre  CommonItem={item} checking={checkedAmper} index={index} filterTitle1={item.amper} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -159,7 +316,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    ultimateCapacity.map((item,index)=>{
-                                         return  <Squre CommongetActive={getActive3} checking= {checkedCapacity} index={index} filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommonItem={item} checking= {checkedCapacity} index={index} filterTitle1={item.capacity} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                  
@@ -171,7 +328,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                   {
                                    seryaData.map((item,index)=>{
-                                         return  <Squre CommongetActive={getActive4} checking= {checkedserya} index={index} filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommonItem={item} checking= {checkedserya} index={index} filterTitle1={item.serya} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                             </div>
@@ -182,7 +339,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                  {
                                    VoltData.map((item,index)=>{
-                                         return  <Squre CommongetActive={getActive5}  checking= {checkedVolt} index={index} filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommonItem={item}  checking= {checkedVolt} index={index} filterTitle1={item.volt} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 
@@ -194,7 +351,7 @@ function ContentDataLeft(){
                             <div className='many_button'>
                                 {
                                    characteristicData.map((item,index)=>{
-                                         return  <Squre CommongetActive={getActive6} checking= {checkedCharacter} index={index} filterTitle1={item.char} filterTitle2={item.parenthesis}/>
+                                         return  <Squre CommonItem={item} checking= {checkedCharacter} index={index} filterTitle1={item.char} filterTitle2={item.parenthesis}/>
                                    })  
                                  }
                                 

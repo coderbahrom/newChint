@@ -10,15 +10,18 @@ import ProshowData from './ProshowData'
 import {useState} from 'react'
 
 
-function ProductsHover_inner() {
+function ProductsHover_inner(){
+
     const [proshowMainData, setProshowMainData] = useState( [
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'},
-    {picture:rasm1,picture_title:'DZ47-60, 1-63А, 4.5кА'}
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'},
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'},
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'},
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'},
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'},
+    {poleImage:rasm1, amper_capacity:'DZ47-60, 1-63А, 4.5кА'}
 ])
+
+
 console.log(setProshowMainData)
 
     return (
@@ -35,7 +38,7 @@ console.log(setProshowMainData)
                             <div className='pro_inner1_rightInner'>
                                 {
                                     proshowMainData.map((item,index)=>{
-                                        return <ProshowData picture={item.picture} picture_title={item.picture_title}/>
+                                        return <ProshowData picture={item.poleImage} picture_title={item.amper_capacity}/>
                                     }) 
                                 }
                                  
