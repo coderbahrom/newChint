@@ -278,7 +278,7 @@ function ContentDataLeft(){
     checkedVolt();
     checkedCharacter();
 }, [collectData])
-    
+
 
     
     return (
