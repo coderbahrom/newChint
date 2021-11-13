@@ -272,7 +272,6 @@ function ContentDataLeft(){
 
     
     useEffect(() => {      
-        console.log(collectData);
         checkedPole();
         checkedAmper();
         checkedCapacity();
