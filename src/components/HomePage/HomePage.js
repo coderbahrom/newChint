@@ -71,7 +71,7 @@ console.log(setProductMainData2)
 function getLoad(){
   setTimeout(()=>{
     setDone(true)
-  },3000)
+  },2000)
 }
  //product active
  const styleProActive = {
