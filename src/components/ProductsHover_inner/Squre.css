@@ -8,13 +8,14 @@
     border:0;
     cursor: pointer;
     transition: .4s;
-    border:2px solid #F8F8F8;
     padding:0 0.7vw;
 }
-
-.squreRang:hover{
-    border:1px solid #65a4f2;
+#disabledDiv{
+    pointer-events:none;
+    background-color:#FBFBFB;
+    color:#CDCDCD!important;
 }
+
  .rang1{
     color:#4f4f4f;
     width:fit-content;
@@ -42,10 +43,25 @@
     display:none;
     font-weight:500;
 }
+
+
 .squreRangActive{
-    background-color:rgb(34, 34, 255);
-    color:#cafdff,
+    background-color:#005DA9; 
 }
+
+
 .rang12Active{
     color:white;
+    margin-left: auto;
+    
+}
+.cancelBlock{
+    display:block;
+    width:1.03vw;
+    height:1.03vw;
+    margin-left: auto;
+    
+}
+.cancelNone{
+    display: none;
 }

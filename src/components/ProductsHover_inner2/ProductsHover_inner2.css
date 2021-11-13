@@ -101,7 +101,7 @@
     width:2vw;
     height:2vw;
 }
-.right_inner_doc p{
+.right_inner_doc .P_Inside_doc{
     font-family:"Inter";
     font-size: 1.02vw;
     font-style: normal;
@@ -166,7 +166,7 @@
         display:none;
     }
     .right_inner_1 p:nth-child(2){
-        font-size: 3.3vw;
+        font-size: 3.5vw;
         line-height: 5.3vw;
         width:100%;
     }
@@ -174,14 +174,14 @@
         width:100%;
     }
     .right_inner_doc img{
-        width:5vw;
-        height:5.4vw;
+        width:5.3vw;
+        height:5.57vw;
     }
-    .right_inner_doc p{
-        font-size: 3.4vw;
+    .right_inner_doc .P_Inside_doc{
+        font-size: 3.5vw;
         width:100%;
         font-weight:400;
-        font-family:"SF Pro Display";
+        color:#1E59A4!important;
     }
     .right_inner_2_1 p:nth-child(1){
         font-size: 2.13vw;
@@ -196,5 +196,8 @@
         line-height: 5vw;
     
     }
+    /* .right_inner_1{
+        margin-botom:21vw;
+    } */
     
 }

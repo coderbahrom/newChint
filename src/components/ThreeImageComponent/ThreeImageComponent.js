@@ -5,17 +5,17 @@ import Flip from 'react-reveal/Flip';
 import {useState} from 'react'
 function ThreeImageComponent() {
   const [newsData,setNewsData] = useState([
-    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
-    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
-    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+    {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
     
   ])
   
   function addNewsData(){
     const getnewsData = [
-     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
-     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
-     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21',newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},]
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},
+     {img:"./assets/images/news1.jpg", newsDate:'15.09.2021 | 20:21', newsDesc:'С 7-10 июня состоялась выставка «Электро-2021» в ЦВК «Экспоцентр»,Москва'},]
     
     setNewsData([...newsData,...getnewsData])
   }
