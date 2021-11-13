@@ -55,17 +55,14 @@ function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
-<<<<<<< HEAD
-  
-=======
+
   const [scroll, setScroll]=useState(false)
   
   const[done, setDone]=useState(undefined)
   useEffect(()=>{
     getLoad();
   },[])
->>>>>>> 23d0f0de96cf1ad1b1ad46b0e31563c52cf2b5d8
-console.log(setProductMainData2)
+
   function filterFun(filterVal){
       const FilteredData = productMainData2.filter((item,index)=>{
           return filterVal===item.filter

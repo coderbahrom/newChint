@@ -63,7 +63,7 @@ function ContentDataLeft(){
         if (collectData.amper.length > 0 || collectData.capacity.length > 0 || collectData.serya.length > 0  || collectData.volt.length > 0  || collectData.char.length > 0 ) {
                 temporary.forEach((item,ind)=>{
                     item.checked===true ? item.disabled=false : item.disabled=true
-                    console.log(item.disabled);
+                    
                 })
                 var result = temporary.every((item)=>{
                     return item.disabled===true
@@ -271,13 +271,15 @@ function ContentDataLeft(){
 
     useEffect(() => {  
     console.log(collectData);
-    checkedPole()
-    checkedAmper()
-    checkedCapacity()
-    checkedserya()
-    checkedVolt()
-    checkedCharacter()
-}, [SqureAmperData,SqurePoleData,ultimateCapacity,seryaData,characteristicData,VoltData])
+    checkedPole();
+    checkedAmper();
+    checkedCapacity();
+    checkedserya();
+    checkedVolt();
+    checkedCharacter();
+}, [collectData])
+    
+
     
     return (
         <div className='content_data_left'>
