@@ -10,6 +10,7 @@
   width: 20vw;
   display: flex;
   flex-direction: column;
+  animation: showcases 1s ease-out forwards;
   
 
 }
@@ -119,4 +120,16 @@
 }
 .section_title_wrap .section_title:hover + .section_title_underline{
   width: 6vw;
+}
+
+@keyframes showcases {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

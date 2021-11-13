@@ -316,7 +316,7 @@
 }
 @media only screen and (max-width: 500px) {
   #nav{
-    height: 10vw;
+    height: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,4 +364,5 @@
     height: 5.600vw;
    
   }
+
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 import './productbox.css'
-
+import Roll from 'react-reveal/Roll';
+import Zoom from 'react-reveal/Zoom';
 function ProductBox({images,pro_box_title,imghidden}) {
     return (
         <div className='product_box'>
+          <Roll right>
             <div className='product_box_innerimg'>
                 <object
                   style={imghidden} 
@@ -18,7 +20,10 @@ function ProductBox({images,pro_box_title,imghidden}) {
                   type="image/svg+xml"
                 > </object>
             </div>
+            </Roll>
+            <Zoom>
             <p>{pro_box_title}</p>
+            </Zoom>
         </div>
     )
 }

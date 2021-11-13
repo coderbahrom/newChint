@@ -1,12 +1,17 @@
 import React from 'react'
 import '../ProductsHover2.css'
+import { HideUntilLoaded } from 'react-animation'
+import LoadingImg from '../../../HomePage/loadingImg'
 function ProductCatalog2(props) {
     return (
        
              <div className={'catalog'}>
             <div className="catalog-img">
-
+            <HideUntilLoaded imageToLoad="https://picsum.photos/2200/1200/"
+  Spinner={() =><LoadingImg/> }>
+  
         <object data={props.data.img} type="image/svg+xml">img</object>
+</HideUntilLoaded>
 
             </div>
             <div className="tit">

@@ -41,7 +41,9 @@ import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
-import {useState} from 'react'
+import {useState , useEffect} from 'react'
+import Bounce from 'react-reveal/Bounce';
+import Loading from './Loadings'
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
@@ -53,7 +55,16 @@ function HomePage(){
   const [proActive, setProActive] = useState({stateActive1:false,stateActive2:false,stateActive3:false});
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
+<<<<<<< HEAD
   
+=======
+  const [scroll, setScroll]=useState(false)
+  
+  const[done, setDone]=useState(undefined)
+  useEffect(()=>{
+    getLoad();
+  },[])
+>>>>>>> 23d0f0de96cf1ad1b1ad46b0e31563c52cf2b5d8
 console.log(setProductMainData2)
   function filterFun(filterVal){
       const FilteredData = productMainData2.filter((item,index)=>{
@@ -61,7 +72,11 @@ console.log(setProductMainData2)
       })
       setProductMainData([...FilteredData])
   }
-
+function getLoad(){
+  setTimeout(()=>{
+    setDone(true)
+  },3000)
+}
  //product active
  const styleProActive = {
     color:'white',
@@ -89,11 +104,24 @@ console.log(setProductMainData2)
     
   }
 
+function handleScroll(){
+ setScroll(true)
+ console.log('hellllo')
+}
 
+const animating={
+  animation: 'showcases 1s ease-out forwards'
+}
   return (
   <>
-  
+ {
+ !done?
+    
+ <Loading/>:
+ 
+ 
   <Switch>
+
   <Route exact path="/">
   <div className="homepage_main_container">
     <Header/>
@@ -149,33 +177,40 @@ console.log(setProductMainData2)
       <img onClick={scrollGoDown} className='vectorbuttom' src={Vertorbottom} alt='rasm'/>
     </div>
     <div className='hompage_content'>
-        <div className='hompage_content_inner'>
+        <div onScroll={handleScroll} style={scroll?animating:{}} className='hompage_content_inner'>
             <ThreeImageComponent/>
         </div>
     </div>
        {/* PRODUCTS  */}
     <div className='homepage_product'>
+    
         <div className='homepage_product_container'>
             <div className='homepage_pro_contaier_title'>
                   <h1>Продукция</h1>
                   <span></span>
             </div>
             <div className='homepage_pro_contaier_menyu'>
+            <Bounce left>
                 <div style={proActive.stateActive1 ? styleProActive : {}} onClick={proActiveFun1} className='homepage_pro_contaier_men1'>
                     <h6>
                         Низковольтное оборудование
                     </h6>
                 </div>
+                </Bounce>
+                <Bounce >
                 <div style={proActive.stateActive2 ? styleProActive : {}} onClick={proActiveFun2} className='homepage_pro_contaier_men2'>
                     <h6>
                         Оборудование <br/>распределения и передачи
                     </h6>
                 </div>
+                </Bounce >
+                <Bounce right>
                 <div style={proActive.stateActive3 ? styleProActive : {}} onClick={proActiveFun3} className='homepage_pro_contaier_men3'>
                     <h6>
                         Электроустановочные <br/>изделия
                     </h6>
                 </div>
+            </Bounce>
             </div>
             <div className="homepage_pro_contaier_box">
                 {productMainData.map((item, index) => {
@@ -396,7 +431,9 @@ console.log(setProductMainData2)
             <ProductsHoverInner3/>
          </Route>
         
-     </Switch>       
+     </Switch>  
+     
+ }
     </>
   )
 }
