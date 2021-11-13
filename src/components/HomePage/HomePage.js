@@ -41,8 +41,9 @@ import { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { ProductBoxData } from './ProductBoxData';
-import {useState} from 'react'
+import {useState , useEffect} from 'react'
 import Bounce from 'react-reveal/Bounce';
+import Loading from './Loadings'
 import SwiperCore, {
   Pagination,Navigation,Mousewheel,Keyboard
 } from 'swiper';
@@ -55,6 +56,11 @@ function HomePage(){
   const [productMainData, setProductMainData] = useState(ProductBoxData)
   const [productMainData2, setProductMainData2] = useState(ProductBoxData)
   const [scroll, setScroll]=useState(false)
+  
+  const[done, setDone]=useState(undefined)
+  useEffect(()=>{
+    getLoad();
+  },[])
 console.log(setProductMainData2)
   function filterFun(filterVal){
       const FilteredData = productMainData2.filter((item,index)=>{
@@ -62,7 +68,11 @@ console.log(setProductMainData2)
       })
       setProductMainData([...FilteredData])
   }
-
+function getLoad(){
+  setTimeout(()=>{
+    setDone(true)
+  },3000)
+}
  //product active
  const styleProActive = {
     color:'white',
@@ -100,8 +110,14 @@ const animating={
 }
   return (
   <>
-  
+ {
+ !done?
+    
+ <Loading/>:
+ 
+ 
   <Switch>
+
   <Route exact path="/">
   <div className="homepage_main_container">
     <Header/>
@@ -163,6 +179,7 @@ const animating={
     </div>
        {/* PRODUCTS  */}
     <div className='homepage_product'>
+    
         <div className='homepage_product_container'>
             <div className='homepage_pro_contaier_title'>
                   <h1>Продукция</h1>
@@ -410,7 +427,9 @@ const animating={
             <ProductsHoverInner3/>
          </Route>
         
-     </Switch>       
+     </Switch>  
+     
+ }
     </>
   )
 }
